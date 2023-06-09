@@ -1,0 +1,142 @@
+transform:
+  # Assign blank node ids to vertices and format coordinates
+  - '.vertices |= [to_entries | .[] | { "@id": "_:vertices-\(.key)", "city:x": .value[0], "city:y": .value[1], "city:z": .value[2] }]'
+  # Assign blank node ids to City Objects
+  - |
+    .CityObjects |= [
+      to_entries | .[] 
+      | .value.parents |= if . then map("_:city-objects-\(.)") else empty end
+      | { "@id": "_:city-objects-\(.key)" } + .value
+    ]
+  # Format coordinates
+  - |
+    def to_coords: if . then { "city:x": .[0], "city:y": .[1], "city:z": .[2] } else empty end ;
+    (.transform.scale |= to_coords) | (.transform.translate |= to_coords)
+  - |
+    .metadata.geographicalExtent |= if . then { 
+      "city:min": { "city:x": .[0], "city:y": .[1], "city:z": .[2] },
+      "city:max": { "city:x": .[3], "city:y": .[4], "city:z": .[5] }
+    } else empty end
+
+context:
+  $:
+    '@version': 1.1
+    '@base': '#'
+
+    city: http://example.com/vocab/city/
+    dct: http://purl.org/dc/terms/
+
+    CityJSON: city:CityJson
+
+    type: '@type'
+    version: city:version
+
+    CityObjects:
+      '@id': city:hasObject
+      '@context':
+        geometry:
+          '@id': city:hasGeometry
+          '@context':
+            lod: city:lod
+        attributes: '@nest'
+        parents:
+          '@id': city:hasParent
+          '@type': '@id'
+        children:
+          '@id': city:hasChild
+          '@type': '@id'
+
+
+    # City Objects
+    Bridge: city:Bridge
+    BridgeConstructiveElement: city:BridgeConstructiveElement
+    BridgeFurniture: city:BridgeFurniture
+    BridgeInstallation: city:BridgeInstallation
+    BridgePart: city:BridgePart
+    BridgeRoom: city:BridgeRoom
+    Building: city:Building
+    BuildingConstructiveElement: city:BuildingConstructiveElement
+    BuildingFurniture: city:BuildingFurniture
+    BuildingInstallation: city:BuildingInstallation
+    BuildingPart: city:BuildingPart
+    BuildingRoom: city:BuildingRoom
+    BuildingStorey: city:BuildingStorey
+    BuildingUnit: city:BuildingUnit
+    CityFurniture: city:CityFurniture
+    CityObjectGroup: city:CityObjectGroup
+    ExtensionObject: city:ExtensionObject
+    LandUse: city:LandUse
+    OtherConstruction: city:OtherConstruction
+    PlantCover: city:PlantCover
+    Railway: city:Railway
+    Road: city:Road
+    SolitaryVegetationObject: city:SolitaryVegetationObject
+    TINRelief: city:TINRelief
+    TransportSquare: city:TransportSquare
+    Tunnel: city:Tunnel
+    TunnelConstructiveElement: city:TunnelConstructiveElement
+    TunnelFurniture: city:TunnelFurniture
+    TunnelHollowSpace: city:TunnelHollowSpace
+    TunnelInstallation: city:TunnelInstallation
+    TunnelPart: city:TunnelPart
+    WaterBody: city:WaterBody
+    Waterway: city:Waterway
+    _AbstractBuilding: city:_AbstractBuilding
+    _AbstractCityObject: city:_AbstractCityObject
+    _AbstractTransportationComplex: city:_AbstractTransportationComplex
+    '+GenericCityObject': https://www.cityjson.org/extensions/download/generic.ext.json#GenericCityObject
+
+    # Geometry Objects
+    GeometryInstance: city:GeometryInstance
+    CompositeSolid: city:CompositeSolid
+    CompositeSurface: city:CompositeSurface
+    MultiLineString: city:MultiLineString
+    MultiPoint: city:MultiPoint
+    MultiSolid: city:MultiSolid
+    MultiSurface: city:MultiSurface
+    Semantics: city:Semantics
+    Solid: city:Solid
+
+    # Geometric primitives
+    RoofSurface: city:RoofSurface
+    GroundSurface: city:GroundSurface
+    WallSurface: city:WallSurface
+    ClosureSurface: city:ClosureSurface
+    OuterCeilingSurface: city:OuterCeilingSurface
+    OuterFloorSurface: city:OuterFloorSurface
+    Window: city:Window
+    Door: city:Door
+    InteriorWallSurface: city:InteriorWallSurface
+    CeilingSurface: city:CeilingSurface
+    FloorSurface: city:FloorSurface
+    WaterSurface: city:WaterSurface
+    WaterGroundSurface: city:WaterGroundSurface
+    WaterClosureSurface: city:WaterClosureSurface
+    TrafficArea: city:TrafficArea
+    AuxiliaryTrafficArea: city:AuxiliaryTrafficArea
+    TransportationHole: city:TransportationHole
+    TransportationMarking: city:TransportationMarking
+
+    # Appearance Objects
+    Material: city:Material
+    Texture: city:Texture
+
+    transform:
+      '@id': city:hasTransform
+      '@context':
+        scale: city:scale
+        translate: city:translate
+
+    metadata:
+      '@id': '@nest'
+    geographicalExtent: city:geographicalExtent
+
+    vertices: city:hasVertex
+
+    extensions:
+      '@id': city:hasExtension
+      '@container': '@index'
+      '@index': dct:identifier
+      '@context':
+        url: '@id'
+        version: dct:version
