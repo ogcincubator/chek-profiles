@@ -16,6 +16,6 @@ _:cityjson a dcat:Dataset, dcfg:UpliftConfiguration ;
   dcfg:glob "cityjson/*.json" ;
   dcfg:hasUpliftDefinition [
     dcfg:order 1 ;
-    dcfg:file "cityjson-draft-01.yml" ;
+    dcfg:file "cityjson/cityjson-draft-01.yml" ;
   ] ;
 .
