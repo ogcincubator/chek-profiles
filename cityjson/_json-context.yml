@@ -38,6 +38,9 @@ context:
           '@id': city:hasGeometry
           '@context':
             lod: city:lod
+            boundaries:
+              '@id': city:boundaries
+              '@container': '@list'
         attributes: '@nest'
         parents:
           '@id': city:hasParent
