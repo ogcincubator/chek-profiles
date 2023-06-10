@@ -1,0 +1,69 @@
+@prefix city: <http://example.com/vocab/city/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://cityjson.org/extensions/download/generic.ext.json> dct:identifier "Generic" ;
+    dct:version "1.0" .
+
+[] a prov:Activity ;
+    prov:endedAtTime "2023-06-10T21:37:14.029671"^^xsd:dateTime ;
+    prov:startedAtTime "2023-06-10T21:37:13.582244"^^xsd:dateTime ;
+    prov:used [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:6fd84c9ba3fcbb7c21b49225cdff5a3effa23f1e" ;
+            rdfs:seeAlso <file:///home/alx5000/work/Proyectos/ogc/chek-profiles/cityjson/cube.city.json> ] ;
+    prov:wasAssociatedWith [ a prov:Agent,
+                schema:SoftwareApplication ;
+            rdfs:label "OGC-NA tools" ;
+            dct:hasVersion "0.2.27.dev0+gc5cd59f.d20230609" ;
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
+    prov:wasInformedBy [ dct:identifier "660ddc01-a287-438c-9656-0cee9a6167bb" ] .
+
+[] a city:CityJson ;
+    city:geographicalExtent [ city:max [ city:x 1 ;
+                    city:y 1 ;
+                    city:z 1 ] ;
+            city:min [ city:x 0 ;
+                    city:y 0 ;
+                    city:z 0 ] ] ;
+    city:hasExtension <https://cityjson.org/extensions/download/generic.ext.json> ;
+    city:hasObject [ a <file:///home/alx5000/work/Proyectos/ogc/chek-profiles/+GenericCityObject> ;
+            city:hasGeometry [ a <file:///home/alx5000/work/Proyectos/ogc/chek-profiles/Solid> ;
+                    city:boundaries ( ( ( ( 0 1 2 3 ) ) ( ( 4 5 1 0 ) ) ( ( 5 6 2 1 ) ) ( ( 6 7 3 2 ) ) ( ( 7 4 0 3 ) ) ( ( 7 6 5 4 ) ) ) ) ;
+                    city:lod "1" ] ] ;
+    city:hasTransform [ city:scale [ city:x 1e-03 ;
+                    city:y 1e-03 ;
+                    city:z 1e-03 ] ;
+            city:translate [ city:x 0 ;
+                    city:y 0 ;
+                    city:z 0 ] ] ;
+    city:hasVertex [ city:x 0 ;
+            city:y 0 ;
+            city:z 1000 ],
+        [ city:x 1000 ;
+            city:y 0 ;
+            city:z 1000 ],
+        [ city:x 1000 ;
+            city:y 1000 ;
+            city:z 1000 ],
+        [ city:x 0 ;
+            city:y 1000 ;
+            city:z 1000 ],
+        [ city:x 0 ;
+            city:y 0 ;
+            city:z 0 ],
+        [ city:x 1000 ;
+            city:y 0 ;
+            city:z 0 ],
+        [ city:x 1000 ;
+            city:y 1000 ;
+            city:z 0 ],
+        [ city:x 0 ;
+            city:y 1000 ;
+            city:z 0 ] ;
+    city:version "1.1" .
+
