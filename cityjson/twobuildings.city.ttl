@@ -6,6 +6,20 @@
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+[] a prov:Activity ;
+    prov:endedAtTime "2023-06-20T22:01:17.130576"^^xsd:dateTime ;
+    prov:startedAtTime "2023-06-20T22:01:16.543556"^^xsd:dateTime ;
+    prov:used [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:49868f5b67dc3910d9bb596d459288c3fdf6256d" ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/master/chek-profiles/cityjson/twobuildings.city.json> ] ;
+    prov:wasAssociatedWith [ a prov:Agent,
+                schema:SoftwareApplication ;
+            rdfs:label "OGC-NA tools" ;
+            dct:hasVersion "0.0.0" ;
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
+    prov:wasInformedBy [ dct:identifier "7ebc8c3a-9fbe-4fad-a93b-2ecd80fc522b" ] .
+
 [] a city:CityJson ;
     city:geographicalExtent [ city:max [ city:x 3.006181e+05 ;
                     city:y 5.041289e+06 ;
@@ -793,18 +807,4 @@
             city:y 4493 ;
             city:z 12114 ] ;
     city:version "1.1" .
-
-[] a prov:Activity ;
-    prov:endedAtTime "2023-06-21T00:00:31.810063"^^xsd:dateTime ;
-    prov:startedAtTime "2023-06-21T00:00:31.156407"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:baaee908ff5a256e597f6e75db6af99c4a75a853" ;
-            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/master/chek-profiles/cityjson/twobuildings.city.json> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
-                schema:SoftwareApplication ;
-            rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.2.34.dev0+gede391c.d20230620" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "2b6c9258-79a2-4093-ab3f-6f115a65f22e" ] .
 
