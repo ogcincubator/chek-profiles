@@ -126,6 +126,16 @@ context:
           '@id': city:hasChild
           '@type': '@id'
 
+    'city:x':
+      '@id': city:x
+      '@type': xsd:decimal
+    'city:y':
+      '@id': city:y
+      '@type': xsd:decimal
+    'city:z':
+      '@id': city:z
+      '@type': xsd:decimal
+
     transform:
       '@id': city:hasTransform
       '@context':

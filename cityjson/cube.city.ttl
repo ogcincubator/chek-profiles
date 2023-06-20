@@ -9,61 +9,61 @@
 <https://cityjson.org/extensions/download/generic.ext.json> dct:identifier "Generic" ;
     dct:version "1.0" .
 
+[] a prov:Activity ;
+    prov:endedAtTime "2023-06-21T00:11:57.790171"^^xsd:dateTime ;
+    prov:startedAtTime "2023-06-21T00:11:57.253564"^^xsd:dateTime ;
+    prov:used [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:4c711b9569ef06a12b2fa0048efcad35b2bafd62" ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/master/chek-profiles/cityjson/cube.city.json> ] ;
+    prov:wasAssociatedWith [ a prov:Agent,
+                schema:SoftwareApplication ;
+            rdfs:label "OGC-NA tools" ;
+            dct:hasVersion "0.2.34.dev0+gede391c.d20230620" ;
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
+    prov:wasInformedBy [ dct:identifier "0c210c8d-d35e-4975-8b34-b737a870468c" ] .
+
 [] a city:CityJson ;
-    city:geographicalExtent [ city:max [ city:x 1 ;
-                    city:y 1 ;
-                    city:z 1 ] ;
-            city:min [ city:x 0 ;
-                    city:y 0 ;
-                    city:z 0 ] ] ;
+    city:geographicalExtent [ city:max [ city:x 1.0 ;
+                    city:y 1.0 ;
+                    city:z 1.0 ] ;
+            city:min [ city:x 0.0 ;
+                    city:y 0.0 ;
+                    city:z 0.0 ] ] ;
     city:hasExtension <https://cityjson.org/extensions/download/generic.ext.json> ;
     city:hasObject [ a <https://www.cityjson.org/extensions/download/generic.ext.json#GenericCityObject> ;
             city:hasGeometry [ a city:Solid ;
                     city:boundaries ( ( ( ( 0 1 2 3 ) ) ( ( 4 5 1 0 ) ) ( ( 5 6 2 1 ) ) ( ( 6 7 3 2 ) ) ( ( 7 4 0 3 ) ) ( ( 7 6 5 4 ) ) ) ) ;
                     city:lod 1 ] ] ;
-    city:hasTransform [ city:scale [ city:x 1e-03 ;
-                    city:y 1e-03 ;
-                    city:z 1e-03 ] ;
-            city:translate [ city:x 0 ;
-                    city:y 0 ;
-                    city:z 0 ] ] ;
-    city:hasVertex [ city:x 0 ;
-            city:y 0 ;
-            city:z 1000 ],
-        [ city:x 1000 ;
-            city:y 0 ;
-            city:z 1000 ],
-        [ city:x 1000 ;
-            city:y 1000 ;
-            city:z 1000 ],
-        [ city:x 0 ;
-            city:y 1000 ;
-            city:z 1000 ],
-        [ city:x 0 ;
-            city:y 0 ;
-            city:z 0 ],
-        [ city:x 1000 ;
-            city:y 0 ;
-            city:z 0 ],
-        [ city:x 1000 ;
-            city:y 1000 ;
-            city:z 0 ],
-        [ city:x 0 ;
-            city:y 1000 ;
-            city:z 0 ] ;
+    city:hasTransform [ city:scale [ city:x 0.001 ;
+                    city:y 0.001 ;
+                    city:z 0.001 ] ;
+            city:translate [ city:x 0.0 ;
+                    city:y 0.0 ;
+                    city:z 0.0 ] ] ;
+    city:hasVertex [ city:x 0.0 ;
+            city:y 0.0 ;
+            city:z 1000.0 ],
+        [ city:x 1000.0 ;
+            city:y 0.0 ;
+            city:z 1000.0 ],
+        [ city:x 1000.0 ;
+            city:y 1000.0 ;
+            city:z 1000.0 ],
+        [ city:x 0.0 ;
+            city:y 1000.0 ;
+            city:z 1000.0 ],
+        [ city:x 0.0 ;
+            city:y 0.0 ;
+            city:z 0.0 ],
+        [ city:x 1000.0 ;
+            city:y 0.0 ;
+            city:z 0.0 ],
+        [ city:x 1000.0 ;
+            city:y 1000.0 ;
+            city:z 0.0 ],
+        [ city:x 0.0 ;
+            city:y 1000.0 ;
+            city:z 0.0 ] ;
     city:version "1.1" .
-
-[] a prov:Activity ;
-    prov:endedAtTime "2023-06-20T22:01:16.536317"^^xsd:dateTime ;
-    prov:startedAtTime "2023-06-20T22:01:16.012650"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:49868f5b67dc3910d9bb596d459288c3fdf6256d" ;
-            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/master/chek-profiles/cityjson/cube.city.json> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
-                schema:SoftwareApplication ;
-            rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.0.0" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "7ebc8c3a-9fbe-4fad-a93b-2ecd80fc522b" ] .
 
