@@ -10,18 +10,18 @@
     dct:version "1.0" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-06-10T21:37:14.029671"^^xsd:dateTime ;
-    prov:startedAtTime "2023-06-10T21:37:13.582244"^^xsd:dateTime ;
+    prov:endedAtTime "2023-06-20T21:42:37.647909"^^xsd:dateTime ;
+    prov:startedAtTime "2023-06-20T21:42:37.251261"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:6fd84c9ba3fcbb7c21b49225cdff5a3effa23f1e" ;
-            rdfs:seeAlso <file:///home/alx5000/work/Proyectos/ogc/chek-profiles/cityjson/cube.city.json> ] ;
+            dct:hasVersion "git:48206d1105a3beae765b09de60783a1d303a5613" ;
+            rdfs:seeAlso <file:///home/runner/work/chek-profiles/chek-profiles/cityjson/cube.city.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.2.27.dev0+gc5cd59f.d20230609" ;
+            dct:hasVersion "0.0.0" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "660ddc01-a287-438c-9656-0cee9a6167bb" ] .
+    prov:wasInformedBy [ dct:identifier "724ed9ed-8c59-4bfc-92f6-135c6fb4e86d" ] .
 
 [] a city:CityJson ;
     city:geographicalExtent [ city:max [ city:x 1 ;
@@ -31,8 +31,8 @@
                     city:y 0 ;
                     city:z 0 ] ] ;
     city:hasExtension <https://cityjson.org/extensions/download/generic.ext.json> ;
-    city:hasObject [ a <file:///home/alx5000/work/Proyectos/ogc/chek-profiles/+GenericCityObject> ;
-            city:hasGeometry [ a <file:///home/alx5000/work/Proyectos/ogc/chek-profiles/Solid> ;
+    city:hasObject [ a <https://www.cityjson.org/extensions/download/generic.ext.json#GenericCityObject> ;
+            city:hasGeometry [ a city:Solid ;
                     city:boundaries ( ( ( ( 0 1 2 3 ) ) ( ( 4 5 1 0 ) ) ( ( 5 6 2 1 ) ) ( ( 6 7 3 2 ) ) ( ( 7 4 0 3 ) ) ( ( 7 6 5 4 ) ) ) ) ;
                     city:lod "1" ] ] ;
     city:hasTransform [ city:scale [ city:x 1e-03 ;
