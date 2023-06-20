@@ -10,18 +10,18 @@
     dct:version "1.0" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-06-20T23:56:53.005262"^^xsd:dateTime ;
-    prov:startedAtTime "2023-06-20T23:56:52.498496"^^xsd:dateTime ;
+    prov:endedAtTime "2023-06-21T00:00:31.141029"^^xsd:dateTime ;
+    prov:startedAtTime "2023-06-21T00:00:30.622096"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:64d4c919d43a31fce6b1c13a65d225e00a1cf11d" ;
+            dct:hasVersion "git:baaee908ff5a256e597f6e75db6af99c4a75a853" ;
             rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/master/chek-profiles/cityjson/cube.city.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.2.34.dev0+gede391c.d20230620" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "f591f396-93fb-4083-af4b-7ed701ad33db" ] .
+    prov:wasInformedBy [ dct:identifier "2b6c9258-79a2-4093-ab3f-6f115a65f22e" ] .
 
 [] a city:CityJson ;
     city:geographicalExtent [ city:max [ city:x 1 ;
@@ -34,7 +34,7 @@
     city:hasObject [ a <https://www.cityjson.org/extensions/download/generic.ext.json#GenericCityObject> ;
             city:hasGeometry [ a city:Solid ;
                     city:boundaries ( ( ( ( 0 1 2 3 ) ) ( ( 4 5 1 0 ) ) ( ( 5 6 2 1 ) ) ( ( 6 7 3 2 ) ) ( ( 7 4 0 3 ) ) ( ( 7 6 5 4 ) ) ) ) ;
-                    city:lod "1" ] ] ;
+                    city:lod 1 ] ] ;
     city:hasTransform [ city:scale [ city:x 1e-03 ;
                     city:y 1e-03 ;
                     city:z 1e-03 ] ;

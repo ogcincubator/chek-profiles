@@ -4,6 +4,7 @@
     "@base": "#",
     "city": "http://example.com/vocab/city/",
     "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "CityJSON": "city:CityJson",
     "type": "@type",
     "version": "city:version",
@@ -79,7 +80,10 @@
             "TransportationMarking": "city:TransportationMarking",
             "Material": "city:Material",
             "Texture": "city:Texture",
-            "lod": "city:lod",
+            "lod": {
+              "@id": "city:lod",
+              "@type": "xsd:integer"
+            },
             "boundaries": {
               "@id": "city:boundaries",
               "@container": "@list"
