@@ -41,6 +41,7 @@ jobs:
           
           python -m ogc.na.ingest_json --batch --skip-on-missing-context \
             --json-ld --ttl --work-dir . --domain-config .ogc/catalog.ttl \
+            --provenance-base-uri https://raw.githubusercontent.com/ogcincubator/master/chek-profiles/ \
             ${MOD_FILES}
 
       - name: Add and commit
