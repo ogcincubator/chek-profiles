@@ -34,9 +34,83 @@ context:
     CityObjects:
       '@id': city:hasObject
       '@context':
+        # City Objects
+        Bridge: city:Bridge
+        BridgeConstructiveElement: city:BridgeConstructiveElement
+        BridgeFurniture: city:BridgeFurniture
+        BridgeInstallation: city:BridgeInstallation
+        BridgePart: city:BridgePart
+        BridgeRoom: city:BridgeRoom
+        Building: city:Building
+        BuildingConstructiveElement: city:BuildingConstructiveElement
+        BuildingFurniture: city:BuildingFurniture
+        BuildingInstallation: city:BuildingInstallation
+        BuildingPart: city:BuildingPart
+        BuildingRoom: city:BuildingRoom
+        BuildingStorey: city:BuildingStorey
+        BuildingUnit: city:BuildingUnit
+        CityFurniture: city:CityFurniture
+        CityObjectGroup: city:CityObjectGroup
+        ExtensionObject: city:ExtensionObject
+        LandUse: city:LandUse
+        OtherConstruction: city:OtherConstruction
+        PlantCover: city:PlantCover
+        Railway: city:Railway
+        Road: city:Road
+        SolitaryVegetationObject: city:SolitaryVegetationObject
+        TINRelief: city:TINRelief
+        TransportSquare: city:TransportSquare
+        Tunnel: city:Tunnel
+        TunnelConstructiveElement: city:TunnelConstructiveElement
+        TunnelFurniture: city:TunnelFurniture
+        TunnelHollowSpace: city:TunnelHollowSpace
+        TunnelInstallation: city:TunnelInstallation
+        TunnelPart: city:TunnelPart
+        WaterBody: city:WaterBody
+        Waterway: city:Waterway
+        _AbstractBuilding: city:_AbstractBuilding
+        _AbstractCityObject: city:_AbstractCityObject
+        _AbstractTransportationComplex: city:_AbstractTransportationComplex
+        '+GenericCityObject': https://www.cityjson.org/extensions/download/generic.ext.json#GenericCityObject
+        
         geometry:
           '@id': city:hasGeometry
           '@context':
+            # Geometry Objects
+            GeometryInstance: city:GeometryInstance
+            CompositeSolid: city:CompositeSolid
+            CompositeSurface: city:CompositeSurface
+            MultiLineString: city:MultiLineString
+            MultiPoint: city:MultiPoint
+            MultiSolid: city:MultiSolid
+            MultiSurface: city:MultiSurface
+            Semantics: city:Semantics
+            Solid: city:Solid
+
+            # Geometric primitives
+            RoofSurface: city:RoofSurface
+            GroundSurface: city:GroundSurface
+            WallSurface: city:WallSurface
+            ClosureSurface: city:ClosureSurface
+            OuterCeilingSurface: city:OuterCeilingSurface
+            OuterFloorSurface: city:OuterFloorSurface
+            Window: city:Window
+            Door: city:Door
+            InteriorWallSurface: city:InteriorWallSurface
+            CeilingSurface: city:CeilingSurface
+            FloorSurface: city:FloorSurface
+            WaterSurface: city:WaterSurface
+            WaterGroundSurface: city:WaterGroundSurface
+            WaterClosureSurface: city:WaterClosureSurface
+            TrafficArea: city:TrafficArea
+            AuxiliaryTrafficArea: city:AuxiliaryTrafficArea
+            TransportationHole: city:TransportationHole
+            TransportationMarking: city:TransportationMarking
+
+            # Appearance Objects
+            Material: city:Material
+            Texture: city:Texture
+
             lod: city:lod
             boundaries:
               '@id': city:boundaries
@@ -48,81 +122,6 @@ context:
         children:
           '@id': city:hasChild
           '@type': '@id'
-
-
-    # City Objects
-    Bridge: city:Bridge
-    BridgeConstructiveElement: city:BridgeConstructiveElement
-    BridgeFurniture: city:BridgeFurniture
-    BridgeInstallation: city:BridgeInstallation
-    BridgePart: city:BridgePart
-    BridgeRoom: city:BridgeRoom
-    Building: city:Building
-    BuildingConstructiveElement: city:BuildingConstructiveElement
-    BuildingFurniture: city:BuildingFurniture
-    BuildingInstallation: city:BuildingInstallation
-    BuildingPart: city:BuildingPart
-    BuildingRoom: city:BuildingRoom
-    BuildingStorey: city:BuildingStorey
-    BuildingUnit: city:BuildingUnit
-    CityFurniture: city:CityFurniture
-    CityObjectGroup: city:CityObjectGroup
-    ExtensionObject: city:ExtensionObject
-    LandUse: city:LandUse
-    OtherConstruction: city:OtherConstruction
-    PlantCover: city:PlantCover
-    Railway: city:Railway
-    Road: city:Road
-    SolitaryVegetationObject: city:SolitaryVegetationObject
-    TINRelief: city:TINRelief
-    TransportSquare: city:TransportSquare
-    Tunnel: city:Tunnel
-    TunnelConstructiveElement: city:TunnelConstructiveElement
-    TunnelFurniture: city:TunnelFurniture
-    TunnelHollowSpace: city:TunnelHollowSpace
-    TunnelInstallation: city:TunnelInstallation
-    TunnelPart: city:TunnelPart
-    WaterBody: city:WaterBody
-    Waterway: city:Waterway
-    _AbstractBuilding: city:_AbstractBuilding
-    _AbstractCityObject: city:_AbstractCityObject
-    _AbstractTransportationComplex: city:_AbstractTransportationComplex
-    '+GenericCityObject': https://www.cityjson.org/extensions/download/generic.ext.json#GenericCityObject
-
-    # Geometry Objects
-    GeometryInstance: city:GeometryInstance
-    CompositeSolid: city:CompositeSolid
-    CompositeSurface: city:CompositeSurface
-    MultiLineString: city:MultiLineString
-    MultiPoint: city:MultiPoint
-    MultiSolid: city:MultiSolid
-    MultiSurface: city:MultiSurface
-    Semantics: city:Semantics
-    Solid: city:Solid
-
-    # Geometric primitives
-    RoofSurface: city:RoofSurface
-    GroundSurface: city:GroundSurface
-    WallSurface: city:WallSurface
-    ClosureSurface: city:ClosureSurface
-    OuterCeilingSurface: city:OuterCeilingSurface
-    OuterFloorSurface: city:OuterFloorSurface
-    Window: city:Window
-    Door: city:Door
-    InteriorWallSurface: city:InteriorWallSurface
-    CeilingSurface: city:CeilingSurface
-    FloorSurface: city:FloorSurface
-    WaterSurface: city:WaterSurface
-    WaterGroundSurface: city:WaterGroundSurface
-    WaterClosureSurface: city:WaterClosureSurface
-    TrafficArea: city:TrafficArea
-    AuxiliaryTrafficArea: city:AuxiliaryTrafficArea
-    TransportationHole: city:TransportationHole
-    TransportationMarking: city:TransportationMarking
-
-    # Appearance Objects
-    Material: city:Material
-    Texture: city:Texture
 
     transform:
       '@id': city:hasTransform

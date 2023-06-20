@@ -7,7 +7,7 @@
 _:chek-profiles a dcat:Catalog ;
   dct:title "CHEK profiles" ;
   dcat:dataset _:cityjson ;
-  dcfg:hasProfileSource "sparql:http://defs-dev.opengis.net/fuseki/query" ;
+  # dcfg:hasProfileSource "sparql:http://defs-dev.opengis.net/fuseki/query" ;
   dcfg:ignoreProfileArtifactErrors true ;
 .
 
