@@ -795,16 +795,16 @@
     city:version "1.1" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-06-20T21:42:37.074363"^^xsd:dateTime ;
-    prov:startedAtTime "2023-06-20T21:42:36.356687"^^xsd:dateTime ;
+    prov:endedAtTime "2023-06-20T23:56:53.677431"^^xsd:dateTime ;
+    prov:startedAtTime "2023-06-20T23:56:53.013605"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:48206d1105a3beae765b09de60783a1d303a5613" ;
-            rdfs:seeAlso <file:///home/runner/work/chek-profiles/chek-profiles/cityjson/twobuildings.city.json> ] ;
+            dct:hasVersion "git:64d4c919d43a31fce6b1c13a65d225e00a1cf11d" ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/master/chek-profiles/cityjson/twobuildings.city.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.0.0" ;
+            dct:hasVersion "0.2.34.dev0+gede391c.d20230620" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "724ed9ed-8c59-4bfc-92f6-135c6fb4e86d" ] .
+    prov:wasInformedBy [ dct:identifier "f591f396-93fb-4083-af4b-7ed701ad33db" ] .
 
