@@ -2,7 +2,7 @@
   "@context": [
     {
       "@base": "https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json",
-      "c": "https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cityjson/cube.city.json"
+      "c": "https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#"
     },
     {
       "@version": 1.1,
@@ -10,7 +10,8 @@
       "city": "http://example.com/vocab/city/",
       "dct": "http://purl.org/dc/terms/",
       "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "CityJSON": "city:CityJson",
+      "gml": "http://www.opengis.net/ont/gml#",
+      "CityJSON": "city:City",
       "type": "@type",
       "version": "city:version",
       "CityObjects": {
@@ -57,14 +58,14 @@
             "@id": "city:hasGeometry",
             "@context": {
               "GeometryInstance": "city:GeometryInstance",
-              "CompositeSolid": "city:CompositeSolid",
-              "CompositeSurface": "city:CompositeSurface",
-              "MultiLineString": "city:MultiLineString",
-              "MultiPoint": "city:MultiPoint",
-              "MultiSolid": "city:MultiSolid",
-              "MultiSurface": "city:MultiSurface",
               "Semantics": "city:Semantics",
-              "Solid": "city:Solid",
+              "CompositeSolid": "gml:CompositeSolid",
+              "CompositeSurface": "gml:CompositeSurface",
+              "MultiLineString": "gml:MultiLineString",
+              "MultiPoint": "gml:MultiPoint",
+              "MultiSolid": "gml:MultiSolid",
+              "MultiSurface": "gml:MultiSurface",
+              "Solid": "gml:Solid",
               "RoofSurface": "city:RoofSurface",
               "GroundSurface": "city:GroundSurface",
               "WallSurface": "city:WallSurface",
@@ -86,12 +87,13 @@
               "Material": "city:Material",
               "Texture": "city:Texture",
               "lod": {
-                "@id": "city:lod",
-                "@type": "xsd:integer"
+                "@id": "city:lod"
               },
+              "surfaces": "city:hasSurface",
               "boundaries": {
                 "@id": "city:boundaries",
-                "@container": "@list"
+                "@container": "@list",
+                "@type": "@id"
               }
             }
           },
@@ -149,60 +151,64 @@
       "@id": "#city-objects-id-1",
       "geometry": [
         {
-          "boundaries": [
-            [
-              [
+          "surfaces": [
+            {
+              "@type": "Solid",
+              "boundaries": [
                 [
-                  0,
-                  1,
-                  2,
-                  3
-                ]
-              ],
-              [
-                [
-                  4,
-                  5,
-                  1,
-                  0
-                ]
-              ],
-              [
-                [
-                  5,
-                  6,
-                  2,
-                  1
-                ]
-              ],
-              [
-                [
-                  6,
-                  7,
-                  3,
-                  2
-                ]
-              ],
-              [
-                [
-                  7,
-                  4,
-                  0,
-                  3
-                ]
-              ],
-              [
-                [
-                  7,
-                  6,
-                  5,
-                  4
+                  [
+                    [
+                      "#vertices-0",
+                      "#vertices-1",
+                      "#vertices-2",
+                      "#vertices-3"
+                    ]
+                  ],
+                  [
+                    [
+                      "#vertices-4",
+                      "#vertices-5",
+                      "#vertices-1",
+                      "#vertices-0"
+                    ]
+                  ],
+                  [
+                    [
+                      "#vertices-5",
+                      "#vertices-6",
+                      "#vertices-2",
+                      "#vertices-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "#vertices-6",
+                      "#vertices-7",
+                      "#vertices-3",
+                      "#vertices-2"
+                    ]
+                  ],
+                  [
+                    [
+                      "#vertices-7",
+                      "#vertices-4",
+                      "#vertices-0",
+                      "#vertices-3"
+                    ]
+                  ],
+                  [
+                    [
+                      "#vertices-7",
+                      "#vertices-6",
+                      "#vertices-5",
+                      "#vertices-4"
+                    ]
+                  ]
                 ]
               ]
-            ]
+            }
           ],
-          "lod": "3.3",
-          "type": "Solid"
+          "lod": "3.3"
         }
       ],
       "attributes": {

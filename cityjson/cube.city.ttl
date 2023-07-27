@@ -1,5 +1,7 @@
+@prefix c: <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#> .
 @prefix city: <http://example.com/vocab/city/> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix gml: <http://www.opengis.net/ont/gml#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -9,44 +11,58 @@
 <https://cityjson.org/extensions/download/generic.ext.json> dct:identifier "Generic" ;
     dct:version "1.0" .
 
-<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#city-objects-id-1> a <https://www.cityjson.org/extensions/download/generic.ext.json#GenericCityObject> ;
-    city:hasGeometry [ a city:Solid ;
-            city:boundaries ( ( ( ( 0 1 2 3 ) ) ( ( 4 5 1 0 ) ) ( ( 5 6 2 1 ) ) ( ( 6 7 3 2 ) ) ( ( 7 4 0 3 ) ) ( ( 7 6 5 4 ) ) ) ) ;
-            city:lod "3.3"^^xsd:integer ] .
+c:city-objects-id-1 a <https://www.cityjson.org/extensions/download/generic.ext.json#GenericCityObject> ;
+    city:hasGeometry [ city:hasSurface [ a gml:Solid ;
+                    city:boundaries ( ( ( ( c:vertices-0 c:vertices-1 c:vertices-2 c:vertices-3 ) ) ( ( c:vertices-4 c:vertices-5 c:vertices-1 c:vertices-0 ) ) ( ( c:vertices-5 c:vertices-6 c:vertices-2 c:vertices-1 ) ) ( ( c:vertices-6 c:vertices-7 c:vertices-3 c:vertices-2 ) ) ( ( c:vertices-7 c:vertices-4 c:vertices-0 c:vertices-3 ) ) ( ( c:vertices-7 c:vertices-6 c:vertices-5 c:vertices-4 ) ) ) ) ] ;
+            city:lod "3.3" ] .
 
-<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-0> city:x 0.0 ;
+c:vertices-0 city:x 0.0 ;
     city:y 0.0 ;
     city:z 1000.0 .
 
-<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-1> city:x 1000.0 ;
+c:vertices-1 city:x 1000.0 ;
     city:y 0.0 ;
     city:z 1000.0 .
 
-<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-2> city:x 1000.0 ;
+c:vertices-2 city:x 1000.0 ;
     city:y 1000.0 ;
     city:z 1000.0 .
 
-<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-3> city:x 0.0 ;
+c:vertices-3 city:x 0.0 ;
     city:y 1000.0 ;
     city:z 1000.0 .
 
-<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-4> city:x 0.0 ;
+c:vertices-4 city:x 0.0 ;
     city:y 0.0 ;
     city:z 0.0 .
 
-<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-5> city:x 1000.0 ;
+c:vertices-5 city:x 1000.0 ;
     city:y 0.0 ;
     city:z 0.0 .
 
-<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-6> city:x 1000.0 ;
+c:vertices-6 city:x 1000.0 ;
     city:y 1000.0 ;
     city:z 0.0 .
 
-<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-7> city:x 0.0 ;
+c:vertices-7 city:x 0.0 ;
     city:y 1000.0 ;
     city:z 0.0 .
 
-[] a city:CityJson ;
+[] a prov:Activity ;
+    prov:endedAtTime "2023-07-27T10:40:31.383592"^^xsd:dateTime ;
+    prov:startedAtTime "2023-07-27T10:40:31.034814"^^xsd:dateTime ;
+    prov:used [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:23b0508b75ba78df24cfe92456ffacdafa16c643" ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/master/chek-profiles/cityjson/cube.city.json> ] ;
+    prov:wasAssociatedWith [ a prov:Agent,
+                schema:SoftwareApplication ;
+            rdfs:label "OGC-NA tools" ;
+            dct:hasVersion "0.3.6" ;
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
+    prov:wasInformedBy [ dct:identifier "4ea10117-6a11-4da7-9bd1-6b320ead72c2" ] .
+
+[] a city:City ;
     city:geographicalExtent [ city:max [ city:x 1.0 ;
                     city:y 1.0 ;
                     city:z 1.0 ] ;
@@ -54,34 +70,20 @@
                     city:y 0.0 ;
                     city:z 0.0 ] ] ;
     city:hasExtension <https://cityjson.org/extensions/download/generic.ext.json> ;
-    city:hasObject <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#city-objects-id-1> ;
+    city:hasObject c:city-objects-id-1 ;
     city:hasTransform [ city:scale [ city:x 0.001 ;
                     city:y 0.001 ;
                     city:z 0.001 ] ;
             city:translate [ city:x 0.0 ;
                     city:y 0.0 ;
                     city:z 0.0 ] ] ;
-    city:hasVertex <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-0>,
-        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-1>,
-        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-2>,
-        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-3>,
-        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-4>,
-        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-5>,
-        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-6>,
-        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/cube.city.json#vertices-7> ;
+    city:hasVertex c:vertices-0,
+        c:vertices-1,
+        c:vertices-2,
+        c:vertices-3,
+        c:vertices-4,
+        c:vertices-5,
+        c:vertices-6,
+        c:vertices-7 ;
     city:version "1.1" .
-
-[] a prov:Activity ;
-    prov:endedAtTime "2023-07-27T08:38:37.224726"^^xsd:dateTime ;
-    prov:startedAtTime "2023-07-27T08:38:36.729115"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:2a48187227614540dfc377a702205b47e42b9361" ;
-            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/master/chek-profiles/cityjson/cube.city.json> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
-                schema:SoftwareApplication ;
-            rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.5" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "d4c5c970-3fda-4f1b-aaee-844b2218f678" ] .
 
