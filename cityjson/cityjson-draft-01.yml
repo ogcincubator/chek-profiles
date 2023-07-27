@@ -1,22 +1,30 @@
 transform:
-  # Assign fragment ids to vertices and format coordinates
-  - '.vertices |= [to_entries | .[] | { "@id": "#vertices-\(.key | @uri)", "city:x": .value[0], "city:y": .value[1], "city:z": .value[2] }]'
-  # Assign fragment ids to City Objects
+  # Assign fragment ids to City Objects and format geometries (semantics surfaces/values)
   - |
     .CityObjects |= [
       to_entries | .[] 
       | .value.parents |= if . then map("_:city-objects-\(.)") else empty end
       | { "@id": "#city-objects-\(.key | @uri)" } + .value
+      | .geometry |= ([ .[] |
+        .type as $GEOM_TYPE | .boundaries as $BOUNDARIES | (try (.semantics.values | to_entries) catch []) as $INDEXES
+        | {
+          "surfaces": (if .semantics.surfaces
+            then [.semantics.surfaces | to_entries | .[] | .key as $IDX | .value | {"@type": [$GEOM_TYPE, .type], "boundaries": [$BOUNDARIES | .[$INDEXES | map(if .value == $IDX then .key else empty end) | .[]]]}]
+            else [{"@type": $GEOM_TYPE, "boundaries": $BOUNDARIES}]
+            end),
+          "lod": .lod
+        }
+      ])
     ]
-  # Format coordinates
+  # Format coordinates and assign fragment ids to vertices
   - |
     def to_coords: if . then { "city:x": .[0], "city:y": .[1], "city:z": .[2] } else empty end ;
     (.transform.scale |= to_coords) | (.transform.translate |= to_coords)
-  - |
-    .metadata.geographicalExtent |= if . then { 
-      "city:min": { "city:x": .[0], "city:y": .[1], "city:z": .[2] },
-      "city:max": { "city:x": .[3], "city:y": .[4], "city:z": .[5] }
+    | .metadata.geographicalExtent |= if . then { 
+      "city:min": .[0:3] | to_coords,
+      "city:max": .[3:6] | to_coords
     } else empty end
+    | .vertices |= [to_entries | .[] | { "@id": "#vertices-\(.key | @uri)" } + (.value | to_coords) ]
   # Add base and prefix for it
   - |
     ."@context" = {
