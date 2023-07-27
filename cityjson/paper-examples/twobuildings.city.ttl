@@ -1,0 +1,1347 @@
+@base <http://example.com/twobuildings.ttl> .
+@prefix city: <http://example.com/vocab/city/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gml: <http://www.opengis.net/ont/gml#> .
+
+<#city-catalog> a dcat:Catalog ;
+  dct:title "Building catalog for rule checking example" ;
+  dct:description "This catalog contains a dataset with two buildings" ;
+  dct:publisher [
+    foaf:name "Open Geospatial Consortium" ;
+  ] ;
+  dcat:dataset <#city> ;
+.
+
+<#city-objects-Building_1> a city:Building ;
+    city:hasGeometry [
+            city:hasSurface [
+                a city:GroundSurface, gml:MultiSurface ;
+                city:boundaries ( ( ( <#vertices-0> <#vertices-1> <#vertices-2> ) ) ( ( <#vertices-3> <#vertices-4> <#vertices-5> ) ) ( ( <#vertices-4> <#vertices-6> <#vertices-5> ) ) ( ( <#vertices-2> <#vertices-7> <#vertices-6> ) ) ( ( <#vertices-5> <#vertices-8> <#vertices-9> ) ) ( ( <#vertices-0> <#vertices-2> <#vertices-4> ) ) ( ( <#vertices-4> <#vertices-2> <#vertices-6> ) ) ( ( <#vertices-5> <#vertices-6> <#vertices-8> ) ) ( ( <#vertices-8> <#vertices-10> <#vertices-9> ) ) ( ( <#vertices-11> <#vertices-12> <#vertices-13> ) ) )
+            ] , [
+                a city:WallSurface, gml:MultiSurface ;
+                city:boundaries ( ( ( <#vertices-11> <#vertices-9> <#vertices-12> ) ) ( ( <#vertices-12> <#vertices-10> <#vertices-14> ) ) ( ( <#vertices-9> <#vertices-10> <#vertices-12> ) ) ( ( <#vertices-15> <#vertices-5> <#vertices-11> ) ) ( ( <#vertices-5> <#vertices-9> <#vertices-11> ) ) ( ( <#vertices-16> <#vertices-3> <#vertices-17> ) ) ( ( <#vertices-17> <#vertices-5> <#vertices-15> ) ) ( ( <#vertices-3> <#vertices-5> <#vertices-17> ) ) ( ( <#vertices-18> <#vertices-17> <#vertices-15> ) ) ( ( <#vertices-16> <#vertices-19> <#vertices-20> ) ) ) ;
+            ] , [
+                a city:RoofSurface, gml:MultiSurface ;
+                city:boundaries ( ( ( <#vertices-20> <#vertices-19> <#vertices-21> ) ) ( ( <#vertices-21> <#vertices-19> <#vertices-7> ) ) ( ( <#vertices-3> <#vertices-20> <#vertices-4> ) ) ( ( <#vertices-21> <#vertices-7> <#vertices-2> ) ) ( ( <#vertices-16> <#vertices-20> <#vertices-3> ) ) ( ( <#vertices-22> <#vertices-2> <#vertices-1> ) ) ( ( <#vertices-22> <#vertices-21> <#vertices-2> ) ) ( ( <#vertices-23> <#vertices-1> <#vertices-0> ) ) ( ( <#vertices-23> <#vertices-22> <#vertices-1> ) ) ( ( <#vertices-23> <#vertices-4> <#vertices-20> ) ) ( ( <#vertices-23> <#vertices-0> <#vertices-4> ) ) ( ( <#vertices-19> <#vertices-24> <#vertices-6> ) ) ( ( <#vertices-19> <#vertices-6> <#vertices-7> ) ) ( ( <#vertices-24> <#vertices-25> <#vertices-8> ) ) ( ( <#vertices-24> <#vertices-8> <#vertices-6> ) ) ( ( <#vertices-25> <#vertices-10> <#vertices-8> ) ) ( ( <#vertices-25> <#vertices-14> <#vertices-10> ) ) ( ( <#vertices-26> <#vertices-27> <#vertices-28> ) ) ( ( <#vertices-29> <#vertices-26> <#vertices-28> ) ) ( ( <#vertices-30> <#vertices-26> <#vertices-29> ) ) ( ( <#vertices-30> <#vertices-31> <#vertices-26> ) ) ( ( <#vertices-32> <#vertices-13> <#vertices-12> ) ) ( ( <#vertices-32> <#vertices-12> <#vertices-33> ) ) ( ( <#vertices-34> <#vertices-32> <#vertices-33> ) ) ( ( <#vertices-34> <#vertices-33> <#vertices-35> ) ) ( ( <#vertices-36> <#vertices-37> <#vertices-38> ) ) ( ( <#vertices-37> <#vertices-39> <#vertices-38> ) ) ( ( <#vertices-40> <#vertices-41> <#vertices-42> ) ) ( ( <#vertices-40> <#vertices-42> <#vertices-43> ) ) ( ( <#vertices-44> <#vertices-40> <#vertices-43> ) ) ( ( <#vertices-45> <#vertices-40> <#vertices-44> ) ) ( ( <#vertices-45> <#vertices-44> <#vertices-46> ) ) ( ( <#vertices-44> <#vertices-47> <#vertices-46> ) ) ( ( <#vertices-36> <#vertices-46> <#vertices-47> ) ) ( ( <#vertices-36> <#vertices-47> <#vertices-37> ) ) ( ( <#vertices-18> <#vertices-35> <#vertices-17> ) ) ( ( <#vertices-18> <#vertices-34> <#vertices-35> ) ) ( ( <#vertices-48> <#vertices-49> <#vertices-50> ) ) ( ( <#vertices-48> <#vertices-50> <#vertices-51> ) ) ( ( <#vertices-41> <#vertices-51> <#vertices-42> ) ) ( ( <#vertices-41> <#vertices-48> <#vertices-51> ) ) ( ( <#vertices-52> <#vertices-27> <#vertices-53> ) ) ( ( <#vertices-52> <#vertices-28> <#vertices-27> ) ) ( ( <#vertices-54> <#vertices-31> <#vertices-30> ) ) ( ( <#vertices-54> <#vertices-55> <#vertices-31> ) ) ( ( <#vertices-56> <#vertices-52> <#vertices-53> ) ) ( ( <#vertices-55> <#vertices-56> <#vertices-53> ) ) ( ( <#vertices-54> <#vertices-56> <#vertices-55> ) ) ( ( <#vertices-38> <#vertices-39> <#vertices-49> ) ) ( ( <#vertices-39> <#vertices-50> <#vertices-49> ) ) ( ( <#vertices-20> <#vertices-21> <#vertices-22> ) ) ( ( <#vertices-23> <#vertices-20> <#vertices-22> ) ) ( ( <#vertices-52> <#vertices-29> <#vertices-28> ) ) ( ( <#vertices-56> <#vertices-29> <#vertices-52> ) ) ( ( <#vertices-54> <#vertices-29> <#vertices-56> ) ) ( ( <#vertices-54> <#vertices-30> <#vertices-29> ) ) ( ( <#vertices-15> <#vertices-11> <#vertices-32> ) ) ( ( <#vertices-18> <#vertices-15> <#vertices-34> ) ) ( ( <#vertices-34> <#vertices-15> <#vertices-32> ) ) ( ( <#vertices-32> <#vertices-11> <#vertices-13> ) ) ( ( <#vertices-38> <#vertices-49> <#vertices-46> ) ) ( ( <#vertices-45> <#vertices-46> <#vertices-41> ) ) ( ( <#vertices-36> <#vertices-38> <#vertices-46> ) ) ( ( <#vertices-45> <#vertices-41> <#vertices-40> ) ) ( ( <#vertices-46> <#vertices-49> <#vertices-41> ) ) ( ( <#vertices-41> <#vertices-49> <#vertices-48> ) ) ( ( <#vertices-50> <#vertices-12> <#vertices-14> ) ) ( ( <#vertices-39> <#vertices-12> <#vertices-50> ) ) ( ( <#vertices-19> <#vertices-27> <#vertices-24> ) ) ( ( <#vertices-53> <#vertices-27> <#vertices-19> ) ) ( ( <#vertices-16> <#vertices-35> <#vertices-31> ) ) ( ( <#vertices-31> <#vertices-37> <#vertices-44> ) ) ( ( <#vertices-16> <#vertices-31> <#vertices-55> ) ) ( ( <#vertices-27> <#vertices-43> <#vertices-51> ) ) ( ( <#vertices-27> <#vertices-51> <#vertices-24> ) ) ( ( <#vertices-35> <#vertices-37> <#vertices-31> ) ) ( ( <#vertices-26> <#vertices-43> <#vertices-27> ) ) ( ( <#vertices-31> <#vertices-44> <#vertices-26> ) ) ( ( <#vertices-16> <#vertices-53> <#vertices-19> ) ) ( ( <#vertices-26> <#vertices-44> <#vertices-43> ) ) ( ( <#vertices-37> <#vertices-47> <#vertices-44> ) ) ( ( <#vertices-16> <#vertices-55> <#vertices-53> ) ) ( ( <#vertices-43> <#vertices-42> <#vertices-51> ) ) ( ( <#vertices-50> <#vertices-14> <#vertices-25> ) ) ( ( <#vertices-33> <#vertices-12> <#vertices-39> ) ) ( ( <#vertices-35> <#vertices-33> <#vertices-37> ) ) ( ( <#vertices-24> <#vertices-51> <#vertices-25> ) ) ( ( <#vertices-16> <#vertices-17> <#vertices-35> ) ) ( ( <#vertices-51> <#vertices-50> <#vertices-25> ) ) ( ( <#vertices-37> <#vertices-33> <#vertices-39> ) ) ) ;
+            ];
+            city:lod "3.3" ;
+    ] .
+
+<#city-objects-Building_2> a city:Building ;
+    city:hasGeometry [
+            city:hasSurface [
+                a city:GroundSurface, gml:MultiSurface ;
+                city:boundaries ( ( ( <#vertices-57> <#vertices-58> <#vertices-59> ) ) ( ( <#vertices-59> <#vertices-60> <#vertices-61> ) ) ( ( <#vertices-59> <#vertices-61> <#vertices-62> ) ) ( ( <#vertices-63> <#vertices-59> <#vertices-64> ) ) ( ( <#vertices-57> <#vertices-59> <#vertices-63> ) ) ( ( <#vertices-59> <#vertices-65> <#vertices-60> ) ) ( ( <#vertices-58> <#vertices-65> <#vertices-59> ) ) ( ( <#vertices-66> <#vertices-67> <#vertices-68> ) ) ( ( <#vertices-67> <#vertices-69> <#vertices-68> ) ) ( ( <#vertices-70> <#vertices-71> <#vertices-72> ) ) ( ( <#vertices-72> <#vertices-71> <#vertices-73> ) ) ( ( <#vertices-74> <#vertices-75> <#vertices-76> ) ) ( ( <#vertices-75> <#vertices-77> <#vertices-76> ) ) ( ( <#vertices-78> <#vertices-79> <#vertices-80> ) ) ( ( <#vertices-81> <#vertices-82> <#vertices-83> ) ) ( ( <#vertices-81> <#vertices-84> <#vertices-82> ) ) ( ( <#vertices-85> <#vertices-86> <#vertices-87> ) ) ( ( <#vertices-88> <#vertices-86> <#vertices-89> ) ) ( ( <#vertices-90> <#vertices-86> <#vertices-88> ) ) ( ( <#vertices-89> <#vertices-86> <#vertices-85> ) ) ( ( <#vertices-91> <#vertices-92> <#vertices-93> ) ) ( ( <#vertices-91> <#vertices-94> <#vertices-92> ) ) ( ( <#vertices-95> <#vertices-93> <#vertices-96> ) ) ( ( <#vertices-91> <#vertices-93> <#vertices-95> ) ) ( ( <#vertices-97> <#vertices-98> <#vertices-99> ) ) ( ( <#vertices-100> <#vertices-101> <#vertices-102> ) ) ( ( <#vertices-103> <#vertices-101> <#vertices-100> ) ) ) ;
+            ] , [
+                a city:WallSurface, gml:MultiSurface ;
+                city:boundaries ( ( ( <#vertices-102> <#vertices-101> <#vertices-104> ) ) ( ( <#vertices-102> <#vertices-104> <#vertices-105> ) ) ( ( <#vertices-106> <#vertices-107> <#vertices-108> ) ) ( ( <#vertices-108> <#vertices-107> <#vertices-109> ) ) ( ( <#vertices-110> <#vertices-111> <#vertices-112> ) ) ( ( <#vertices-110> <#vertices-113> <#vertices-111> ) ) ( ( <#vertices-114> <#vertices-115> <#vertices-116> ) ) ( ( <#vertices-114> <#vertices-117> <#vertices-115> ) ) ( ( <#vertices-118> <#vertices-116> <#vertices-119> ) ) ( ( <#vertices-114> <#vertices-116> <#vertices-118> ) ) ( ( <#vertices-120> <#vertices-121> <#vertices-122> ) ) ( ( <#vertices-122> <#vertices-121> <#vertices-123> ) ) ( ( <#vertices-124> <#vertices-125> <#vertices-126> ) ) ( ( <#vertices-125> <#vertices-127> <#vertices-128> ) ) ( ( <#vertices-124> <#vertices-127> <#vertices-125> ) ) ( ( <#vertices-129> <#vertices-130> <#vertices-131> ) ) ( ( <#vertices-131> <#vertices-132> <#vertices-133> ) ) ( ( <#vertices-129> <#vertices-131> <#vertices-133> ) ) ( ( <#vertices-134> <#vertices-135> <#vertices-136> ) ) ( ( <#vertices-134> <#vertices-136> <#vertices-137> ) ) ( ( <#vertices-138> <#vertices-139> <#vertices-140> ) ) ( ( <#vertices-138> <#vertices-140> <#vertices-141> ) ) ( ( <#vertices-142> <#vertices-143> <#vertices-144> ) ) ( ( <#vertices-142> <#vertices-145> <#vertices-143> ) ) ( ( <#vertices-146> <#vertices-144> <#vertices-147> ) ) ( ( <#vertices-142> <#vertices-144> <#vertices-146> ) ) ( ( <#vertices-148> <#vertices-149> <#vertices-150> ) ) ( ( <#vertices-151> <#vertices-148> <#vertices-150> ) ) ( ( <#vertices-149> <#vertices-152> <#vertices-150> ) ) ( ( <#vertices-152> <#vertices-153> <#vertices-150> ) ) ( ( <#vertices-154> <#vertices-155> <#vertices-156> ) ) ( ( <#vertices-157> <#vertices-155> <#vertices-154> ) ) ( ( <#vertices-158> <#vertices-159> <#vertices-160> ) ) ( ( <#vertices-159> <#vertices-161> <#vertices-160> ) ) ( ( <#vertices-162> <#vertices-163> <#vertices-164> ) ) ( ( <#vertices-165> <#vertices-162> <#vertices-164> ) ) ( ( <#vertices-163> <#vertices-166> <#vertices-164> ) ) ( ( <#vertices-166> <#vertices-167> <#vertices-164> ) ) ) ;
+            ] , [
+                a city:RoofSurface, gml:MultiSurface ;
+                city:boundaries ( ( ( <#vertices-93> <#vertices-78> <#vertices-80> ) ) ( ( <#vertices-93> <#vertices-80> <#vertices-168> ) ) ( ( <#vertices-93> <#vertices-168> <#vertices-96> ) ) ( ( <#vertices-116> <#vertices-138> <#vertices-141> ) ) ( ( <#vertices-116> <#vertices-141> <#vertices-119> ) ) ( ( <#vertices-144> <#vertices-124> <#vertices-126> ) ) ( ( <#vertices-144> <#vertices-126> <#vertices-147> ) ) ( ( <#vertices-169> <#vertices-170> <#vertices-171> ) ) ( ( <#vertices-169> <#vertices-171> <#vertices-97> ) ) ( ( <#vertices-171> <#vertices-98> <#vertices-97> ) ) ( ( <#vertices-172> <#vertices-173> <#vertices-135> ) ) ( ( <#vertices-172> <#vertices-135> <#vertices-134> ) ) ( ( <#vertices-174> <#vertices-130> <#vertices-129> ) ) ( ( <#vertices-174> <#vertices-175> <#vertices-130> ) ) ( ( <#vertices-176> <#vertices-177> <#vertices-178> ) ) ( ( <#vertices-179> <#vertices-89> <#vertices-85> ) ) ( ( <#vertices-180> <#vertices-166> <#vertices-163> ) ) ( ( <#vertices-181> <#vertices-152> <#vertices-149> ) ) ( ( <#vertices-182> <#vertices-183> <#vertices-184> ) ) ( ( <#vertices-185> <#vertices-186> <#vertices-187> ) ) ( ( <#vertices-156> <#vertices-102> <#vertices-188> ) ) ( ( <#vertices-155> <#vertices-102> <#vertices-156> ) ) ( ( <#vertices-188> <#vertices-102> <#vertices-105> ) ) ( ( <#vertices-160> <#vertices-161> <#vertices-189> ) ) ( ( <#vertices-161> <#vertices-190> <#vertices-189> ) ) ( ( <#vertices-191> <#vertices-192> <#vertices-193> ) ) ( ( <#vertices-194> <#vertices-192> <#vertices-191> ) ) ( ( <#vertices-157> <#vertices-154> <#vertices-74> ) ) ( ( <#vertices-154> <#vertices-75> <#vertices-74> ) ) ( ( <#vertices-159> <#vertices-195> <#vertices-196> ) ) ( ( <#vertices-158> <#vertices-195> <#vertices-159> ) ) ( ( <#vertices-197> <#vertices-110> <#vertices-145> ) ) ( ( <#vertices-197> <#vertices-113> <#vertices-110> ) ) ( ( <#vertices-110> <#vertices-143> <#vertices-145> ) ) ( ( <#vertices-197> <#vertices-198> <#vertices-113> ) ) ( ( <#vertices-174> <#vertices-199> <#vertices-200> ) ) ( ( <#vertices-174> <#vertices-200> <#vertices-175> ) ) ( ( <#vertices-103> <#vertices-76> <#vertices-201> ) ) ( ( <#vertices-103> <#vertices-100> <#vertices-76> ) ) ( ( <#vertices-77> <#vertices-202> <#vertices-201> ) ) ( ( <#vertices-76> <#vertices-77> <#vertices-201> ) ) ( ( <#vertices-196> <#vertices-189> <#vertices-190> ) ) ( ( <#vertices-195> <#vertices-189> <#vertices-196> ) ) ( ( <#vertices-90> <#vertices-203> <#vertices-204> ) ) ( ( <#vertices-90> <#vertices-88> <#vertices-203> ) ) ( ( <#vertices-205> <#vertices-206> <#vertices-204> ) ) ( ( <#vertices-203> <#vertices-205> <#vertices-204> ) ) ( ( <#vertices-192> <#vertices-178> <#vertices-193> ) ) ( ( <#vertices-193> <#vertices-178> <#vertices-177> ) ) ( ( <#vertices-151> <#vertices-207> <#vertices-107> ) ) ( ( <#vertices-107> <#vertices-207> <#vertices-109> ) ) ( ( <#vertices-151> <#vertices-107> <#vertices-148> ) ) ( ( <#vertices-109> <#vertices-207> <#vertices-208> ) ) ( ( <#vertices-209> <#vertices-210> <#vertices-186> ) ) ( ( <#vertices-210> <#vertices-187> <#vertices-186> ) ) ( ( <#vertices-211> <#vertices-212> <#vertices-213> ) ) ( ( <#vertices-214> <#vertices-211> <#vertices-213> ) ) ( ( <#vertices-123> <#vertices-215> <#vertices-216> ) ) ( ( <#vertices-165> <#vertices-121> <#vertices-162> ) ) ( ( <#vertices-121> <#vertices-215> <#vertices-123> ) ) ( ( <#vertices-165> <#vertices-215> <#vertices-121> ) ) ( ( <#vertices-217> <#vertices-218> <#vertices-183> ) ) ( ( <#vertices-218> <#vertices-184> <#vertices-183> ) ) ( ( <#vertices-219> <#vertices-91> <#vertices-95> ) ) ( ( <#vertices-219> <#vertices-95> <#vertices-220> ) ) ( ( <#vertices-221> <#vertices-118> <#vertices-222> ) ) ( ( <#vertices-221> <#vertices-114> <#vertices-118> ) ) ( ( <#vertices-197> <#vertices-142> <#vertices-146> ) ) ( ( <#vertices-197> <#vertices-146> <#vertices-198> ) ) ( ( <#vertices-204> <#vertices-206> <#vertices-86> ) ) ( ( <#vertices-206> <#vertices-87> <#vertices-86> ) ) ( ( <#vertices-164> <#vertices-167> <#vertices-215> ) ) ( ( <#vertices-167> <#vertices-216> <#vertices-215> ) ) ( ( <#vertices-150> <#vertices-153> <#vertices-207> ) ) ( ( <#vertices-153> <#vertices-208> <#vertices-207> ) ) ( ( <#vertices-201> <#vertices-202> <#vertices-223> ) ) ( ( <#vertices-201> <#vertices-223> <#vertices-101> ) ) ( ( <#vertices-223> <#vertices-104> <#vertices-101> ) ) ( ( <#vertices-224> <#vertices-225> <#vertices-226> ) ) ( ( <#vertices-226> <#vertices-225> <#vertices-227> ) ) ( ( <#vertices-228> <#vertices-211> <#vertices-214> ) ) ( ( <#vertices-228> <#vertices-229> <#vertices-211> ) ) ( ( <#vertices-225> <#vertices-230> <#vertices-231> ) ) ( ( <#vertices-225> <#vertices-231> <#vertices-227> ) ) ( ( <#vertices-231> <#vertices-230> <#vertices-232> ) ) ( ( <#vertices-228> <#vertices-233> <#vertices-229> ) ) ( ( <#vertices-228> <#vertices-234> <#vertices-233> ) ) ( ( <#vertices-235> <#vertices-232> <#vertices-230> ) ) ( ( <#vertices-235> <#vertices-64> <#vertices-232> ) ) ( ( <#vertices-64> <#vertices-59> <#vertices-232> ) ) ( ( <#vertices-233> <#vertices-60> <#vertices-65> ) ) ( ( <#vertices-233> <#vertices-212> <#vertices-60> ) ) ( ( <#vertices-234> <#vertices-212> <#vertices-233> ) ) ( ( <#vertices-234> <#vertices-213> <#vertices-212> ) ) ( ( <#vertices-236> <#vertices-65> <#vertices-58> ) ) ( ( <#vertices-236> <#vertices-233> <#vertices-65> ) ) ( ( <#vertices-212> <#vertices-237> <#vertices-60> ) ) ( ( <#vertices-60> <#vertices-237> <#vertices-61> ) ) ( ( <#vertices-224> <#vertices-226> <#vertices-235> ) ) ( ( <#vertices-226> <#vertices-64> <#vertices-235> ) ) ( ( <#vertices-226> <#vertices-63> <#vertices-64> ) ) ( ( <#vertices-238> <#vertices-63> <#vertices-226> ) ) ( ( <#vertices-238> <#vertices-57> <#vertices-63> ) ) ( ( <#vertices-232> <#vertices-59> <#vertices-239> ) ) ( ( <#vertices-59> <#vertices-62> <#vertices-239> ) ) ( ( <#vertices-239> <#vertices-62> <#vertices-61> ) ) ( ( <#vertices-239> <#vertices-61> <#vertices-237> ) ) ( ( <#vertices-57> <#vertices-236> <#vertices-58> ) ) ( ( <#vertices-238> <#vertices-236> <#vertices-57> ) ) ( ( <#vertices-68> <#vertices-69> <#vertices-203> ) ) ( ( <#vertices-69> <#vertices-205> <#vertices-203> ) ) ( ( <#vertices-227> <#vertices-231> <#vertices-229> ) ) ( ( <#vertices-231> <#vertices-211> <#vertices-229> ) ) ( ( <#vertices-125> <#vertices-99> <#vertices-98> ) ) ( ( <#vertices-240> <#vertices-241> <#vertices-242> ) ) ( ( <#vertices-125> <#vertices-241> <#vertices-99> ) ) ( ( <#vertices-242> <#vertices-241> <#vertices-243> ) ) ( ( <#vertices-125> <#vertices-128> <#vertices-132> ) ) ( ( <#vertices-125> <#vertices-132> <#vertices-241> ) ) ( ( <#vertices-244> <#vertices-128> <#vertices-245> ) ) ( ( <#vertices-79> <#vertices-241> <#vertices-229> ) ) ( ( <#vertices-244> <#vertices-132> <#vertices-128> ) ) ( ( <#vertices-227> <#vertices-132> <#vertices-131> ) ) ( ( <#vertices-227> <#vertices-229> <#vertices-132> ) ) ( ( <#vertices-125> <#vertices-98> <#vertices-171> ) ) ( ( <#vertices-168> <#vertices-80> <#vertices-236> ) ) ( ( <#vertices-236> <#vertices-80> <#vertices-229> ) ) ( ( <#vertices-80> <#vertices-79> <#vertices-229> ) ) ( ( <#vertices-132> <#vertices-229> <#vertices-241> ) ) ( ( <#vertices-79> <#vertices-243> <#vertices-241> ) ) ( ( <#vertices-238> <#vertices-226> <#vertices-227> ) ) ( ( <#vertices-236> <#vertices-229> <#vertices-233> ) ) ( ( <#vertices-238> <#vertices-146> <#vertices-236> ) ) ( ( <#vertices-140> <#vertices-131> <#vertices-130> ) ) ( ( <#vertices-118> <#vertices-130> <#vertices-175> ) ) ( ( <#vertices-141> <#vertices-140> <#vertices-130> ) ) ( ( <#vertices-146> <#vertices-126> <#vertices-171> ) ) ( ( <#vertices-118> <#vertices-141> <#vertices-130> ) ) ( ( <#vertices-146> <#vertices-171> <#vertices-170> ) ) ( ( <#vertices-238> <#vertices-135> <#vertices-173> ) ) ( ( <#vertices-238> <#vertices-118> <#vertices-175> ) ) ( ( <#vertices-126> <#vertices-125> <#vertices-171> ) ) ( ( <#vertices-146> <#vertices-170> <#vertices-236> ) ) ( ( <#vertices-95> <#vertices-168> <#vertices-236> ) ) ( ( <#vertices-220> <#vertices-95> <#vertices-236> ) ) ( ( <#vertices-238> <#vertices-222> <#vertices-118> ) ) ( ( <#vertices-238> <#vertices-198> <#vertices-146> ) ) ( ( <#vertices-140> <#vertices-136> <#vertices-131> ) ) ( ( <#vertices-146> <#vertices-147> <#vertices-126> ) ) ( ( <#vertices-238> <#vertices-175> <#vertices-198> ) ) ( ( <#vertices-175> <#vertices-200> <#vertices-198> ) ) ( ( <#vertices-198> <#vertices-200> <#vertices-113> ) ) ( ( <#vertices-118> <#vertices-119> <#vertices-141> ) ) ( ( <#vertices-170> <#vertices-220> <#vertices-236> ) ) ( ( <#vertices-238> <#vertices-173> <#vertices-222> ) ) ( ( <#vertices-173> <#vertices-82> <#vertices-222> ) ) ( ( <#vertices-222> <#vertices-82> <#vertices-84> ) ) ( ( <#vertices-170> <#vertices-246> <#vertices-220> ) ) ( ( <#vertices-200> <#vertices-244> <#vertices-111> ) ) ( ( <#vertices-220> <#vertices-246> <#vertices-72> ) ) ( ( <#vertices-82> <#vertices-136> <#vertices-140> ) ) ( ( <#vertices-82> <#vertices-140> <#vertices-82> ) ) ( ( <#vertices-246> <#vertices-240> <#vertices-72> ) ) ( ( <#vertices-113> <#vertices-200> <#vertices-111> ) ) ( ( <#vertices-84> <#vertices-82> <#vertices-82> ) ) ( ( <#vertices-238> <#vertices-227> <#vertices-135> ) ) ( ( <#vertices-136> <#vertices-227> <#vertices-131> ) ) ( ( <#vertices-135> <#vertices-227> <#vertices-136> ) ) ( ( <#vertices-247> <#vertices-134> <#vertices-137> ) ) ( ( <#vertices-172> <#vertices-134> <#vertices-247> ) ) ( ( <#vertices-199> <#vertices-129> <#vertices-133> ) ) ( ( <#vertices-174> <#vertices-129> <#vertices-199> ) ) ( ( <#vertices-115> <#vertices-139> <#vertices-138> ) ) ( ( <#vertices-116> <#vertices-115> <#vertices-138> ) ) ( ( <#vertices-81> <#vertices-83> <#vertices-115> ) ) ( ( <#vertices-83> <#vertices-139> <#vertices-115> ) ) ( ( <#vertices-221> <#vertices-117> <#vertices-114> ) ) ( ( <#vertices-219> <#vertices-94> <#vertices-91> ) ) ( ( <#vertices-143> <#vertices-127> <#vertices-124> ) ) ( ( <#vertices-144> <#vertices-143> <#vertices-124> ) ) ( ( <#vertices-110> <#vertices-112> <#vertices-143> ) ) ( ( <#vertices-112> <#vertices-127> <#vertices-143> ) ) ( ( <#vertices-197> <#vertices-145> <#vertices-142> ) ) ( ( <#vertices-169> <#vertices-97> <#vertices-248> ) ) ( ( <#vertices-248> <#vertices-97> <#vertices-99> ) ) ( ( <#vertices-248> <#vertices-99> <#vertices-241> ) ) ( ( <#vertices-70> <#vertices-92> <#vertices-71> ) ) ( ( <#vertices-93> <#vertices-92> <#vertices-78> ) ) ( ( <#vertices-70> <#vertices-79> <#vertices-92> ) ) ( ( <#vertices-92> <#vertices-79> <#vertices-78> ) ) ( ( <#vertices-70> <#vertices-243> <#vertices-79> ) ) ( ( <#vertices-234> <#vertices-214> <#vertices-213> ) ) ( ( <#vertices-228> <#vertices-214> <#vertices-234> ) ) ( ( <#vertices-224> <#vertices-235> <#vertices-230> ) ) ( ( <#vertices-224> <#vertices-230> <#vertices-225> ) ) ( ( <#vertices-249> <#vertices-209> <#vertices-185> ) ) ( ( <#vertices-185> <#vertices-209> <#vertices-186> ) ) ( ( <#vertices-182> <#vertices-217> <#vertices-183> ) ) ( ( <#vertices-250> <#vertices-217> <#vertices-182> ) ) ( ( <#vertices-148> <#vertices-107> <#vertices-106> ) ) ( ( <#vertices-181> <#vertices-149> <#vertices-148> ) ) ( ( <#vertices-251> <#vertices-181> <#vertices-148> ) ) ( ( <#vertices-251> <#vertices-148> <#vertices-106> ) ) ( ( <#vertices-151> <#vertices-150> <#vertices-207> ) ) ( ( <#vertices-165> <#vertices-164> <#vertices-215> ) ) ( ( <#vertices-180> <#vertices-163> <#vertices-162> ) ) ( ( <#vertices-252> <#vertices-162> <#vertices-120> ) ) ( ( <#vertices-252> <#vertices-180> <#vertices-162> ) ) ( ( <#vertices-162> <#vertices-121> <#vertices-120> ) ) ( ( <#vertices-211> <#vertices-237> <#vertices-212> ) ) ( ( <#vertices-231> <#vertices-232> <#vertices-211> ) ) ( ( <#vertices-232> <#vertices-194> <#vertices-211> ) ) ( ( <#vertices-232> <#vertices-159> <#vertices-194> ) ) ( ( <#vertices-232> <#vertices-239> <#vertices-161> ) ) ( ( <#vertices-194> <#vertices-253> <#vertices-211> ) ) ( ( <#vertices-232> <#vertices-161> <#vertices-159> ) ) ( ( <#vertices-154> <#vertices-254> <#vertices-194> ) ) ( ( <#vertices-154> <#vertices-156> <#vertices-254> ) ) ( ( <#vertices-156> <#vertices-188> <#vertices-254> ) ) ( ( <#vertices-161> <#vertices-239> <#vertices-190> ) ) ( ( <#vertices-202> <#vertices-239> <#vertices-223> ) ) ( ( <#vertices-159> <#vertices-154> <#vertices-194> ) ) ( ( <#vertices-154> <#vertices-196> <#vertices-77> ) ) ( ( <#vertices-159> <#vertices-196> <#vertices-154> ) ) ( ( <#vertices-190> <#vertices-239> <#vertices-202> ) ) ( ( <#vertices-196> <#vertices-190> <#vertices-202> ) ) ( ( <#vertices-196> <#vertices-202> <#vertices-77> ) ) ( ( <#vertices-194> <#vertices-191> <#vertices-66> ) ) ( ( <#vertices-194> <#vertices-66> <#vertices-253> ) ) ( ( <#vertices-239> <#vertices-237> <#vertices-153> ) ) ( ( <#vertices-211> <#vertices-249> <#vertices-250> ) ) ( ( <#vertices-211> <#vertices-253> <#vertices-249> ) ) ( ( <#vertices-211> <#vertices-182> <#vertices-237> ) ) ( ( <#vertices-211> <#vertices-250> <#vertices-182> ) ) ( ( <#vertices-249> <#vertices-180> <#vertices-252> ) ) ( ( <#vertices-188> <#vertices-177> <#vertices-176> ) ) ( ( <#vertices-253> <#vertices-181> <#vertices-251> ) ) ( ( <#vertices-185> <#vertices-187> <#vertices-166> ) ) ( ( <#vertices-185> <#vertices-166> <#vertices-180> ) ) ( ( <#vertices-181> <#vertices-85> <#vertices-152> ) ) ( ( <#vertices-182> <#vertices-184> <#vertices-237> ) ) ( ( <#vertices-179> <#vertices-85> <#vertices-181> ) ) ( ( <#vertices-239> <#vertices-153> <#vertices-85> ) ) ( ( <#vertices-249> <#vertices-185> <#vertices-180> ) ) ( ( <#vertices-239> <#vertices-177> <#vertices-105> ) ) ( ( <#vertices-239> <#vertices-85> <#vertices-206> ) ) ( ( <#vertices-187> <#vertices-237> <#vertices-167> ) ) ( ( <#vertices-253> <#vertices-179> <#vertices-181> ) ) ( ( <#vertices-167> <#vertices-237> <#vertices-216> ) ) ( ( <#vertices-153> <#vertices-237> <#vertices-208> ) ) ( ( <#vertices-188> <#vertices-105> <#vertices-177> ) ) ( ( <#vertices-254> <#vertices-188> <#vertices-176> ) ) ( ( <#vertices-223> <#vertices-239> <#vertices-105> ) ) ( ( <#vertices-249> <#vertices-252> <#vertices-250> ) ) ( ( <#vertices-253> <#vertices-251> <#vertices-249> ) ) ( ( <#vertices-187> <#vertices-167> <#vertices-166> ) ) ( ( <#vertices-218> <#vertices-216> <#vertices-184> ) ) ( ( <#vertices-218> <#vertices-123> <#vertices-216> ) ) ( ( <#vertices-216> <#vertices-237> <#vertices-184> ) ) ( ( <#vertices-85> <#vertices-153> <#vertices-152> ) ) ( ( <#vertices-210> <#vertices-208> <#vertices-187> ) ) ( ( <#vertices-210> <#vertices-109> <#vertices-208> ) ) ( ( <#vertices-208> <#vertices-237> <#vertices-187> ) ) ( ( <#vertices-239> <#vertices-206> <#vertices-177> ) ) ( ( <#vertices-67> <#vertices-193> <#vertices-205> ) ) ( ( <#vertices-193> <#vertices-177> <#vertices-206> ) ) ( ( <#vertices-193> <#vertices-206> <#vertices-205> ) ) ( ( <#vertices-249> <#vertices-251> <#vertices-210> ) ) ( ( <#vertices-251> <#vertices-108> <#vertices-210> ) ) ( ( <#vertices-250> <#vertices-252> <#vertices-218> ) ) ( ( <#vertices-252> <#vertices-122> <#vertices-218> ) ) ( ( <#vertices-122> <#vertices-123> <#vertices-218> ) ) ( ( <#vertices-108> <#vertices-109> <#vertices-210> ) ) ( ( <#vertices-158> <#vertices-160> <#vertices-195> ) ) ( ( <#vertices-160> <#vertices-189> <#vertices-195> ) ) ( ( <#vertices-157> <#vertices-100> <#vertices-155> ) ) ( ( <#vertices-155> <#vertices-100> <#vertices-102> ) ) ( ( <#vertices-157> <#vertices-74> <#vertices-100> ) ) ( ( <#vertices-74> <#vertices-76> <#vertices-100> ) ) ( ( <#vertices-103> <#vertices-201> <#vertices-101> ) ) ( ( <#vertices-90> <#vertices-204> <#vertices-86> ) ) ( ( <#vertices-254> <#vertices-176> <#vertices-192> ) ) ( ( <#vertices-194> <#vertices-254> <#vertices-192> ) ) ( ( <#vertices-176> <#vertices-178> <#vertices-192> ) ) ( ( <#vertices-179> <#vertices-88> <#vertices-89> ) ) ( ( <#vertices-68> <#vertices-203> <#vertices-88> ) ) ( ( <#vertices-66> <#vertices-68> <#vertices-253> ) ) ( ( <#vertices-253> <#vertices-68> <#vertices-88> ) ) ( ( <#vertices-253> <#vertices-88> <#vertices-179> ) ) ) ;
+            ];
+            city:lod "2" ;
+    ] .
+
+<#city> a city:CityJSON, dcat:Dataset ;
+    dct:temporal [
+      dcat:startDate "2023-01-01"^^xsd:date ;
+    ] ;
+    dct:accessRights <http://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+    city:geographicalExtent [ city:max [ city:x 300618.138 ;
+                    city:y 5041289.394 ;
+                    city:z 29.45 ] ;
+            city:min [ city:x 300578.235 ;
+                    city:y 5041258.061 ;
+                    city:z 13.688 ] ] ;
+    city:hasObject <#city-objects-Building_1>,
+        <#city-objects-Building_2> ;
+    city:hasTransform [ city:scale [ city:x 0.001 ;
+                    city:y 0.001 ;
+                    city:z 0.001 ] ;
+            city:translate [ city:x 300578.235 ;
+                    city:y 5041258.061 ;
+                    city:z 13.688 ] ] ;
+    city:hasVertex <#vertices-0>,
+        <#vertices-1>,
+        <#vertices-10>,
+        <#vertices-100>,
+        <#vertices-101>,
+        <#vertices-102>,
+        <#vertices-103>,
+        <#vertices-104>,
+        <#vertices-105>,
+        <#vertices-106>,
+        <#vertices-107>,
+        <#vertices-108>,
+        <#vertices-109>,
+        <#vertices-11>,
+        <#vertices-110>,
+        <#vertices-111>,
+        <#vertices-112>,
+        <#vertices-113>,
+        <#vertices-114>,
+        <#vertices-115>,
+        <#vertices-116>,
+        <#vertices-117>,
+        <#vertices-118>,
+        <#vertices-119>,
+        <#vertices-12>,
+        <#vertices-120>,
+        <#vertices-121>,
+        <#vertices-122>,
+        <#vertices-123>,
+        <#vertices-124>,
+        <#vertices-125>,
+        <#vertices-126>,
+        <#vertices-127>,
+        <#vertices-128>,
+        <#vertices-129>,
+        <#vertices-13>,
+        <#vertices-130>,
+        <#vertices-131>,
+        <#vertices-132>,
+        <#vertices-133>,
+        <#vertices-134>,
+        <#vertices-135>,
+        <#vertices-136>,
+        <#vertices-137>,
+        <#vertices-138>,
+        <#vertices-139>,
+        <#vertices-14>,
+        <#vertices-140>,
+        <#vertices-141>,
+        <#vertices-142>,
+        <#vertices-143>,
+        <#vertices-144>,
+        <#vertices-145>,
+        <#vertices-146>,
+        <#vertices-147>,
+        <#vertices-148>,
+        <#vertices-149>,
+        <#vertices-15>,
+        <#vertices-150>,
+        <#vertices-151>,
+        <#vertices-152>,
+        <#vertices-153>,
+        <#vertices-154>,
+        <#vertices-155>,
+        <#vertices-156>,
+        <#vertices-157>,
+        <#vertices-158>,
+        <#vertices-159>,
+        <#vertices-16>,
+        <#vertices-160>,
+        <#vertices-161>,
+        <#vertices-162>,
+        <#vertices-163>,
+        <#vertices-164>,
+        <#vertices-165>,
+        <#vertices-166>,
+        <#vertices-167>,
+        <#vertices-168>,
+        <#vertices-169>,
+        <#vertices-17>,
+        <#vertices-170>,
+        <#vertices-171>,
+        <#vertices-172>,
+        <#vertices-173>,
+        <#vertices-174>,
+        <#vertices-175>,
+        <#vertices-176>,
+        <#vertices-177>,
+        <#vertices-178>,
+        <#vertices-179>,
+        <#vertices-18>,
+        <#vertices-180>,
+        <#vertices-181>,
+        <#vertices-182>,
+        <#vertices-183>,
+        <#vertices-184>,
+        <#vertices-185>,
+        <#vertices-186>,
+        <#vertices-187>,
+        <#vertices-188>,
+        <#vertices-189>,
+        <#vertices-19>,
+        <#vertices-190>,
+        <#vertices-191>,
+        <#vertices-192>,
+        <#vertices-193>,
+        <#vertices-194>,
+        <#vertices-195>,
+        <#vertices-196>,
+        <#vertices-197>,
+        <#vertices-198>,
+        <#vertices-199>,
+        <#vertices-2>,
+        <#vertices-20>,
+        <#vertices-200>,
+        <#vertices-201>,
+        <#vertices-202>,
+        <#vertices-203>,
+        <#vertices-204>,
+        <#vertices-205>,
+        <#vertices-206>,
+        <#vertices-207>,
+        <#vertices-208>,
+        <#vertices-209>,
+        <#vertices-21>,
+        <#vertices-210>,
+        <#vertices-211>,
+        <#vertices-212>,
+        <#vertices-213>,
+        <#vertices-214>,
+        <#vertices-215>,
+        <#vertices-216>,
+        <#vertices-217>,
+        <#vertices-218>,
+        <#vertices-219>,
+        <#vertices-22>,
+        <#vertices-220>,
+        <#vertices-221>,
+        <#vertices-222>,
+        <#vertices-223>,
+        <#vertices-224>,
+        <#vertices-225>,
+        <#vertices-226>,
+        <#vertices-227>,
+        <#vertices-228>,
+        <#vertices-229>,
+        <#vertices-23>,
+        <#vertices-230>,
+        <#vertices-231>,
+        <#vertices-232>,
+        <#vertices-233>,
+        <#vertices-234>,
+        <#vertices-235>,
+        <#vertices-236>,
+        <#vertices-237>,
+        <#vertices-238>,
+        <#vertices-239>,
+        <#vertices-24>,
+        <#vertices-240>,
+        <#vertices-241>,
+        <#vertices-242>,
+        <#vertices-243>,
+        <#vertices-244>,
+        <#vertices-245>,
+        <#vertices-246>,
+        <#vertices-247>,
+        <#vertices-248>,
+        <#vertices-249>,
+        <#vertices-25>,
+        <#vertices-250>,
+        <#vertices-251>,
+        <#vertices-252>,
+        <#vertices-253>,
+        <#vertices-254>,
+        <#vertices-26>,
+        <#vertices-27>,
+        <#vertices-28>,
+        <#vertices-29>,
+        <#vertices-3>,
+        <#vertices-30>,
+        <#vertices-31>,
+        <#vertices-32>,
+        <#vertices-33>,
+        <#vertices-34>,
+        <#vertices-35>,
+        <#vertices-36>,
+        <#vertices-37>,
+        <#vertices-38>,
+        <#vertices-39>,
+        <#vertices-4>,
+        <#vertices-40>,
+        <#vertices-41>,
+        <#vertices-42>,
+        <#vertices-43>,
+        <#vertices-44>,
+        <#vertices-45>,
+        <#vertices-46>,
+        <#vertices-47>,
+        <#vertices-48>,
+        <#vertices-49>,
+        <#vertices-5>,
+        <#vertices-50>,
+        <#vertices-51>,
+        <#vertices-52>,
+        <#vertices-53>,
+        <#vertices-54>,
+        <#vertices-55>,
+        <#vertices-56>,
+        <#vertices-57>,
+        <#vertices-58>,
+        <#vertices-59>,
+        <#vertices-6>,
+        <#vertices-60>,
+        <#vertices-61>,
+        <#vertices-62>,
+        <#vertices-63>,
+        <#vertices-64>,
+        <#vertices-65>,
+        <#vertices-66>,
+        <#vertices-67>,
+        <#vertices-68>,
+        <#vertices-69>,
+        <#vertices-7>,
+        <#vertices-70>,
+        <#vertices-71>,
+        <#vertices-72>,
+        <#vertices-73>,
+        <#vertices-74>,
+        <#vertices-75>,
+        <#vertices-76>,
+        <#vertices-77>,
+        <#vertices-78>,
+        <#vertices-79>,
+        <#vertices-8>,
+        <#vertices-80>,
+        <#vertices-81>,
+        <#vertices-82>,
+        <#vertices-83>,
+        <#vertices-84>,
+        <#vertices-85>,
+        <#vertices-86>,
+        <#vertices-87>,
+        <#vertices-88>,
+        <#vertices-89>,
+        <#vertices-9>,
+        <#vertices-90>,
+        <#vertices-91>,
+        <#vertices-92>,
+        <#vertices-93>,
+        <#vertices-94>,
+        <#vertices-95>,
+        <#vertices-96>,
+        <#vertices-97>,
+        <#vertices-98>,
+        <#vertices-99> ;
+    city:version "1.1" .
+
+<#vertices-0> city:x 19211.0 ;
+    city:y 19441.0 ;
+    city:z 0.0 .
+
+<#vertices-1> city:x 17245.0 ;
+    city:y 14582.0 ;
+    city:z 0.0 .
+
+<#vertices-10> city:x 0.0 ;
+    city:y 20015.0 ;
+    city:z 0.0 .
+
+<#vertices-100> city:x 31053.0 ;
+    city:y 12946.0 ;
+    city:z 12232.0 .
+
+<#vertices-101> city:x 30306.0 ;
+    city:y 12519.0 ;
+    city:z 11498.0 .
+
+<#vertices-102> city:x 30308.0 ;
+    city:y 12520.0 ;
+    city:z 11497.0 .
+
+<#vertices-103> city:x 31053.0 ;
+    city:y 12946.0 ;
+    city:z 12235.0 .
+
+<#vertices-104> city:x 30306.0 ;
+    city:y 12519.0 ;
+    city:z 10462.0 .
+
+<#vertices-105> city:x 30308.0 ;
+    city:y 12520.0 ;
+    city:z 10463.0 .
+
+<#vertices-106> city:x 28977.0 ;
+    city:y 7536.0 ;
+    city:z 12286.0 .
+
+<#vertices-107> city:x 28975.0 ;
+    city:y 7541.0 ;
+    city:z 12281.0 .
+
+<#vertices-108> city:x 28977.0 ;
+    city:y 7536.0 ;
+    city:z 11160.0 .
+
+<#vertices-109> city:x 28975.0 ;
+    city:y 7541.0 ;
+    city:z 11156.0 .
+
+<#vertices-11> city:x 4403.0 ;
+    city:y 31333.0 ;
+    city:z 14494.0 .
+
+<#vertices-110> city:x 37014.0 ;
+    city:y 6955.0 ;
+    city:z 12269.0 .
+
+<#vertices-111> city:x 37013.0 ;
+    city:y 6960.0 ;
+    city:z 10993.0 .
+
+<#vertices-112> city:x 37013.0 ;
+    city:y 6960.0 ;
+    city:z 12274.0 .
+
+<#vertices-113> city:x 37014.0 ;
+    city:y 6955.0 ;
+    city:z 10990.0 .
+
+<#vertices-114> city:x 38348.0 ;
+    city:y 9208.0 ;
+    city:z 11498.0 .
+
+<#vertices-115> city:x 38174.0 ;
+    city:y 10015.0 ;
+    city:z 12377.0 .
+
+<#vertices-116> city:x 38347.0 ;
+    city:y 9211.0 ;
+    city:z 11496.0 .
+
+<#vertices-117> city:x 38174.0 ;
+    city:y 10015.0 ;
+    city:z 12383.0 .
+
+<#vertices-118> city:x 38348.0 ;
+    city:y 9208.0 ;
+    city:z 10615.0 .
+
+<#vertices-119> city:x 38347.0 ;
+    city:y 9211.0 ;
+    city:z 10617.0 .
+
+<#vertices-12> city:x 4338.0 ;
+    city:y 31167.0 ;
+    city:z 13252.0 .
+
+<#vertices-120> city:x 28089.0 ;
+    city:y 5212.0 ;
+    city:z 12279.0 .
+
+<#vertices-121> city:x 28083.0 ;
+    city:y 5223.0 ;
+    city:z 12268.0 .
+
+<#vertices-122> city:x 28089.0 ;
+    city:y 5212.0 ;
+    city:z 11229.0 .
+
+<#vertices-123> city:x 28083.0 ;
+    city:y 5223.0 ;
+    city:z 11219.0 .
+
+<#vertices-124> city:x 36296.0 ;
+    city:y 6544.0 ;
+    city:z 11503.0 .
+
+<#vertices-125> city:x 35895.0 ;
+    city:y 7269.0 ;
+    city:z 12117.0 .
+
+<#vertices-126> city:x 36296.0 ;
+    city:y 6544.0 ;
+    city:z 11488.0 .
+
+<#vertices-127> city:x 35804.0 ;
+    city:y 7434.0 ;
+    city:z 12274.0 .
+
+<#vertices-128> city:x 35804.0 ;
+    city:y 7434.0 ;
+    city:z 12261.0 .
+
+<#vertices-129> city:x 36768.0 ;
+    city:y 7673.0 ;
+    city:z 11493.0 .
+
+<#vertices-13> city:x 4338.0 ;
+    city:y 31167.0 ;
+    city:z 14494.0 .
+
+<#vertices-130> city:x 36768.0 ;
+    city:y 7673.0 ;
+    city:z 11477.0 .
+
+<#vertices-131> city:x 35913.0 ;
+    city:y 7468.0 ;
+    city:z 12175.0 .
+
+<#vertices-132> city:x 35792.0 ;
+    city:y 7440.0 ;
+    city:z 12274.0 .
+
+<#vertices-133> city:x 35792.0 ;
+    city:y 7440.0 ;
+    city:z 12287.0 .
+
+<#vertices-134> city:x 37994.0 ;
+    city:y 10685.0 ;
+    city:z 11497.0 .
+
+<#vertices-135> city:x 37994.0 ;
+    city:y 10685.0 ;
+    city:z 11477.0 .
+
+<#vertices-136> city:x 36945.0 ;
+    city:y 10527.0 ;
+    city:z 12367.0 .
+
+<#vertices-137> city:x 36945.0 ;
+    city:y 10527.0 ;
+    city:z 12385.0 .
+
+<#vertices-138> city:x 37529.0 ;
+    city:y 9553.0 ;
+    city:z 11500.0 .
+
+<#vertices-139> city:x 36948.0 ;
+    city:y 10525.0 ;
+    city:z 12381.0 .
+
+<#vertices-14> city:x 0.0 ;
+    city:y 20015.0 ;
+    city:z 13252.0 .
+
+<#vertices-140> city:x 36948.0 ;
+    city:y 10525.0 ;
+    city:z 12363.0 .
+
+<#vertices-141> city:x 37529.0 ;
+    city:y 9553.0 ;
+    city:z 11481.0 .
+
+<#vertices-142> city:x 37134.0 ;
+    city:y 6196.0 ;
+    city:z 11498.0 .
+
+<#vertices-143> city:x 37010.0 ;
+    city:y 6952.0 ;
+    city:z 12264.0 .
+
+<#vertices-144> city:x 37133.0 ;
+    city:y 6205.0 ;
+    city:z 11492.0 .
+
+<#vertices-145> city:x 37010.0 ;
+    city:y 6952.0 ;
+    city:z 12281.0 .
+
+<#vertices-146> city:x 37134.0 ;
+    city:y 6196.0 ;
+    city:z 10603.0 .
+
+<#vertices-147> city:x 37133.0 ;
+    city:y 6205.0 ;
+    city:z 10608.0 .
+
+<#vertices-148> city:x 28979.0 ;
+    city:y 7543.0 ;
+    city:z 12277.0 .
+
+<#vertices-149> city:x 28638.0 ;
+    city:y 8384.0 ;
+    city:z 11492.0 .
+
+<#vertices-15> city:x 9831.0 ;
+    city:y 29283.0 ;
+    city:z 14494.0 .
+
+<#vertices-150> city:x 28635.0 ;
+    city:y 8393.0 ;
+    city:z 11498.0 .
+
+<#vertices-151> city:x 28979.0 ;
+    city:y 7543.0 ;
+    city:z 12292.0 .
+
+<#vertices-152> city:x 28638.0 ;
+    city:y 8384.0 ;
+    city:z 10502.0 .
+
+<#vertices-153> city:x 28635.0 ;
+    city:y 8393.0 ;
+    city:z 10495.0 .
+
+<#vertices-154> city:x 32141.0 ;
+    city:y 12473.0 ;
+    city:z 12192.0 .
+
+<#vertices-155> city:x 31233.0 ;
+    city:y 12121.0 ;
+    city:z 11503.0 .
+
+<#vertices-156> city:x 31233.0 ;
+    city:y 12121.0 ;
+    city:z 11487.0 .
+
+<#vertices-157> city:x 32141.0 ;
+    city:y 12473.0 ;
+    city:z 12234.0 .
+
+<#vertices-158> city:x 32146.0 ;
+    city:y 12473.0 ;
+    city:z 12238.0 .
+
+<#vertices-159> city:x 32146.0 ;
+    city:y 12473.0 ;
+    city:z 12197.0 .
+
+<#vertices-16> city:x 20166.0 ;
+    city:y 25185.0 ;
+    city:z 13252.0 .
+
+<#vertices-160> city:x 31683.0 ;
+    city:y 13262.0 ;
+    city:z 11496.0 .
+
+<#vertices-161> city:x 31683.0 ;
+    city:y 13262.0 ;
+    city:z 11454.0 .
+
+<#vertices-162> city:x 28094.0 ;
+    city:y 5227.0 ;
+    city:z 12259.0 .
+
+<#vertices-163> city:x 27685.0 ;
+    city:y 6031.0 ;
+    city:z 11486.0 .
+
+<#vertices-164> city:x 27674.0 ;
+    city:y 6053.0 ;
+    city:z 11498.0 .
+
+<#vertices-165> city:x 28094.0 ;
+    city:y 5227.0 ;
+    city:z 12292.0 .
+
+<#vertices-166> city:x 27685.0 ;
+    city:y 6031.0 ;
+    city:z 10520.0 .
+
+<#vertices-167> city:x 27674.0 ;
+    city:y 6053.0 ;
+    city:z 10501.0 .
+
+<#vertices-168> city:x 35549.0 ;
+    city:y 3354.0 ;
+    city:z 10990.0 .
+
+<#vertices-169> city:x 36374.0 ;
+    city:y 4339.0 ;
+    city:z 11501.0 .
+
+<#vertices-17> city:x 13671.0 ;
+    city:y 27760.0 ;
+    city:z 13252.0 .
+
+<#vertices-170> city:x 36374.0 ;
+    city:y 4339.0 ;
+    city:z 10607.0 .
+
+<#vertices-171> city:x 35662.0 ;
+    city:y 4635.0 ;
+    city:z 11358.0 .
+
+<#vertices-172> city:x 38825.0 ;
+    city:y 10339.0 ;
+    city:z 11500.0 .
+
+<#vertices-173> city:x 38825.0 ;
+    city:y 10339.0 ;
+    city:z 10599.0 .
+
+<#vertices-174> city:x 37614.0 ;
+    city:y 7332.0 ;
+    city:z 11505.0 .
+
+<#vertices-175> city:x 37614.0 ;
+    city:y 7332.0 ;
+    city:z 10587.0 .
+
+<#vertices-176> city:x 30462.0 ;
+    city:y 10275.0 ;
+    city:z 11497.0 .
+
+<#vertices-177> city:x 29620.0 ;
+    city:y 10636.0 ;
+    city:z 10551.0 .
+
+<#vertices-178> city:x 29620.0 ;
+    city:y 10636.0 ;
+    city:z 11500.0 .
+
+<#vertices-179> city:x 29997.0 ;
+    city:y 9141.0 ;
+    city:z 11501.0 .
+
+<#vertices-18> city:x 13671.0 ;
+    city:y 27760.0 ;
+    city:z 14494.0 .
+
+<#vertices-180> city:x 28578.0 ;
+    city:y 5686.0 ;
+    city:z 11509.0 .
+
+<#vertices-181> city:x 29536.0 ;
+    city:y 8019.0 ;
+    city:z 11504.0 .
+
+<#vertices-182> city:x 28091.0 ;
+    city:y 4563.0 ;
+    city:z 11487.0 .
+
+<#vertices-183> city:x 27192.0 ;
+    city:y 4909.0 ;
+    city:z 11511.0 .
+
+<#vertices-184> city:x 27192.0 ;
+    city:y 4909.0 ;
+    city:z 10492.0 .
+
+<#vertices-185> city:x 29059.0 ;
+    city:y 6892.0 ;
+    city:z 11493.0 .
+
+<#vertices-186> city:x 28155.0 ;
+    city:y 7258.0 ;
+    city:z 11504.0 .
+
+<#vertices-187> city:x 28155.0 ;
+    city:y 7258.0 ;
+    city:z 10485.0 .
+
+<#vertices-188> city:x 30527.0 ;
+    city:y 12425.0 ;
+    city:z 10710.0 .
+
+<#vertices-189> city:x 30784.0 ;
+    city:y 13650.0 ;
+    city:z 11501.0 .
+
+<#vertices-19> city:x 15156.0 ;
+    city:y 12804.0 ;
+    city:z 13252.0 .
+
+<#vertices-190> city:x 30784.0 ;
+    city:y 13650.0 ;
+    city:z 10464.0 .
+
+<#vertices-191> city:x 30662.0 ;
+    city:y 9549.0 ;
+    city:z 11974.0 .
+
+<#vertices-192> city:x 29941.0 ;
+    city:y 9861.0 ;
+    city:z 12362.0 .
+
+<#vertices-193> city:x 29941.0 ;
+    city:y 9861.0 ;
+    city:z 11163.0 .
+
+<#vertices-194> city:x 31014.0 ;
+    city:y 9397.0 ;
+    city:z 12362.0 .
+
+<#vertices-195> city:x 31055.0 ;
+    city:y 12950.0 ;
+    city:z 12238.0 .
+
+<#vertices-196> city:x 31055.0 ;
+    city:y 12950.0 ;
+    city:z 10993.0 .
+
+<#vertices-197> city:x 37611.0 ;
+    city:y 7324.0 ;
+    city:z 11498.0 .
+
+<#vertices-198> city:x 37611.0 ;
+    city:y 7324.0 ;
+    city:z 10587.0 .
+
+<#vertices-199> city:x 37014.0 ;
+    city:y 6961.0 ;
+    city:z 12287.0 .
+
+<#vertices-2> city:x 16068.0 ;
+    city:y 15059.0 ;
+    city:z 0.0 .
+
+<#vertices-20> city:x 18034.0 ;
+    city:y 19918.0 ;
+    city:z 12747.0 .
+
+<#vertices-200> city:x 37014.0 ;
+    city:y 6961.0 ;
+    city:z 10993.0 .
+
+<#vertices-201> city:x 30783.0 ;
+    city:y 13647.0 ;
+    city:z 11498.0 .
+
+<#vertices-202> city:x 30783.0 ;
+    city:y 13647.0 ;
+    city:z 10464.0 .
+
+<#vertices-203> city:x 29939.0 ;
+    city:y 9859.0 ;
+    city:z 12358.0 .
+
+<#vertices-204> city:x 29619.0 ;
+    city:y 10634.0 ;
+    city:z 11498.0 .
+
+<#vertices-205> city:x 29939.0 ;
+    city:y 9859.0 ;
+    city:z 11162.0 .
+
+<#vertices-206> city:x 29619.0 ;
+    city:y 10634.0 ;
+    city:z 10550.0 .
+
+<#vertices-207> city:x 28158.0 ;
+    city:y 7265.0 ;
+    city:z 11498.0 .
+
+<#vertices-208> city:x 28158.0 ;
+    city:y 7265.0 ;
+    city:z 10484.0 .
+
+<#vertices-209> city:x 28976.0 ;
+    city:y 7535.0 ;
+    city:z 12298.0 .
+
+<#vertices-21> city:x 16068.0 ;
+    city:y 15059.0 ;
+    city:z 12747.0 .
+
+<#vertices-210> city:x 28976.0 ;
+    city:y 7535.0 ;
+    city:z 11160.0 .
+
+<#vertices-211> city:x 30976.0 ;
+    city:y 2842.0 ;
+    city:z 14923.0 .
+
+<#vertices-212> city:x 30547.0 ;
+    city:y 1946.0 ;
+    city:z 14707.0 .
+
+<#vertices-213> city:x 30547.0 ;
+    city:y 1946.0 ;
+    city:z 15762.0 .
+
+<#vertices-214> city:x 30976.0 ;
+    city:y 2842.0 ;
+    city:z 15762.0 .
+
+<#vertices-215> city:x 27197.0 ;
+    city:y 4925.0 ;
+    city:z 11498.0 .
+
+<#vertices-216> city:x 27197.0 ;
+    city:y 4925.0 ;
+    city:z 10491.0 .
+
+<#vertices-217> city:x 28088.0 ;
+    city:y 5211.0 ;
+    city:z 12305.0 .
+
+<#vertices-218> city:x 28088.0 ;
+    city:y 5211.0 ;
+    city:z 11229.0 .
+
+<#vertices-219> city:x 36373.0 ;
+    city:y 4336.0 ;
+    city:z 11498.0 .
+
+<#vertices-22> city:x 17245.0 ;
+    city:y 14582.0 ;
+    city:z 12462.0 .
+
+<#vertices-220> city:x 36373.0 ;
+    city:y 4336.0 ;
+    city:z 10607.0 .
+
+<#vertices-221> city:x 38824.0 ;
+    city:y 10336.0 ;
+    city:z 11498.0 .
+
+<#vertices-222> city:x 38824.0 ;
+    city:y 10336.0 ;
+    city:z 10599.0 .
+
+<#vertices-223> city:x 30501.0 ;
+    city:y 12980.0 ;
+    city:z 10466.0 .
+
+<#vertices-224> city:x 36641.0 ;
+    city:y 12768.0 ;
+    city:z 15263.0 .
+
+<#vertices-225> city:x 36310.0 ;
+    city:y 11972.0 ;
+    city:z 15263.0 .
+
+<#vertices-226> city:x 36641.0 ;
+    city:y 12768.0 ;
+    city:z 13471.0 .
+
+<#vertices-227> city:x 36310.0 ;
+    city:y 11972.0 ;
+    city:z 13471.0 .
+
+<#vertices-228> city:x 32013.0 ;
+    city:y 2346.0 ;
+    city:z 15762.0 .
+
+<#vertices-229> city:x 32013.0 ;
+    city:y 2346.0 ;
+    city:z 13857.0 .
+
+<#vertices-23> city:x 19211.0 ;
+    city:y 19441.0 ;
+    city:z 12444.0 .
+
+<#vertices-230> city:x 34792.0 ;
+    city:y 12604.0 ;
+    city:z 15263.0 .
+
+<#vertices-231> city:x 35008.0 ;
+    city:y 12514.0 ;
+    city:z 14923.0 .
+
+<#vertices-232> city:x 34792.0 ;
+    city:y 12604.0 ;
+    city:z 14605.0 .
+
+<#vertices-233> city:x 31584.0 ;
+    city:y 1450.0 ;
+    city:z 13857.0 .
+
+<#vertices-234> city:x 31584.0 ;
+    city:y 1450.0 ;
+    city:z 15762.0 .
+
+<#vertices-235> city:x 35123.0 ;
+    city:y 13399.0 ;
+    city:z 15263.0 .
+
+<#vertices-236> city:x 35253.0 ;
+    city:y 0.0 ;
+    city:z 10024.0 .
+
+<#vertices-237> city:x 26216.0 ;
+    city:y 3965.0 ;
+    city:z 9933.0 .
+
+<#vertices-238> city:x 39903.0 ;
+    city:y 11453.0 ;
+    city:z 10035.0 .
+
+<#vertices-239> city:x 30437.0 ;
+    city:y 14347.0 ;
+    city:z 9865.0 .
+
+<#vertices-24> city:x 8944.0 ;
+    city:y 16499.0 ;
+    city:z 13252.0 .
+
+<#vertices-240> city:x 35608.0 ;
+    city:y 4017.0 ;
+    city:z 11181.0 .
+
+<#vertices-241> city:x 34574.0 ;
+    city:y 4440.0 ;
+    city:z 12284.0 .
+
+<#vertices-242> city:x 35607.0 ;
+    city:y 4015.0 ;
+    city:z 11180.0 .
+
+<#vertices-243> city:x 34577.0 ;
+    city:y 4436.0 ;
+    city:z 12279.0 .
+
+<#vertices-244> city:x 35906.0 ;
+    city:y 7395.0 ;
+    city:z 12153.0 .
+
+<#vertices-245> city:x 35906.0 ;
+    city:y 7394.0 ;
+    city:z 12153.0 .
+
+<#vertices-246> city:x 35848.0 ;
+    city:y 3918.0 ;
+    city:z 10927.0 .
+
+<#vertices-247> city:x 38175.0 ;
+    city:y 10018.0 ;
+    city:z 12385.0 .
+
+<#vertices-248> city:x 35848.0 ;
+    city:y 3918.0 ;
+    city:z 12284.0 .
+
+<#vertices-249> city:x 30001.0 ;
+    city:y 7131.0 ;
+    city:z 12298.0 .
+
+<#vertices-25> city:x 5482.0 ;
+    city:y 17965.0 ;
+    city:z 13252.0 .
+
+<#vertices-250> city:x 29067.0 ;
+    city:y 4855.0 ;
+    city:z 12305.0 .
+
+<#vertices-251> city:x 29990.0 ;
+    city:y 7136.0 ;
+    city:z 12286.0 .
+
+<#vertices-252> city:x 29044.0 ;
+    city:y 4864.0 ;
+    city:z 12279.0 .
+
+<#vertices-253> city:x 30673.0 ;
+    city:y 9315.0 ;
+    city:z 12077.0 .
+
+<#vertices-254> city:x 30641.0 ;
+    city:y 9987.0 ;
+    city:z 11782.0 .
+
+<#vertices-26> city:x 12313.0 ;
+    city:y 22218.0 ;
+    city:z 13252.0 .
+
+<#vertices-27> city:x 11229.0 ;
+    city:y 19602.0 ;
+    city:z 13252.0 .
+
+<#vertices-28> city:x 11229.0 ;
+    city:y 19602.0 ;
+    city:z 14469.0 .
+
+<#vertices-29> city:x 12313.0 ;
+    city:y 22218.0 ;
+    city:z 15152.0 .
+
+<#vertices-3> city:x 20166.0 ;
+    city:y 25185.0 ;
+    city:z 0.0 .
+
+<#vertices-30> city:x 13264.0 ;
+    city:y 24729.0 ;
+    city:z 14469.0 .
+
+<#vertices-31> city:x 13264.0 ;
+    city:y 24729.0 ;
+    city:z 13252.0 .
+
+<#vertices-32> city:x 9769.0 ;
+    city:y 29122.0 ;
+    city:z 14494.0 .
+
+<#vertices-33> city:x 9769.0 ;
+    city:y 29122.0 ;
+    city:z 13252.0 .
+
+<#vertices-34> city:x 13593.0 ;
+    city:y 27596.0 ;
+    city:z 14494.0 .
+
+<#vertices-35> city:x 13593.0 ;
+    city:y 27596.0 ;
+    city:z 13252.0 .
+
+<#vertices-36> city:x 10099.0 ;
+    city:y 28352.0 ;
+    city:z 13885.0 .
+
+<#vertices-37> city:x 10099.0 ;
+    city:y 28352.0 ;
+    city:z 13252.0 .
+
+<#vertices-38> city:x 9539.0 ;
+    city:y 28524.0 ;
+    city:z 13885.0 .
+
+<#vertices-39> city:x 9539.0 ;
+    city:y 28524.0 ;
+    city:z 13252.0 .
+
+<#vertices-4> city:x 18034.0 ;
+    city:y 19918.0 ;
+    city:z 0.0 .
+
+<#vertices-40> city:x 8646.0 ;
+    city:y 22157.0 ;
+    city:z 13885.0 .
+
+<#vertices-41> city:x 7855.0 ;
+    city:y 22489.0 ;
+    city:z 13885.0 .
+
+<#vertices-42> city:x 7855.0 ;
+    city:y 22489.0 ;
+    city:z 13252.0 .
+
+<#vertices-43> city:x 8646.0 ;
+    city:y 22157.0 ;
+    city:z 13252.0 .
+
+<#vertices-44> city:x 9173.0 ;
+    city:y 23630.0 ;
+    city:z 13252.0 .
+
+<#vertices-45> city:x 9173.0 ;
+    city:y 23630.0 ;
+    city:z 13885.0 .
+
+<#vertices-46> city:x 8382.0 ;
+    city:y 23962.0 ;
+    city:z 13885.0 .
+
+<#vertices-47> city:x 8382.0 ;
+    city:y 23962.0 ;
+    city:z 13252.0 .
+
+<#vertices-48> city:x 6358.0 ;
+    city:y 18288.0 ;
+    city:z 13885.0 .
+
+<#vertices-49> city:x 5712.0 ;
+    city:y 18565.0 ;
+    city:z 13885.0 .
+
+<#vertices-5> city:x 9831.0 ;
+    city:y 29283.0 ;
+    city:z 0.0 .
+
+<#vertices-50> city:x 5712.0 ;
+    city:y 18565.0 ;
+    city:z 13252.0 .
+
+<#vertices-51> city:x 6358.0 ;
+    city:y 18288.0 ;
+    city:z 13252.0 .
+
+<#vertices-52> city:x 16385.0 ;
+    city:y 17555.0 ;
+    city:z 14469.0 .
+
+<#vertices-53> city:x 16385.0 ;
+    city:y 17555.0 ;
+    city:z 13252.0 .
+
+<#vertices-54> city:x 18420.0 ;
+    city:y 22682.0 ;
+    city:z 14469.0 .
+
+<#vertices-55> city:x 18420.0 ;
+    city:y 22682.0 ;
+    city:z 13252.0 .
+
+<#vertices-56> city:x 17440.0 ;
+    city:y 20213.0 ;
+    city:z 15152.0 .
+
+<#vertices-57> city:x 39903.0 ;
+    city:y 11453.0 ;
+    city:z 2794.0 .
+
+<#vertices-58> city:x 35253.0 ;
+    city:y 0.0 ;
+    city:z 2794.0 .
+
+<#vertices-59> city:x 34792.0 ;
+    city:y 12604.0 ;
+    city:z 2794.0 .
+
+<#vertices-6> city:x 8944.0 ;
+    city:y 16499.0 ;
+    city:z 0.0 .
+
+<#vertices-60> city:x 30547.0 ;
+    city:y 1946.0 ;
+    city:z 2794.0 .
+
+<#vertices-61> city:x 26216.0 ;
+    city:y 3965.0 ;
+    city:z 2794.0 .
+
+<#vertices-62> city:x 30437.0 ;
+    city:y 14347.0 ;
+    city:z 2794.0 .
+
+<#vertices-63> city:x 36641.0 ;
+    city:y 12768.0 ;
+    city:z 2794.0 .
+
+<#vertices-64> city:x 35123.0 ;
+    city:y 13399.0 ;
+    city:z 2794.0 .
+
+<#vertices-65> city:x 31584.0 ;
+    city:y 1450.0 ;
+    city:z 2794.0 .
+
+<#vertices-66> city:x 31011.0 ;
+    city:y 9397.0 ;
+    city:z 12359.0 .
+
+<#vertices-67> city:x 30662.0 ;
+    city:y 9548.0 ;
+    city:z 11975.0 .
+
+<#vertices-68> city:x 29940.0 ;
+    city:y 9860.0 ;
+    city:z 12359.0 .
+
+<#vertices-69> city:x 29940.0 ;
+    city:y 9860.0 ;
+    city:z 11163.0 .
+
+<#vertices-7> city:x 15156.0 ;
+    city:y 12804.0 ;
+    city:z 0.0 .
+
+<#vertices-70> city:x 35848.0 ;
+    city:y 3916.0 ;
+    city:z 12279.0 .
+
+<#vertices-71> city:x 35848.0 ;
+    city:y 3915.0 ;
+    city:z 12278.0 .
+
+<#vertices-72> city:x 35848.0 ;
+    city:y 3916.0 ;
+    city:z 10927.0 .
+
+<#vertices-73> city:x 35848.0 ;
+    city:y 3915.0 ;
+    city:z 10926.0 .
+
+<#vertices-74> city:x 31054.0 ;
+    city:y 12948.0 ;
+    city:z 12234.0 .
+
+<#vertices-75> city:x 31054.0 ;
+    city:y 12948.0 ;
+    city:z 10993.0 .
+
+<#vertices-76> city:x 31053.0 ;
+    city:y 12947.0 ;
+    city:z 12233.0 .
+
+<#vertices-77> city:x 31053.0 ;
+    city:y 12947.0 ;
+    city:z 10992.0 .
+
+<#vertices-78> city:x 35075.0 ;
+    city:y 3551.0 ;
+    city:z 11502.0 .
+
+<#vertices-79> city:x 34758.0 ;
+    city:y 4112.0 ;
+    city:z 11994.0 .
+
+<#vertices-8> city:x 5482.0 ;
+    city:y 17965.0 ;
+    city:z 0.0 .
+
+<#vertices-80> city:x 35075.0 ;
+    city:y 3551.0 ;
+    city:z 11496.0 .
+
+<#vertices-81> city:x 38175.0 ;
+    city:y 10016.0 ;
+    city:z 12379.0 .
+
+<#vertices-82> city:x 38175.0 ;
+    city:y 10018.0 ;
+    city:z 11068.0 .
+
+<#vertices-83> city:x 38175.0 ;
+    city:y 10018.0 ;
+    city:z 12381.0 .
+
+<#vertices-84> city:x 38175.0 ;
+    city:y 10016.0 ;
+    city:z 11067.0 .
+
+<#vertices-85> city:x 29144.0 ;
+    city:y 9506.0 ;
+    city:z 10542.0 .
+
+<#vertices-86> city:x 29142.0 ;
+    city:y 9506.0 ;
+    city:z 11498.0 .
+
+<#vertices-87> city:x 29142.0 ;
+    city:y 9506.0 ;
+    city:z 10540.0 .
+
+<#vertices-88> city:x 29940.0 ;
+    city:y 9858.0 ;
+    city:z 12357.0 .
+
+<#vertices-89> city:x 29144.0 ;
+    city:y 9506.0 ;
+    city:z 11497.0 .
+
+<#vertices-9> city:x 4403.0 ;
+    city:y 31333.0 ;
+    city:z 0.0 .
+
+<#vertices-90> city:x 29940.0 ;
+    city:y 9858.0 ;
+    city:z 12360.0 .
+
+<#vertices-91> city:x 35896.0 ;
+    city:y 3208.0 ;
+    city:z 11498.0 .
+
+<#vertices-92> city:x 35847.0 ;
+    city:y 3915.0 ;
+    city:z 12277.0 .
+
+<#vertices-93> city:x 35896.0 ;
+    city:y 3210.0 ;
+    city:z 11497.0 .
+
+<#vertices-94> city:x 35847.0 ;
+    city:y 3915.0 ;
+    city:z 12281.0 .
+
+<#vertices-95> city:x 35896.0 ;
+    city:y 3208.0 ;
+    city:z 10622.0 .
+
+<#vertices-96> city:x 35896.0 ;
+    city:y 3210.0 ;
+    city:z 10623.0 .
+
+<#vertices-97> city:x 35544.0 ;
+    city:y 4683.0 ;
+    city:z 11496.0 .
+
+<#vertices-98> city:x 35544.0 ;
+    city:y 4683.0 ;
+    city:z 11485.0 .
+
+<#vertices-99> city:x 34780.0 ;
+    city:y 4493.0 ;
+    city:z 12114.0 .

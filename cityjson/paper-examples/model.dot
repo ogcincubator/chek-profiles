@@ -1,0 +1,87 @@
+digraph G {
+
+    node [shape=box,style=filled]
+
+    subgraph cluster_0 {
+      "dcat:CityDataset" [style="dashed,striped", fillcolor="lightblue;0.5:greenyellow"]
+
+      node [shape=box, style=filled, fillcolor=lightblue, fontname="Arial"];
+      "city:CityJSON";
+      node [shape=box, style=filled, fillcolor=greenyellow, fontname="Arial"];
+      "dcat:Dataset";
+    }
+
+    node [shape=box, style=filled, fillcolor=greenyellow, fontname="Arial"];
+
+    "dcat:CityDataset" -> "dcat:Dataset" [label="rdfs:subClassOf"];
+    "dcat:CityDataset" -> "city:CityJSON" [label="rdfs:subClassOf"];
+
+    "dcat:Catalog" -> "dcat:CityDataset" [label="dcat:dataset"];
+    "dcat:Catalog" -> "foaf:Agent" [label="dct:publisher"];
+    "dcat:Dataset" -> "dct:PeriodOfTime" [label="dct:temporal"];
+
+    node [shape=ellipse]
+    "dcat:Catalog" -> "dct:title";
+    "dcat:Catalog" -> "dct:description";
+    "dcat:Dataset" -> "dct:accessRights";
+    "city:CityJSON" -> "dct:version"
+    "dct:PeriodOfTime" -> "dcat:startDate";
+    "dct:PeriodOfTime" -> "dcat:endDate";
+
+    node [shape=box, style=filled, fillcolor=lightblue, fontname="Arial"];
+
+    "city:CityJSON" -> "city:GeographicalExtent" [label="city:geographicalExtent"];
+    "city:GeographicalExtent" -> "city:Coordinates" [label="city:min"];
+    "city:GeographicalExtent" -> "city:Coordinates" [label="city:max"];
+    "city:CityJSON" -> "city:CityObject" [label="city:hasObject"];
+
+    subgraph cluster_3 {
+        "city:FirstLevelCityObject" [style="filled,dashed"];
+        "city:SecondLevelCityObject" [style="filled,dashed"];
+
+        "city:FirstLevelCityObject" -> "city:CityObject" [label="rdfs:subClassOf"];
+        "city:SecondLevelCityObject" -> "city:CityObject" [label="rdfs:subClassOf"];
+        "city:Building" -> "city:FirstLevelCityObject" [label="rdfs:subClassOf"];
+        "city:BuildingPart" -> "city:SecondLevelCityObject" [label="rdfs:subClassOf"];
+        "city:Road" -> "city:FirstLevelCityObject" [label="rdfs:subClassOf"];
+    }
+
+    "city:CityObject" [style="filled,dashed"];
+
+    "city:CityJSON" -> "city:Transform" [label="city:hasTransform"];
+    "city:Transform" -> "city:Coordinates" [label="city:scale"];
+    "city:Transform" -> "city:Coordinates" [label="city:translate"];
+    "city:CityJSON" -> "city:Coordinates" [label="city:hasVertex"];
+
+    subgraph cluster_1 {
+        "city:GeometrySurface" [style="filled,dashed"];
+        "city:GroundSurface" -> "city:GeometrySurface" [label="rdfs:subClassOf"];
+        "city:WallSurface" -> "city:GeometrySurface" [label="rdfs:subClassOf"];
+        "city:Window" -> "city:GeometrySurface" [label="rdfs:subClassOf"];
+        "city:DoorWindow" -> "city:GeometrySurface" [label="rdfs:subClassOf"];
+    }
+
+    "city:SemanticObject" [style="filled,dashed"];
+    "city:CityObject" -> "city:Geometry" [label="city:hasGeometry"];
+    "city:Geometry" -> "city:SemanticObject" [label="city:hasSurface"];
+    "city:SemanticObject" -> "city:GeometrySurface" [label="rdfs:subClassOf"];
+
+    subgraph cluster_2 {
+        "gml:AbstractGeometry" [style="filled,dashed"];
+        "gml:MultiSurface" -> "gml:AbstractGeometry" [label="rdfs:subClassOf"];
+        "gml:MultiPoint" -> "gml:AbstractGeometry" [label="rdfs:subClassOf"];
+        "gml:MultiLineString" -> "gml:AbstractGeometry" [label="rdfs:subClassOf"];
+    }
+
+    "city:SemanticObject" -> "gml:AbstractGeometry" [label="rdfs:subClassOf"];
+
+    node [shape=ellipse]
+
+    "city:Coordinates" -> "city:x";
+    "city:Coordinates" -> "city:y";
+    "city:Coordinates" -> "city:z";
+    {rank=same; "city:x" -> "city:y" -> "city:z" [style=invis]};
+    "city:Geometry" -> "city:lod";
+    "city:SemanticObject" -> "city:boundaries";
+
+}

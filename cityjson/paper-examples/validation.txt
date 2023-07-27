@@ -1,0 +1,51 @@
+Validation Report
+Conforms: False
+Results (6):
+Constraint Violation in NotConstraintComponent (http://www.w3.org/ns/shacl#NotConstraintComponent):
+        Severity: sh:Violation
+        Source Shape: <file:///home/avillar/Proyectos/ogc/chek-profiles/cityjson/paper/shapes.ttl#License>
+        Focus Node: <http://example.com/twobuildings.ttl#city>
+        Value Node: <http://example.com/twobuildings.ttl#city>
+        Message: License does not support commercial usage
+Constraint Violation in NotConstraintComponent (http://www.w3.org/ns/shacl#NotConstraintComponent):
+        Severity: sh:Violation
+        Source Shape: <file:///home/avillar/Proyectos/ogc/chek-profiles/cityjson/paper/shapes.ttl#Lod3.3>
+        Focus Node: <http://example.com/twobuildings.ttl#city-objects-Building_2>
+        Value Node: <http://example.com/twobuildings.ttl#city-objects-Building_2>
+        Message: Building has LoD < 3.3
+Constraint Violation in NotConstraintComponent (http://www.w3.org/ns/shacl#NotConstraintComponent):
+        Severity: sh:Violation
+        Source Shape: <file:///home/avillar/Proyectos/ogc/chek-profiles/cityjson/paper/shapes.ttl#RoadsRequired>
+        Focus Node: [ ]
+        Value Node: [ ]
+        Message: Dataset contains no Road objects
+Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+        Severity: sh:Violation
+        Source Shape: <file:///home/avillar/Proyectos/ogc/chek-profiles/cityjson/paper/shapes.ttl#WindowsInAllBuildings>
+        Focus Node: <http://example.com/twobuildings.ttl#city-objects-Building_1>
+        Value Node: city:Window
+        Result Path: city:hasGeometry
+        Source Constraint: [ sh:message Literal("Building has no windows") ; sh:prefixes <http://example.org/> ; sh:select Literal("
+        SELECT $this (city:hasGeometry as ?path) (city:Window as ?value) WHERE {
+          FILTER NOT EXISTS { $this city:hasChild*/city:hasGeometry/city:hasSurface/rdf:type city:Window }
+        }
+    ") ; sh:severity sh:Violation ]
+        Message: Building has no windows
+Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+        Severity: sh:Violation
+        Source Shape: <file:///home/avillar/Proyectos/ogc/chek-profiles/cityjson/paper/shapes.ttl#WindowsInAllBuildings>
+        Focus Node: <http://example.com/twobuildings.ttl#city-objects-Building_2>
+        Value Node: city:Window
+        Result Path: city:hasGeometry
+        Source Constraint: [ sh:message Literal("Building has no windows") ; sh:prefixes <http://example.org/> ; sh:select Literal("
+        SELECT $this (city:hasGeometry as ?path) (city:Window as ?value) WHERE {
+          FILTER NOT EXISTS { $this city:hasChild*/city:hasGeometry/city:hasSurface/rdf:type city:Window }
+        }
+    ") ; sh:severity sh:Violation ]
+        Message: Building has no windows
+Constraint Violation in NotConstraintComponent (http://www.w3.org/ns/shacl#NotConstraintComponent):
+        Severity: sh:Violation
+        Source Shape: <file:///home/avillar/Proyectos/ogc/chek-profiles/cityjson/paper/shapes.ttl#CRS>
+        Focus Node: <http://example.com/twobuildings.ttl#city>
+        Value Node: <http://example.com/twobuildings.ttl#city>
+        Message: Unsupported CRS

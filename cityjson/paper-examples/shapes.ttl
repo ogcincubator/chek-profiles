@@ -1,0 +1,182 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ex: <http://example.org/> .
+@prefix city: <http://example.com/vocab/city/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+ex:
+  a owl:Ontology ;
+  owl:imports sh: ;
+  sh:declare [
+    sh:prefix "city" ;
+    sh:namespace "http://example.com/vocab/city/"^^xsd:anyURI ;
+  ], [
+    sh:prefix "rdf" ;
+    sh:namespace "http://www.w3.org/1999/02/22-rdf-syntax-ns#"^^xsd:anyURI ;
+  ], [
+    sh:prefix "dcat" ;
+    sh:namespace "http://www.w3.org/ns/dcat#"^^xsd:anyURI ;
+  ], [
+    sh:prefix "dct" ;
+    sh:namespace "http://purl.org/dc/terms/"^^xsd:anyURI ;
+  ];
+.
+
+# Building of interest is present
+<#BuildingOfInterestPresent>
+    a sh:NodeShape ;
+    sh:targetNode <http://example.com/twobuildings.ttl#city-objects-Building_1> ;
+    sh:sparql [
+      sh:prefixes ex: ;
+      sh:select """
+        SELECT $this (rdf:type as ?path) (0 as ?value) WHERE {
+          FILTER NOT EXISTS { $this a city:Building }
+        }
+    """ ;
+      sh:message "The building of interest is not present" ;
+      sh:severity sh:Violation
+    ].
+
+# Spatial coverage
+<#SpatialCoverage>
+    a sh:NodeShape ;
+    sh:targetClass city:CityJSON ;
+    sh:not [
+      sh:sparql [
+        sh:prefixes ex: ;
+        sh:select """
+          SELECT $this (city:geographicalExtent as ?path) ?value WHERE {
+            $this city:geographicalExtent ?value .
+            ?value city:max ?max ; city:min ?min .
+            ?max city:x ?xMax ; city:y ?yMax ; city:z ?zMax .
+            ?min city:x ?xMin ; city:y ?yMin ; city:z ?zMin .
+            FILTER(
+              ?xMin <= 300580 && ?xMax >= 300582
+              && ?yMin <= 5041265 && ?yMax >= 5041284
+              && ?zMin <= 14.5 && ?zMax >= 26
+            )
+          }
+      """ ;
+      ] ;
+    ] ;
+    sh:message "Insufficient or invalid spatial coverage" ;
+    sh:severity sh:Violation ;
+.
+
+# Temporal coverage
+<#TemporalCoverage>
+    a sh:NodeShape ;
+    sh:targetClass dcat:Dataset ;
+    sh:sparql [
+      sh:prefixes ex: ;
+      sh:select """
+        SELECT $this (dcat:endDate as ?path) ?value WHERE {
+          $this a city:CityJSON ; dct:temporal/dcat:endDate ?value .
+          FILTER(str(?value) < '2023-01-01')
+        }
+    """ ;
+    ] ;
+    sh:message "Dataset is older than 2023-01-01" ;
+    sh:severity sh:Violation ;
+.
+
+# CRS
+<#CRS>
+    a sh:NodeShape ;
+    sh:targetClass city:CityJSON ;
+    sh:not [
+      sh:sparql [
+        sh:prefixes ex: ;
+        sh:select """
+          SELECT $this (city:referenceSystem as ?path) ?value WHERE {
+            $this city:referenceSystem ?value
+            FILTER(?value = <http://www.opengis.net/def/crs/OGC/1.3/CRS84>)
+          }
+      """ ;
+      ] ;
+    ] ;
+    sh:message "Unsupported CRS" ;
+    sh:severity sh:Violation ;
+.
+
+# Access rights / license
+<#License>
+    a sh:NodeShape ;
+    sh:targetClass city:CityJSON ;
+    sh:not [
+      sh:sparql [
+        sh:prefixes ex: ;
+        sh:select """
+          SELECT $this (dct:accessRights as ?path) ?value WHERE {
+            $this dct:accessRights ?value
+            FILTER(?value IN (
+              <https://creativecommons.org/publicdomain/zero/1.0/>,
+              <https://creativecommons.org/licenses/by/4.0>,
+              <https://creativecommons.org/licenses/by-sa/4.0>,
+              <https://creativecommons.org/licenses/by-nd/4.0>
+            ))
+          }
+      """ ;
+      ] ;
+    ] ;
+    sh:message "License does not support commercial usage" ;
+    sh:severity sh:Violation ;
+.
+
+# LoD3.3 for buildings
+<#Lod3.3>
+    a sh:NodeShape ;
+    sh:targetClass city:Building, city:BuildingPart, city:BuildingRoom, city:BuildingStorey,
+     city:BuildingUnit, city:BuildingInstallation;
+    sh:not [
+      sh:sparql [
+        sh:prefixes ex: ;
+        sh:select """
+          SELECT $this (city:lod as ?path) (?lod as ?value) WHERE {
+            $this city:hasGeometry/city:lod ?lod .
+            FILTER regex(str(?lod), '^(3.3|4.*)$')
+          } LIMIT 1
+      """ ;
+      ] ;
+    ];
+    sh:message "Building has LoD < 3.3" ;
+    sh:severity sh:Violation
+.
+
+# Require Windows in all buildings
+<#WindowsInAllBuildings>
+    a sh:NodeShape ;
+    sh:targetClass city:Building ;
+    sh:sparql [
+      sh:prefixes ex: ;
+      sh:select """
+        SELECT $this (city:hasGeometry as ?path) (city:Window as ?value) WHERE {
+          FILTER NOT EXISTS { $this city:hasChild*/city:hasGeometry/city:hasSurface/rdf:type city:Window }
+        }
+    """ ;
+      sh:message "Building has no windows" ;
+      sh:severity sh:Violation
+    ].
+
+# Require Roads
+<#RoadsRequired>
+    a sh:NodeShape ;
+    sh:targetNode _:dummy ;
+    sh:not [
+        sh:sparql [
+          sh:prefixes ex: ;
+          sh:select """
+            SELECT $this (rdf:type as ?path) (city:Road as ?value) WHERE {
+              ?s a city:Road
+            } LIMIT 1
+        """ ;
+        ] ;
+      ] ;
+    sh:message "Dataset contains no Road objects" ;
+    sh:severity sh:Violation
+.
