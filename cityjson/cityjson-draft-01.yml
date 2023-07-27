@@ -1,12 +1,13 @@
 transform:
   # Assign fragment ids to City Objects and format geometries (semantics surfaces/values)
   - |
+    def replace_vertices: if . | type == "array" then map(replace_vertices) else "#vertices-\(. | @uri)" end ;
     .CityObjects |= [
       to_entries | .[] 
       | .value.parents |= if . then map("_:city-objects-\(.)") else empty end
       | { "@id": "#city-objects-\(.key | @uri)" } + .value
       | .geometry |= ([ .[] |
-        .type as $GEOM_TYPE | .boundaries as $BOUNDARIES | (try (.semantics.values | to_entries) catch []) as $INDEXES
+        .type as $GEOM_TYPE | (.boundaries | replace_vertices) as $BOUNDARIES | (try (.semantics.values | to_entries) catch []) as $INDEXES
         | {
           "surfaces": (if .semantics.surfaces
             then [.semantics.surfaces | to_entries | .[] | .key as $IDX | .value | {"@type": [$GEOM_TYPE, .type], "boundaries": [$BOUNDARIES | .[$INDEXES | map(if .value == $IDX then .key else empty end) | .[]]]}]
@@ -134,6 +135,7 @@ context:
             boundaries:
               '@id': city:boundaries
               '@container': '@list'
+              '@type': '@id'
         attributes: '@nest'
         parents:
           '@id': city:hasParent
