@@ -17,10 +17,11 @@ transform:
       "city:min": { "city:x": .[0], "city:y": .[1], "city:z": .[2] },
       "city:max": { "city:x": .[3], "city:y": .[4], "city:z": .[5] }
     } else empty end
+  # Add base and prefix for it
   - |
     ."@context" = {
       "@base": "https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/\($_relname)",
-      "c": "https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/\($_relname)"
+      "c": "https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/\($_relname)#"
     }
 
 context:
@@ -31,6 +32,7 @@ context:
     city: http://example.com/vocab/city/
     dct: http://purl.org/dc/terms/
     xsd: http://www.w3.org/2001/XMLSchema#
+    gml: http://www.opengis.net/ont/gml#
 
     CityJSON: city:City
 
@@ -84,14 +86,15 @@ context:
           '@context':
             # Geometry Objects
             GeometryInstance: city:GeometryInstance
-            CompositeSolid: city:CompositeSolid
-            CompositeSurface: city:CompositeSurface
-            MultiLineString: city:MultiLineString
-            MultiPoint: city:MultiPoint
-            MultiSolid: city:MultiSolid
-            MultiSurface: city:MultiSurface
             Semantics: city:Semantics
-            Solid: city:Solid
+
+            CompositeSolid: gml:CompositeSolid
+            CompositeSurface: gml:CompositeSurface
+            MultiLineString: gml:MultiLineString
+            MultiPoint: gml:MultiPoint
+            MultiSolid: gml:MultiSolid
+            MultiSurface: gml:MultiSurface
+            Solid: gml:Solid
 
             # Geometric primitives
             RoofSurface: city:RoofSurface
