@@ -13,7 +13,7 @@ transform:
             then [.semantics.surfaces | to_entries | .[] | .key as $IDX | .value | {"@type": [$GEOM_TYPE, .type], "boundaries": [$BOUNDARIES | .[$INDEXES | map(if .value == $IDX then .key else empty end) | .[]]]}]
             else [{"@type": $GEOM_TYPE, "boundaries": $BOUNDARIES}]
             end),
-          "lod": .lod
+          "lod": "\(.lod)"
         }
       ])
     ]
@@ -131,7 +131,7 @@ context:
 
             lod:
               '@id': city:lod
-              '@type': xsd:decimal
+            surfaces: city:hasSurface
             boundaries:
               '@id': city:boundaries
               '@container': '@list'
