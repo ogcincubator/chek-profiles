@@ -119,7 +119,7 @@ context:
 
             lod:
               '@id': city:lod
-              '@type': xsd:integer
+              '@type': xsd:decimal
             boundaries:
               '@id': city:boundaries
               '@container': '@list'
