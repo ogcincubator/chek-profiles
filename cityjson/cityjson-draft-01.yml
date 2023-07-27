@@ -1,12 +1,12 @@
 transform:
-  # Assign blank node ids to vertices and format coordinates
-  - '.vertices |= [to_entries | .[] | { "@id": "_:vertices-\(.key)", "city:x": .value[0], "city:y": .value[1], "city:z": .value[2] }]'
-  # Assign blank node ids to City Objects
+  # Assign fragment ids to vertices and format coordinates
+  - '.vertices |= [to_entries | .[] | { "@id": "#vertices-\(.key | @uri)", "city:x": .value[0], "city:y": .value[1], "city:z": .value[2] }]'
+  # Assign fragment ids to City Objects
   - |
     .CityObjects |= [
       to_entries | .[] 
       | .value.parents |= if . then map("_:city-objects-\(.)") else empty end
-      | { "@id": "_:city-objects-\(.key)" } + .value
+      | { "@id": "#city-objects-\(.key | @uri)" } + .value
     ]
   # Format coordinates
   - |
@@ -17,6 +17,11 @@ transform:
       "city:min": { "city:x": .[0], "city:y": .[1], "city:z": .[2] },
       "city:max": { "city:x": .[3], "city:y": .[4], "city:z": .[5] }
     } else empty end
+  - |
+    ."@context" = {
+      "@base": "https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/\($_relname)",
+      "c": "https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/\($_relname)"
+    }
 
 context:
   $:
@@ -144,6 +149,8 @@ context:
 
     metadata:
       '@id': '@nest'
+      '@context':
+        identifier: dct:identifier
     geographicalExtent: city:geographicalExtent
 
     vertices: city:hasVertex
