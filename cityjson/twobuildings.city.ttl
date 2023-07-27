@@ -6,19 +6,1049 @@
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#city-objects-Building_1> a city:Building ;
+    city:hasGeometry [ a city:MultiSurface ;
+            city:boundaries ( ( ( 0 1 2 ) ) ( ( 3 4 5 ) ) ( ( 4 6 5 ) ) ( ( 2 7 6 ) ) ( ( 5 8 9 ) ) ( ( 0 2 4 ) ) ( ( 4 2 6 ) ) ( ( 5 6 8 ) ) ( ( 8 10 9 ) ) ( ( 11 12 13 ) ) ( ( 11 9 12 ) ) ( ( 12 10 14 ) ) ( ( 9 10 12 ) ) ( ( 15 5 11 ) ) ( ( 5 9 11 ) ) ( ( 16 3 17 ) ) ( ( 17 5 15 ) ) ( ( 3 5 17 ) ) ( ( 18 17 15 ) ) ( ( 16 19 20 ) ) ( ( 20 19 21 ) ) ( ( 21 19 7 ) ) ( ( 3 20 4 ) ) ( ( 21 7 2 ) ) ( ( 16 20 3 ) ) ( ( 22 2 1 ) ) ( ( 22 21 2 ) ) ( ( 23 1 0 ) ) ( ( 23 22 1 ) ) ( ( 23 4 20 ) ) ( ( 23 0 4 ) ) ( ( 19 24 6 ) ) ( ( 19 6 7 ) ) ( ( 24 25 8 ) ) ( ( 24 8 6 ) ) ( ( 25 10 8 ) ) ( ( 25 14 10 ) ) ( ( 26 27 28 ) ) ( ( 29 26 28 ) ) ( ( 30 26 29 ) ) ( ( 30 31 26 ) ) ( ( 32 13 12 ) ) ( ( 32 12 33 ) ) ( ( 34 32 33 ) ) ( ( 34 33 35 ) ) ( ( 36 37 38 ) ) ( ( 37 39 38 ) ) ( ( 40 41 42 ) ) ( ( 40 42 43 ) ) ( ( 44 40 43 ) ) ( ( 45 40 44 ) ) ( ( 45 44 46 ) ) ( ( 44 47 46 ) ) ( ( 36 46 47 ) ) ( ( 36 47 37 ) ) ( ( 18 35 17 ) ) ( ( 18 34 35 ) ) ( ( 48 49 50 ) ) ( ( 48 50 51 ) ) ( ( 41 51 42 ) ) ( ( 41 48 51 ) ) ( ( 52 27 53 ) ) ( ( 52 28 27 ) ) ( ( 54 31 30 ) ) ( ( 54 55 31 ) ) ( ( 56 52 53 ) ) ( ( 55 56 53 ) ) ( ( 54 56 55 ) ) ( ( 38 39 49 ) ) ( ( 39 50 49 ) ) ( ( 20 21 22 ) ) ( ( 23 20 22 ) ) ( ( 52 29 28 ) ) ( ( 56 29 52 ) ) ( ( 54 29 56 ) ) ( ( 54 30 29 ) ) ( ( 15 11 32 ) ) ( ( 18 15 34 ) ) ( ( 34 15 32 ) ) ( ( 32 11 13 ) ) ( ( 38 49 46 ) ) ( ( 45 46 41 ) ) ( ( 36 38 46 ) ) ( ( 45 41 40 ) ) ( ( 46 49 41 ) ) ( ( 41 49 48 ) ) ( ( 50 12 14 ) ) ( ( 39 12 50 ) ) ( ( 19 27 24 ) ) ( ( 53 27 19 ) ) ( ( 16 35 31 ) ) ( ( 31 37 44 ) ) ( ( 16 31 55 ) ) ( ( 27 43 51 ) ) ( ( 27 51 24 ) ) ( ( 35 37 31 ) ) ( ( 26 43 27 ) ) ( ( 31 44 26 ) ) ( ( 16 53 19 ) ) ( ( 26 44 43 ) ) ( ( 37 47 44 ) ) ( ( 16 55 53 ) ) ( ( 43 42 51 ) ) ( ( 50 14 25 ) ) ( ( 33 12 39 ) ) ( ( 35 33 37 ) ) ( ( 24 51 25 ) ) ( ( 16 17 35 ) ) ( ( 51 50 25 ) ) ( ( 37 33 39 ) ) ) ;
+            city:lod 2 ] .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#city-objects-Building_2> a city:Building ;
+    city:hasGeometry [ a city:MultiSurface ;
+            city:boundaries ( ( ( 57 58 59 ) ) ( ( 59 60 61 ) ) ( ( 59 61 62 ) ) ( ( 63 59 64 ) ) ( ( 57 59 63 ) ) ( ( 59 65 60 ) ) ( ( 58 65 59 ) ) ( ( 66 67 68 ) ) ( ( 67 69 68 ) ) ( ( 70 71 72 ) ) ( ( 72 71 73 ) ) ( ( 74 75 76 ) ) ( ( 75 77 76 ) ) ( ( 78 79 80 ) ) ( ( 81 82 83 ) ) ( ( 81 84 82 ) ) ( ( 85 86 87 ) ) ( ( 88 86 89 ) ) ( ( 90 86 88 ) ) ( ( 89 86 85 ) ) ( ( 91 92 93 ) ) ( ( 91 94 92 ) ) ( ( 95 93 96 ) ) ( ( 91 93 95 ) ) ( ( 97 98 99 ) ) ( ( 100 101 102 ) ) ( ( 103 101 100 ) ) ( ( 102 101 104 ) ) ( ( 102 104 105 ) ) ( ( 106 107 108 ) ) ( ( 108 107 109 ) ) ( ( 110 111 112 ) ) ( ( 110 113 111 ) ) ( ( 114 115 116 ) ) ( ( 114 117 115 ) ) ( ( 118 116 119 ) ) ( ( 114 116 118 ) ) ( ( 120 121 122 ) ) ( ( 122 121 123 ) ) ( ( 124 125 126 ) ) ( ( 125 127 128 ) ) ( ( 124 127 125 ) ) ( ( 129 130 131 ) ) ( ( 131 132 133 ) ) ( ( 129 131 133 ) ) ( ( 134 135 136 ) ) ( ( 134 136 137 ) ) ( ( 138 139 140 ) ) ( ( 138 140 141 ) ) ( ( 142 143 144 ) ) ( ( 142 145 143 ) ) ( ( 146 144 147 ) ) ( ( 142 144 146 ) ) ( ( 148 149 150 ) ) ( ( 151 148 150 ) ) ( ( 149 152 150 ) ) ( ( 152 153 150 ) ) ( ( 154 155 156 ) ) ( ( 157 155 154 ) ) ( ( 158 159 160 ) ) ( ( 159 161 160 ) ) ( ( 162 163 164 ) ) ( ( 165 162 164 ) ) ( ( 163 166 164 ) ) ( ( 166 167 164 ) ) ( ( 93 78 80 ) ) ( ( 93 80 168 ) ) ( ( 93 168 96 ) ) ( ( 116 138 141 ) ) ( ( 116 141 119 ) ) ( ( 144 124 126 ) ) ( ( 144 126 147 ) ) ( ( 169 170 171 ) ) ( ( 169 171 97 ) ) ( ( 171 98 97 ) ) ( ( 172 173 135 ) ) ( ( 172 135 134 ) ) ( ( 174 130 129 ) ) ( ( 174 175 130 ) ) ( ( 176 177 178 ) ) ( ( 179 89 85 ) ) ( ( 180 166 163 ) ) ( ( 181 152 149 ) ) ( ( 182 183 184 ) ) ( ( 185 186 187 ) ) ( ( 156 102 188 ) ) ( ( 155 102 156 ) ) ( ( 188 102 105 ) ) ( ( 160 161 189 ) ) ( ( 161 190 189 ) ) ( ( 191 192 193 ) ) ( ( 194 192 191 ) ) ( ( 157 154 74 ) ) ( ( 154 75 74 ) ) ( ( 159 195 196 ) ) ( ( 158 195 159 ) ) ( ( 197 110 145 ) ) ( ( 197 113 110 ) ) ( ( 110 143 145 ) ) ( ( 197 198 113 ) ) ( ( 174 199 200 ) ) ( ( 174 200 175 ) ) ( ( 103 76 201 ) ) ( ( 103 100 76 ) ) ( ( 77 202 201 ) ) ( ( 76 77 201 ) ) ( ( 196 189 190 ) ) ( ( 195 189 196 ) ) ( ( 90 203 204 ) ) ( ( 90 88 203 ) ) ( ( 205 206 204 ) ) ( ( 203 205 204 ) ) ( ( 192 178 193 ) ) ( ( 193 178 177 ) ) ( ( 151 207 107 ) ) ( ( 107 207 109 ) ) ( ( 151 107 148 ) ) ( ( 109 207 208 ) ) ( ( 209 210 186 ) ) ( ( 210 187 186 ) ) ( ( 211 212 213 ) ) ( ( 214 211 213 ) ) ( ( 123 215 216 ) ) ( ( 165 121 162 ) ) ( ( 121 215 123 ) ) ( ( 165 215 121 ) ) ( ( 217 218 183 ) ) ( ( 218 184 183 ) ) ( ( 219 91 95 ) ) ( ( 219 95 220 ) ) ( ( 221 118 222 ) ) ( ( 221 114 118 ) ) ( ( 197 142 146 ) ) ( ( 197 146 198 ) ) ( ( 204 206 86 ) ) ( ( 206 87 86 ) ) ( ( 164 167 215 ) ) ( ( 167 216 215 ) ) ( ( 150 153 207 ) ) ( ( 153 208 207 ) ) ( ( 201 202 223 ) ) ( ( 201 223 101 ) ) ( ( 223 104 101 ) ) ( ( 224 225 226 ) ) ( ( 226 225 227 ) ) ( ( 228 211 214 ) ) ( ( 228 229 211 ) ) ( ( 225 230 231 ) ) ( ( 225 231 227 ) ) ( ( 231 230 232 ) ) ( ( 228 233 229 ) ) ( ( 228 234 233 ) ) ( ( 235 232 230 ) ) ( ( 235 64 232 ) ) ( ( 64 59 232 ) ) ( ( 233 60 65 ) ) ( ( 233 212 60 ) ) ( ( 234 212 233 ) ) ( ( 234 213 212 ) ) ( ( 236 65 58 ) ) ( ( 236 233 65 ) ) ( ( 212 237 60 ) ) ( ( 60 237 61 ) ) ( ( 224 226 235 ) ) ( ( 226 64 235 ) ) ( ( 226 63 64 ) ) ( ( 238 63 226 ) ) ( ( 238 57 63 ) ) ( ( 232 59 239 ) ) ( ( 59 62 239 ) ) ( ( 239 62 61 ) ) ( ( 239 61 237 ) ) ( ( 57 236 58 ) ) ( ( 238 236 57 ) ) ( ( 68 69 203 ) ) ( ( 69 205 203 ) ) ( ( 227 231 229 ) ) ( ( 231 211 229 ) ) ( ( 125 99 98 ) ) ( ( 240 241 242 ) ) ( ( 125 241 99 ) ) ( ( 242 241 243 ) ) ( ( 125 128 132 ) ) ( ( 125 132 241 ) ) ( ( 244 128 245 ) ) ( ( 79 241 229 ) ) ( ( 244 132 128 ) ) ( ( 227 132 131 ) ) ( ( 227 229 132 ) ) ( ( 125 98 171 ) ) ( ( 168 80 236 ) ) ( ( 236 80 229 ) ) ( ( 80 79 229 ) ) ( ( 132 229 241 ) ) ( ( 79 243 241 ) ) ( ( 238 226 227 ) ) ( ( 236 229 233 ) ) ( ( 238 146 236 ) ) ( ( 140 131 130 ) ) ( ( 118 130 175 ) ) ( ( 141 140 130 ) ) ( ( 146 126 171 ) ) ( ( 118 141 130 ) ) ( ( 146 171 170 ) ) ( ( 238 135 173 ) ) ( ( 238 118 175 ) ) ( ( 126 125 171 ) ) ( ( 146 170 236 ) ) ( ( 95 168 236 ) ) ( ( 220 95 236 ) ) ( ( 238 222 118 ) ) ( ( 238 198 146 ) ) ( ( 140 136 131 ) ) ( ( 146 147 126 ) ) ( ( 238 175 198 ) ) ( ( 175 200 198 ) ) ( ( 198 200 113 ) ) ( ( 118 119 141 ) ) ( ( 170 220 236 ) ) ( ( 238 173 222 ) ) ( ( 173 82 222 ) ) ( ( 222 82 84 ) ) ( ( 170 246 220 ) ) ( ( 200 244 111 ) ) ( ( 220 246 72 ) ) ( ( 82 136 140 ) ) ( ( 82 140 82 ) ) ( ( 246 240 72 ) ) ( ( 113 200 111 ) ) ( ( 84 82 82 ) ) ( ( 238 227 135 ) ) ( ( 136 227 131 ) ) ( ( 135 227 136 ) ) ( ( 247 134 137 ) ) ( ( 172 134 247 ) ) ( ( 199 129 133 ) ) ( ( 174 129 199 ) ) ( ( 115 139 138 ) ) ( ( 116 115 138 ) ) ( ( 81 83 115 ) ) ( ( 83 139 115 ) ) ( ( 221 117 114 ) ) ( ( 219 94 91 ) ) ( ( 143 127 124 ) ) ( ( 144 143 124 ) ) ( ( 110 112 143 ) ) ( ( 112 127 143 ) ) ( ( 197 145 142 ) ) ( ( 169 97 248 ) ) ( ( 248 97 99 ) ) ( ( 248 99 241 ) ) ( ( 70 92 71 ) ) ( ( 93 92 78 ) ) ( ( 70 79 92 ) ) ( ( 92 79 78 ) ) ( ( 70 243 79 ) ) ( ( 234 214 213 ) ) ( ( 228 214 234 ) ) ( ( 224 235 230 ) ) ( ( 224 230 225 ) ) ( ( 249 209 185 ) ) ( ( 185 209 186 ) ) ( ( 182 217 183 ) ) ( ( 250 217 182 ) ) ( ( 148 107 106 ) ) ( ( 181 149 148 ) ) ( ( 251 181 148 ) ) ( ( 251 148 106 ) ) ( ( 151 150 207 ) ) ( ( 165 164 215 ) ) ( ( 180 163 162 ) ) ( ( 252 162 120 ) ) ( ( 252 180 162 ) ) ( ( 162 121 120 ) ) ( ( 211 237 212 ) ) ( ( 231 232 211 ) ) ( ( 232 194 211 ) ) ( ( 232 159 194 ) ) ( ( 232 239 161 ) ) ( ( 194 253 211 ) ) ( ( 232 161 159 ) ) ( ( 154 254 194 ) ) ( ( 154 156 254 ) ) ( ( 156 188 254 ) ) ( ( 161 239 190 ) ) ( ( 202 239 223 ) ) ( ( 159 154 194 ) ) ( ( 154 196 77 ) ) ( ( 159 196 154 ) ) ( ( 190 239 202 ) ) ( ( 196 190 202 ) ) ( ( 196 202 77 ) ) ( ( 194 191 66 ) ) ( ( 194 66 253 ) ) ( ( 239 237 153 ) ) ( ( 211 249 250 ) ) ( ( 211 253 249 ) ) ( ( 211 182 237 ) ) ( ( 211 250 182 ) ) ( ( 249 180 252 ) ) ( ( 188 177 176 ) ) ( ( 253 181 251 ) ) ( ( 185 187 166 ) ) ( ( 185 166 180 ) ) ( ( 181 85 152 ) ) ( ( 182 184 237 ) ) ( ( 179 85 181 ) ) ( ( 239 153 85 ) ) ( ( 249 185 180 ) ) ( ( 239 177 105 ) ) ( ( 239 85 206 ) ) ( ( 187 237 167 ) ) ( ( 253 179 181 ) ) ( ( 167 237 216 ) ) ( ( 153 237 208 ) ) ( ( 188 105 177 ) ) ( ( 254 188 176 ) ) ( ( 223 239 105 ) ) ( ( 249 252 250 ) ) ( ( 253 251 249 ) ) ( ( 187 167 166 ) ) ( ( 218 216 184 ) ) ( ( 218 123 216 ) ) ( ( 216 237 184 ) ) ( ( 85 153 152 ) ) ( ( 210 208 187 ) ) ( ( 210 109 208 ) ) ( ( 208 237 187 ) ) ( ( 239 206 177 ) ) ( ( 67 193 205 ) ) ( ( 193 177 206 ) ) ( ( 193 206 205 ) ) ( ( 249 251 210 ) ) ( ( 251 108 210 ) ) ( ( 250 252 218 ) ) ( ( 252 122 218 ) ) ( ( 122 123 218 ) ) ( ( 108 109 210 ) ) ( ( 158 160 195 ) ) ( ( 160 189 195 ) ) ( ( 157 100 155 ) ) ( ( 155 100 102 ) ) ( ( 157 74 100 ) ) ( ( 74 76 100 ) ) ( ( 103 201 101 ) ) ( ( 90 204 86 ) ) ( ( 254 176 192 ) ) ( ( 194 254 192 ) ) ( ( 176 178 192 ) ) ( ( 179 88 89 ) ) ( ( 68 203 88 ) ) ( ( 66 68 253 ) ) ( ( 253 68 88 ) ) ( ( 253 88 179 ) ) ) ;
+            city:lod 2 ] .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-0> city:x 19211.0 ;
+    city:y 19441.0 ;
+    city:z 0.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-1> city:x 17245.0 ;
+    city:y 14582.0 ;
+    city:z 0.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-10> city:x 0.0 ;
+    city:y 20015.0 ;
+    city:z 0.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-100> city:x 31053.0 ;
+    city:y 12946.0 ;
+    city:z 12232.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-101> city:x 30306.0 ;
+    city:y 12519.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-102> city:x 30308.0 ;
+    city:y 12520.0 ;
+    city:z 11497.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-103> city:x 31053.0 ;
+    city:y 12946.0 ;
+    city:z 12235.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-104> city:x 30306.0 ;
+    city:y 12519.0 ;
+    city:z 10462.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-105> city:x 30308.0 ;
+    city:y 12520.0 ;
+    city:z 10463.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-106> city:x 28977.0 ;
+    city:y 7536.0 ;
+    city:z 12286.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-107> city:x 28975.0 ;
+    city:y 7541.0 ;
+    city:z 12281.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-108> city:x 28977.0 ;
+    city:y 7536.0 ;
+    city:z 11160.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-109> city:x 28975.0 ;
+    city:y 7541.0 ;
+    city:z 11156.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-11> city:x 4403.0 ;
+    city:y 31333.0 ;
+    city:z 14494.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-110> city:x 37014.0 ;
+    city:y 6955.0 ;
+    city:z 12269.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-111> city:x 37013.0 ;
+    city:y 6960.0 ;
+    city:z 10993.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-112> city:x 37013.0 ;
+    city:y 6960.0 ;
+    city:z 12274.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-113> city:x 37014.0 ;
+    city:y 6955.0 ;
+    city:z 10990.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-114> city:x 38348.0 ;
+    city:y 9208.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-115> city:x 38174.0 ;
+    city:y 10015.0 ;
+    city:z 12377.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-116> city:x 38347.0 ;
+    city:y 9211.0 ;
+    city:z 11496.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-117> city:x 38174.0 ;
+    city:y 10015.0 ;
+    city:z 12383.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-118> city:x 38348.0 ;
+    city:y 9208.0 ;
+    city:z 10615.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-119> city:x 38347.0 ;
+    city:y 9211.0 ;
+    city:z 10617.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-12> city:x 4338.0 ;
+    city:y 31167.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-120> city:x 28089.0 ;
+    city:y 5212.0 ;
+    city:z 12279.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-121> city:x 28083.0 ;
+    city:y 5223.0 ;
+    city:z 12268.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-122> city:x 28089.0 ;
+    city:y 5212.0 ;
+    city:z 11229.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-123> city:x 28083.0 ;
+    city:y 5223.0 ;
+    city:z 11219.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-124> city:x 36296.0 ;
+    city:y 6544.0 ;
+    city:z 11503.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-125> city:x 35895.0 ;
+    city:y 7269.0 ;
+    city:z 12117.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-126> city:x 36296.0 ;
+    city:y 6544.0 ;
+    city:z 11488.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-127> city:x 35804.0 ;
+    city:y 7434.0 ;
+    city:z 12274.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-128> city:x 35804.0 ;
+    city:y 7434.0 ;
+    city:z 12261.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-129> city:x 36768.0 ;
+    city:y 7673.0 ;
+    city:z 11493.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-13> city:x 4338.0 ;
+    city:y 31167.0 ;
+    city:z 14494.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-130> city:x 36768.0 ;
+    city:y 7673.0 ;
+    city:z 11477.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-131> city:x 35913.0 ;
+    city:y 7468.0 ;
+    city:z 12175.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-132> city:x 35792.0 ;
+    city:y 7440.0 ;
+    city:z 12274.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-133> city:x 35792.0 ;
+    city:y 7440.0 ;
+    city:z 12287.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-134> city:x 37994.0 ;
+    city:y 10685.0 ;
+    city:z 11497.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-135> city:x 37994.0 ;
+    city:y 10685.0 ;
+    city:z 11477.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-136> city:x 36945.0 ;
+    city:y 10527.0 ;
+    city:z 12367.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-137> city:x 36945.0 ;
+    city:y 10527.0 ;
+    city:z 12385.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-138> city:x 37529.0 ;
+    city:y 9553.0 ;
+    city:z 11500.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-139> city:x 36948.0 ;
+    city:y 10525.0 ;
+    city:z 12381.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-14> city:x 0.0 ;
+    city:y 20015.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-140> city:x 36948.0 ;
+    city:y 10525.0 ;
+    city:z 12363.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-141> city:x 37529.0 ;
+    city:y 9553.0 ;
+    city:z 11481.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-142> city:x 37134.0 ;
+    city:y 6196.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-143> city:x 37010.0 ;
+    city:y 6952.0 ;
+    city:z 12264.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-144> city:x 37133.0 ;
+    city:y 6205.0 ;
+    city:z 11492.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-145> city:x 37010.0 ;
+    city:y 6952.0 ;
+    city:z 12281.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-146> city:x 37134.0 ;
+    city:y 6196.0 ;
+    city:z 10603.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-147> city:x 37133.0 ;
+    city:y 6205.0 ;
+    city:z 10608.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-148> city:x 28979.0 ;
+    city:y 7543.0 ;
+    city:z 12277.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-149> city:x 28638.0 ;
+    city:y 8384.0 ;
+    city:z 11492.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-15> city:x 9831.0 ;
+    city:y 29283.0 ;
+    city:z 14494.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-150> city:x 28635.0 ;
+    city:y 8393.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-151> city:x 28979.0 ;
+    city:y 7543.0 ;
+    city:z 12292.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-152> city:x 28638.0 ;
+    city:y 8384.0 ;
+    city:z 10502.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-153> city:x 28635.0 ;
+    city:y 8393.0 ;
+    city:z 10495.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-154> city:x 32141.0 ;
+    city:y 12473.0 ;
+    city:z 12192.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-155> city:x 31233.0 ;
+    city:y 12121.0 ;
+    city:z 11503.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-156> city:x 31233.0 ;
+    city:y 12121.0 ;
+    city:z 11487.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-157> city:x 32141.0 ;
+    city:y 12473.0 ;
+    city:z 12234.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-158> city:x 32146.0 ;
+    city:y 12473.0 ;
+    city:z 12238.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-159> city:x 32146.0 ;
+    city:y 12473.0 ;
+    city:z 12197.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-16> city:x 20166.0 ;
+    city:y 25185.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-160> city:x 31683.0 ;
+    city:y 13262.0 ;
+    city:z 11496.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-161> city:x 31683.0 ;
+    city:y 13262.0 ;
+    city:z 11454.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-162> city:x 28094.0 ;
+    city:y 5227.0 ;
+    city:z 12259.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-163> city:x 27685.0 ;
+    city:y 6031.0 ;
+    city:z 11486.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-164> city:x 27674.0 ;
+    city:y 6053.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-165> city:x 28094.0 ;
+    city:y 5227.0 ;
+    city:z 12292.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-166> city:x 27685.0 ;
+    city:y 6031.0 ;
+    city:z 10520.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-167> city:x 27674.0 ;
+    city:y 6053.0 ;
+    city:z 10501.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-168> city:x 35549.0 ;
+    city:y 3354.0 ;
+    city:z 10990.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-169> city:x 36374.0 ;
+    city:y 4339.0 ;
+    city:z 11501.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-17> city:x 13671.0 ;
+    city:y 27760.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-170> city:x 36374.0 ;
+    city:y 4339.0 ;
+    city:z 10607.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-171> city:x 35662.0 ;
+    city:y 4635.0 ;
+    city:z 11358.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-172> city:x 38825.0 ;
+    city:y 10339.0 ;
+    city:z 11500.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-173> city:x 38825.0 ;
+    city:y 10339.0 ;
+    city:z 10599.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-174> city:x 37614.0 ;
+    city:y 7332.0 ;
+    city:z 11505.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-175> city:x 37614.0 ;
+    city:y 7332.0 ;
+    city:z 10587.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-176> city:x 30462.0 ;
+    city:y 10275.0 ;
+    city:z 11497.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-177> city:x 29620.0 ;
+    city:y 10636.0 ;
+    city:z 10551.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-178> city:x 29620.0 ;
+    city:y 10636.0 ;
+    city:z 11500.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-179> city:x 29997.0 ;
+    city:y 9141.0 ;
+    city:z 11501.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-18> city:x 13671.0 ;
+    city:y 27760.0 ;
+    city:z 14494.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-180> city:x 28578.0 ;
+    city:y 5686.0 ;
+    city:z 11509.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-181> city:x 29536.0 ;
+    city:y 8019.0 ;
+    city:z 11504.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-182> city:x 28091.0 ;
+    city:y 4563.0 ;
+    city:z 11487.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-183> city:x 27192.0 ;
+    city:y 4909.0 ;
+    city:z 11511.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-184> city:x 27192.0 ;
+    city:y 4909.0 ;
+    city:z 10492.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-185> city:x 29059.0 ;
+    city:y 6892.0 ;
+    city:z 11493.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-186> city:x 28155.0 ;
+    city:y 7258.0 ;
+    city:z 11504.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-187> city:x 28155.0 ;
+    city:y 7258.0 ;
+    city:z 10485.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-188> city:x 30527.0 ;
+    city:y 12425.0 ;
+    city:z 10710.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-189> city:x 30784.0 ;
+    city:y 13650.0 ;
+    city:z 11501.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-19> city:x 15156.0 ;
+    city:y 12804.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-190> city:x 30784.0 ;
+    city:y 13650.0 ;
+    city:z 10464.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-191> city:x 30662.0 ;
+    city:y 9549.0 ;
+    city:z 11974.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-192> city:x 29941.0 ;
+    city:y 9861.0 ;
+    city:z 12362.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-193> city:x 29941.0 ;
+    city:y 9861.0 ;
+    city:z 11163.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-194> city:x 31014.0 ;
+    city:y 9397.0 ;
+    city:z 12362.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-195> city:x 31055.0 ;
+    city:y 12950.0 ;
+    city:z 12238.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-196> city:x 31055.0 ;
+    city:y 12950.0 ;
+    city:z 10993.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-197> city:x 37611.0 ;
+    city:y 7324.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-198> city:x 37611.0 ;
+    city:y 7324.0 ;
+    city:z 10587.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-199> city:x 37014.0 ;
+    city:y 6961.0 ;
+    city:z 12287.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-2> city:x 16068.0 ;
+    city:y 15059.0 ;
+    city:z 0.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-20> city:x 18034.0 ;
+    city:y 19918.0 ;
+    city:z 12747.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-200> city:x 37014.0 ;
+    city:y 6961.0 ;
+    city:z 10993.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-201> city:x 30783.0 ;
+    city:y 13647.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-202> city:x 30783.0 ;
+    city:y 13647.0 ;
+    city:z 10464.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-203> city:x 29939.0 ;
+    city:y 9859.0 ;
+    city:z 12358.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-204> city:x 29619.0 ;
+    city:y 10634.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-205> city:x 29939.0 ;
+    city:y 9859.0 ;
+    city:z 11162.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-206> city:x 29619.0 ;
+    city:y 10634.0 ;
+    city:z 10550.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-207> city:x 28158.0 ;
+    city:y 7265.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-208> city:x 28158.0 ;
+    city:y 7265.0 ;
+    city:z 10484.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-209> city:x 28976.0 ;
+    city:y 7535.0 ;
+    city:z 12298.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-21> city:x 16068.0 ;
+    city:y 15059.0 ;
+    city:z 12747.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-210> city:x 28976.0 ;
+    city:y 7535.0 ;
+    city:z 11160.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-211> city:x 30976.0 ;
+    city:y 2842.0 ;
+    city:z 14923.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-212> city:x 30547.0 ;
+    city:y 1946.0 ;
+    city:z 14707.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-213> city:x 30547.0 ;
+    city:y 1946.0 ;
+    city:z 15762.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-214> city:x 30976.0 ;
+    city:y 2842.0 ;
+    city:z 15762.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-215> city:x 27197.0 ;
+    city:y 4925.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-216> city:x 27197.0 ;
+    city:y 4925.0 ;
+    city:z 10491.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-217> city:x 28088.0 ;
+    city:y 5211.0 ;
+    city:z 12305.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-218> city:x 28088.0 ;
+    city:y 5211.0 ;
+    city:z 11229.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-219> city:x 36373.0 ;
+    city:y 4336.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-22> city:x 17245.0 ;
+    city:y 14582.0 ;
+    city:z 12462.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-220> city:x 36373.0 ;
+    city:y 4336.0 ;
+    city:z 10607.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-221> city:x 38824.0 ;
+    city:y 10336.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-222> city:x 38824.0 ;
+    city:y 10336.0 ;
+    city:z 10599.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-223> city:x 30501.0 ;
+    city:y 12980.0 ;
+    city:z 10466.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-224> city:x 36641.0 ;
+    city:y 12768.0 ;
+    city:z 15263.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-225> city:x 36310.0 ;
+    city:y 11972.0 ;
+    city:z 15263.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-226> city:x 36641.0 ;
+    city:y 12768.0 ;
+    city:z 13471.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-227> city:x 36310.0 ;
+    city:y 11972.0 ;
+    city:z 13471.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-228> city:x 32013.0 ;
+    city:y 2346.0 ;
+    city:z 15762.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-229> city:x 32013.0 ;
+    city:y 2346.0 ;
+    city:z 13857.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-23> city:x 19211.0 ;
+    city:y 19441.0 ;
+    city:z 12444.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-230> city:x 34792.0 ;
+    city:y 12604.0 ;
+    city:z 15263.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-231> city:x 35008.0 ;
+    city:y 12514.0 ;
+    city:z 14923.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-232> city:x 34792.0 ;
+    city:y 12604.0 ;
+    city:z 14605.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-233> city:x 31584.0 ;
+    city:y 1450.0 ;
+    city:z 13857.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-234> city:x 31584.0 ;
+    city:y 1450.0 ;
+    city:z 15762.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-235> city:x 35123.0 ;
+    city:y 13399.0 ;
+    city:z 15263.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-236> city:x 35253.0 ;
+    city:y 0.0 ;
+    city:z 10024.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-237> city:x 26216.0 ;
+    city:y 3965.0 ;
+    city:z 9933.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-238> city:x 39903.0 ;
+    city:y 11453.0 ;
+    city:z 10035.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-239> city:x 30437.0 ;
+    city:y 14347.0 ;
+    city:z 9865.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-24> city:x 8944.0 ;
+    city:y 16499.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-240> city:x 35608.0 ;
+    city:y 4017.0 ;
+    city:z 11181.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-241> city:x 34574.0 ;
+    city:y 4440.0 ;
+    city:z 12284.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-242> city:x 35607.0 ;
+    city:y 4015.0 ;
+    city:z 11180.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-243> city:x 34577.0 ;
+    city:y 4436.0 ;
+    city:z 12279.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-244> city:x 35906.0 ;
+    city:y 7395.0 ;
+    city:z 12153.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-245> city:x 35906.0 ;
+    city:y 7394.0 ;
+    city:z 12153.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-246> city:x 35848.0 ;
+    city:y 3918.0 ;
+    city:z 10927.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-247> city:x 38175.0 ;
+    city:y 10018.0 ;
+    city:z 12385.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-248> city:x 35848.0 ;
+    city:y 3918.0 ;
+    city:z 12284.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-249> city:x 30001.0 ;
+    city:y 7131.0 ;
+    city:z 12298.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-25> city:x 5482.0 ;
+    city:y 17965.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-250> city:x 29067.0 ;
+    city:y 4855.0 ;
+    city:z 12305.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-251> city:x 29990.0 ;
+    city:y 7136.0 ;
+    city:z 12286.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-252> city:x 29044.0 ;
+    city:y 4864.0 ;
+    city:z 12279.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-253> city:x 30673.0 ;
+    city:y 9315.0 ;
+    city:z 12077.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-254> city:x 30641.0 ;
+    city:y 9987.0 ;
+    city:z 11782.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-26> city:x 12313.0 ;
+    city:y 22218.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-27> city:x 11229.0 ;
+    city:y 19602.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-28> city:x 11229.0 ;
+    city:y 19602.0 ;
+    city:z 14469.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-29> city:x 12313.0 ;
+    city:y 22218.0 ;
+    city:z 15152.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-3> city:x 20166.0 ;
+    city:y 25185.0 ;
+    city:z 0.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-30> city:x 13264.0 ;
+    city:y 24729.0 ;
+    city:z 14469.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-31> city:x 13264.0 ;
+    city:y 24729.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-32> city:x 9769.0 ;
+    city:y 29122.0 ;
+    city:z 14494.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-33> city:x 9769.0 ;
+    city:y 29122.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-34> city:x 13593.0 ;
+    city:y 27596.0 ;
+    city:z 14494.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-35> city:x 13593.0 ;
+    city:y 27596.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-36> city:x 10099.0 ;
+    city:y 28352.0 ;
+    city:z 13885.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-37> city:x 10099.0 ;
+    city:y 28352.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-38> city:x 9539.0 ;
+    city:y 28524.0 ;
+    city:z 13885.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-39> city:x 9539.0 ;
+    city:y 28524.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-4> city:x 18034.0 ;
+    city:y 19918.0 ;
+    city:z 0.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-40> city:x 8646.0 ;
+    city:y 22157.0 ;
+    city:z 13885.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-41> city:x 7855.0 ;
+    city:y 22489.0 ;
+    city:z 13885.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-42> city:x 7855.0 ;
+    city:y 22489.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-43> city:x 8646.0 ;
+    city:y 22157.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-44> city:x 9173.0 ;
+    city:y 23630.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-45> city:x 9173.0 ;
+    city:y 23630.0 ;
+    city:z 13885.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-46> city:x 8382.0 ;
+    city:y 23962.0 ;
+    city:z 13885.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-47> city:x 8382.0 ;
+    city:y 23962.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-48> city:x 6358.0 ;
+    city:y 18288.0 ;
+    city:z 13885.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-49> city:x 5712.0 ;
+    city:y 18565.0 ;
+    city:z 13885.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-5> city:x 9831.0 ;
+    city:y 29283.0 ;
+    city:z 0.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-50> city:x 5712.0 ;
+    city:y 18565.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-51> city:x 6358.0 ;
+    city:y 18288.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-52> city:x 16385.0 ;
+    city:y 17555.0 ;
+    city:z 14469.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-53> city:x 16385.0 ;
+    city:y 17555.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-54> city:x 18420.0 ;
+    city:y 22682.0 ;
+    city:z 14469.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-55> city:x 18420.0 ;
+    city:y 22682.0 ;
+    city:z 13252.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-56> city:x 17440.0 ;
+    city:y 20213.0 ;
+    city:z 15152.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-57> city:x 39903.0 ;
+    city:y 11453.0 ;
+    city:z 2794.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-58> city:x 35253.0 ;
+    city:y 0.0 ;
+    city:z 2794.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-59> city:x 34792.0 ;
+    city:y 12604.0 ;
+    city:z 2794.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-6> city:x 8944.0 ;
+    city:y 16499.0 ;
+    city:z 0.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-60> city:x 30547.0 ;
+    city:y 1946.0 ;
+    city:z 2794.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-61> city:x 26216.0 ;
+    city:y 3965.0 ;
+    city:z 2794.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-62> city:x 30437.0 ;
+    city:y 14347.0 ;
+    city:z 2794.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-63> city:x 36641.0 ;
+    city:y 12768.0 ;
+    city:z 2794.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-64> city:x 35123.0 ;
+    city:y 13399.0 ;
+    city:z 2794.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-65> city:x 31584.0 ;
+    city:y 1450.0 ;
+    city:z 2794.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-66> city:x 31011.0 ;
+    city:y 9397.0 ;
+    city:z 12359.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-67> city:x 30662.0 ;
+    city:y 9548.0 ;
+    city:z 11975.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-68> city:x 29940.0 ;
+    city:y 9860.0 ;
+    city:z 12359.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-69> city:x 29940.0 ;
+    city:y 9860.0 ;
+    city:z 11163.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-7> city:x 15156.0 ;
+    city:y 12804.0 ;
+    city:z 0.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-70> city:x 35848.0 ;
+    city:y 3916.0 ;
+    city:z 12279.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-71> city:x 35848.0 ;
+    city:y 3915.0 ;
+    city:z 12278.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-72> city:x 35848.0 ;
+    city:y 3916.0 ;
+    city:z 10927.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-73> city:x 35848.0 ;
+    city:y 3915.0 ;
+    city:z 10926.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-74> city:x 31054.0 ;
+    city:y 12948.0 ;
+    city:z 12234.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-75> city:x 31054.0 ;
+    city:y 12948.0 ;
+    city:z 10993.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-76> city:x 31053.0 ;
+    city:y 12947.0 ;
+    city:z 12233.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-77> city:x 31053.0 ;
+    city:y 12947.0 ;
+    city:z 10992.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-78> city:x 35075.0 ;
+    city:y 3551.0 ;
+    city:z 11502.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-79> city:x 34758.0 ;
+    city:y 4112.0 ;
+    city:z 11994.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-8> city:x 5482.0 ;
+    city:y 17965.0 ;
+    city:z 0.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-80> city:x 35075.0 ;
+    city:y 3551.0 ;
+    city:z 11496.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-81> city:x 38175.0 ;
+    city:y 10016.0 ;
+    city:z 12379.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-82> city:x 38175.0 ;
+    city:y 10018.0 ;
+    city:z 11068.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-83> city:x 38175.0 ;
+    city:y 10018.0 ;
+    city:z 12381.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-84> city:x 38175.0 ;
+    city:y 10016.0 ;
+    city:z 11067.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-85> city:x 29144.0 ;
+    city:y 9506.0 ;
+    city:z 10542.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-86> city:x 29142.0 ;
+    city:y 9506.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-87> city:x 29142.0 ;
+    city:y 9506.0 ;
+    city:z 10540.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-88> city:x 29940.0 ;
+    city:y 9858.0 ;
+    city:z 12357.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-89> city:x 29144.0 ;
+    city:y 9506.0 ;
+    city:z 11497.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-9> city:x 4403.0 ;
+    city:y 31333.0 ;
+    city:z 0.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-90> city:x 29940.0 ;
+    city:y 9858.0 ;
+    city:z 12360.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-91> city:x 35896.0 ;
+    city:y 3208.0 ;
+    city:z 11498.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-92> city:x 35847.0 ;
+    city:y 3915.0 ;
+    city:z 12277.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-93> city:x 35896.0 ;
+    city:y 3210.0 ;
+    city:z 11497.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-94> city:x 35847.0 ;
+    city:y 3915.0 ;
+    city:z 12281.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-95> city:x 35896.0 ;
+    city:y 3208.0 ;
+    city:z 10622.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-96> city:x 35896.0 ;
+    city:y 3210.0 ;
+    city:z 10623.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-97> city:x 35544.0 ;
+    city:y 4683.0 ;
+    city:z 11496.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-98> city:x 35544.0 ;
+    city:y 4683.0 ;
+    city:z 11485.0 .
+
+<https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-99> city:x 34780.0 ;
+    city:y 4493.0 ;
+    city:z 12114.0 .
+
 [] a prov:Activity ;
-    prov:endedAtTime "2023-06-21T00:11:58.493620"^^xsd:dateTime ;
-    prov:startedAtTime "2023-06-21T00:11:57.798253"^^xsd:dateTime ;
+    prov:endedAtTime "2023-07-27T08:38:37.929685"^^xsd:dateTime ;
+    prov:startedAtTime "2023-07-27T08:38:37.230988"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:4c711b9569ef06a12b2fa0048efcad35b2bafd62" ;
+            dct:hasVersion "git:2a48187227614540dfc377a702205b47e42b9361" ;
             rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/master/chek-profiles/cityjson/twobuildings.city.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.2.34.dev0+gede391c.d20230620" ;
+            dct:hasVersion "0.3.5" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "0c210c8d-d35e-4975-8b34-b737a870468c" ] .
+    prov:wasInformedBy [ dct:identifier "d4c5c970-3fda-4f1b-aaee-844b2218f678" ] .
 
 [] a city:CityJson ;
     city:geographicalExtent [ city:max [ city:x 300618.138 ;
@@ -27,784 +1057,268 @@
             city:min [ city:x 300578.235 ;
                     city:y 5041258.061 ;
                     city:z 13.688 ] ] ;
-    city:hasObject [ a city:Building ;
-            city:hasGeometry [ a city:MultiSurface ;
-                    city:boundaries ( ( ( 0 1 2 ) ) ( ( 3 4 5 ) ) ( ( 4 6 5 ) ) ( ( 2 7 6 ) ) ( ( 5 8 9 ) ) ( ( 0 2 4 ) ) ( ( 4 2 6 ) ) ( ( 5 6 8 ) ) ( ( 8 10 9 ) ) ( ( 11 12 13 ) ) ( ( 11 9 12 ) ) ( ( 12 10 14 ) ) ( ( 9 10 12 ) ) ( ( 15 5 11 ) ) ( ( 5 9 11 ) ) ( ( 16 3 17 ) ) ( ( 17 5 15 ) ) ( ( 3 5 17 ) ) ( ( 18 17 15 ) ) ( ( 16 19 20 ) ) ( ( 20 19 21 ) ) ( ( 21 19 7 ) ) ( ( 3 20 4 ) ) ( ( 21 7 2 ) ) ( ( 16 20 3 ) ) ( ( 22 2 1 ) ) ( ( 22 21 2 ) ) ( ( 23 1 0 ) ) ( ( 23 22 1 ) ) ( ( 23 4 20 ) ) ( ( 23 0 4 ) ) ( ( 19 24 6 ) ) ( ( 19 6 7 ) ) ( ( 24 25 8 ) ) ( ( 24 8 6 ) ) ( ( 25 10 8 ) ) ( ( 25 14 10 ) ) ( ( 26 27 28 ) ) ( ( 29 26 28 ) ) ( ( 30 26 29 ) ) ( ( 30 31 26 ) ) ( ( 32 13 12 ) ) ( ( 32 12 33 ) ) ( ( 34 32 33 ) ) ( ( 34 33 35 ) ) ( ( 36 37 38 ) ) ( ( 37 39 38 ) ) ( ( 40 41 42 ) ) ( ( 40 42 43 ) ) ( ( 44 40 43 ) ) ( ( 45 40 44 ) ) ( ( 45 44 46 ) ) ( ( 44 47 46 ) ) ( ( 36 46 47 ) ) ( ( 36 47 37 ) ) ( ( 18 35 17 ) ) ( ( 18 34 35 ) ) ( ( 48 49 50 ) ) ( ( 48 50 51 ) ) ( ( 41 51 42 ) ) ( ( 41 48 51 ) ) ( ( 52 27 53 ) ) ( ( 52 28 27 ) ) ( ( 54 31 30 ) ) ( ( 54 55 31 ) ) ( ( 56 52 53 ) ) ( ( 55 56 53 ) ) ( ( 54 56 55 ) ) ( ( 38 39 49 ) ) ( ( 39 50 49 ) ) ( ( 20 21 22 ) ) ( ( 23 20 22 ) ) ( ( 52 29 28 ) ) ( ( 56 29 52 ) ) ( ( 54 29 56 ) ) ( ( 54 30 29 ) ) ( ( 15 11 32 ) ) ( ( 18 15 34 ) ) ( ( 34 15 32 ) ) ( ( 32 11 13 ) ) ( ( 38 49 46 ) ) ( ( 45 46 41 ) ) ( ( 36 38 46 ) ) ( ( 45 41 40 ) ) ( ( 46 49 41 ) ) ( ( 41 49 48 ) ) ( ( 50 12 14 ) ) ( ( 39 12 50 ) ) ( ( 19 27 24 ) ) ( ( 53 27 19 ) ) ( ( 16 35 31 ) ) ( ( 31 37 44 ) ) ( ( 16 31 55 ) ) ( ( 27 43 51 ) ) ( ( 27 51 24 ) ) ( ( 35 37 31 ) ) ( ( 26 43 27 ) ) ( ( 31 44 26 ) ) ( ( 16 53 19 ) ) ( ( 26 44 43 ) ) ( ( 37 47 44 ) ) ( ( 16 55 53 ) ) ( ( 43 42 51 ) ) ( ( 50 14 25 ) ) ( ( 33 12 39 ) ) ( ( 35 33 37 ) ) ( ( 24 51 25 ) ) ( ( 16 17 35 ) ) ( ( 51 50 25 ) ) ( ( 37 33 39 ) ) ) ;
-                    city:lod 2 ] ],
-        [ a city:Building ;
-            city:hasGeometry [ a city:MultiSurface ;
-                    city:boundaries ( ( ( 57 58 59 ) ) ( ( 59 60 61 ) ) ( ( 59 61 62 ) ) ( ( 63 59 64 ) ) ( ( 57 59 63 ) ) ( ( 59 65 60 ) ) ( ( 58 65 59 ) ) ( ( 66 67 68 ) ) ( ( 67 69 68 ) ) ( ( 70 71 72 ) ) ( ( 72 71 73 ) ) ( ( 74 75 76 ) ) ( ( 75 77 76 ) ) ( ( 78 79 80 ) ) ( ( 81 82 83 ) ) ( ( 81 84 82 ) ) ( ( 85 86 87 ) ) ( ( 88 86 89 ) ) ( ( 90 86 88 ) ) ( ( 89 86 85 ) ) ( ( 91 92 93 ) ) ( ( 91 94 92 ) ) ( ( 95 93 96 ) ) ( ( 91 93 95 ) ) ( ( 97 98 99 ) ) ( ( 100 101 102 ) ) ( ( 103 101 100 ) ) ( ( 102 101 104 ) ) ( ( 102 104 105 ) ) ( ( 106 107 108 ) ) ( ( 108 107 109 ) ) ( ( 110 111 112 ) ) ( ( 110 113 111 ) ) ( ( 114 115 116 ) ) ( ( 114 117 115 ) ) ( ( 118 116 119 ) ) ( ( 114 116 118 ) ) ( ( 120 121 122 ) ) ( ( 122 121 123 ) ) ( ( 124 125 126 ) ) ( ( 125 127 128 ) ) ( ( 124 127 125 ) ) ( ( 129 130 131 ) ) ( ( 131 132 133 ) ) ( ( 129 131 133 ) ) ( ( 134 135 136 ) ) ( ( 134 136 137 ) ) ( ( 138 139 140 ) ) ( ( 138 140 141 ) ) ( ( 142 143 144 ) ) ( ( 142 145 143 ) ) ( ( 146 144 147 ) ) ( ( 142 144 146 ) ) ( ( 148 149 150 ) ) ( ( 151 148 150 ) ) ( ( 149 152 150 ) ) ( ( 152 153 150 ) ) ( ( 154 155 156 ) ) ( ( 157 155 154 ) ) ( ( 158 159 160 ) ) ( ( 159 161 160 ) ) ( ( 162 163 164 ) ) ( ( 165 162 164 ) ) ( ( 163 166 164 ) ) ( ( 166 167 164 ) ) ( ( 93 78 80 ) ) ( ( 93 80 168 ) ) ( ( 93 168 96 ) ) ( ( 116 138 141 ) ) ( ( 116 141 119 ) ) ( ( 144 124 126 ) ) ( ( 144 126 147 ) ) ( ( 169 170 171 ) ) ( ( 169 171 97 ) ) ( ( 171 98 97 ) ) ( ( 172 173 135 ) ) ( ( 172 135 134 ) ) ( ( 174 130 129 ) ) ( ( 174 175 130 ) ) ( ( 176 177 178 ) ) ( ( 179 89 85 ) ) ( ( 180 166 163 ) ) ( ( 181 152 149 ) ) ( ( 182 183 184 ) ) ( ( 185 186 187 ) ) ( ( 156 102 188 ) ) ( ( 155 102 156 ) ) ( ( 188 102 105 ) ) ( ( 160 161 189 ) ) ( ( 161 190 189 ) ) ( ( 191 192 193 ) ) ( ( 194 192 191 ) ) ( ( 157 154 74 ) ) ( ( 154 75 74 ) ) ( ( 159 195 196 ) ) ( ( 158 195 159 ) ) ( ( 197 110 145 ) ) ( ( 197 113 110 ) ) ( ( 110 143 145 ) ) ( ( 197 198 113 ) ) ( ( 174 199 200 ) ) ( ( 174 200 175 ) ) ( ( 103 76 201 ) ) ( ( 103 100 76 ) ) ( ( 77 202 201 ) ) ( ( 76 77 201 ) ) ( ( 196 189 190 ) ) ( ( 195 189 196 ) ) ( ( 90 203 204 ) ) ( ( 90 88 203 ) ) ( ( 205 206 204 ) ) ( ( 203 205 204 ) ) ( ( 192 178 193 ) ) ( ( 193 178 177 ) ) ( ( 151 207 107 ) ) ( ( 107 207 109 ) ) ( ( 151 107 148 ) ) ( ( 109 207 208 ) ) ( ( 209 210 186 ) ) ( ( 210 187 186 ) ) ( ( 211 212 213 ) ) ( ( 214 211 213 ) ) ( ( 123 215 216 ) ) ( ( 165 121 162 ) ) ( ( 121 215 123 ) ) ( ( 165 215 121 ) ) ( ( 217 218 183 ) ) ( ( 218 184 183 ) ) ( ( 219 91 95 ) ) ( ( 219 95 220 ) ) ( ( 221 118 222 ) ) ( ( 221 114 118 ) ) ( ( 197 142 146 ) ) ( ( 197 146 198 ) ) ( ( 204 206 86 ) ) ( ( 206 87 86 ) ) ( ( 164 167 215 ) ) ( ( 167 216 215 ) ) ( ( 150 153 207 ) ) ( ( 153 208 207 ) ) ( ( 201 202 223 ) ) ( ( 201 223 101 ) ) ( ( 223 104 101 ) ) ( ( 224 225 226 ) ) ( ( 226 225 227 ) ) ( ( 228 211 214 ) ) ( ( 228 229 211 ) ) ( ( 225 230 231 ) ) ( ( 225 231 227 ) ) ( ( 231 230 232 ) ) ( ( 228 233 229 ) ) ( ( 228 234 233 ) ) ( ( 235 232 230 ) ) ( ( 235 64 232 ) ) ( ( 64 59 232 ) ) ( ( 233 60 65 ) ) ( ( 233 212 60 ) ) ( ( 234 212 233 ) ) ( ( 234 213 212 ) ) ( ( 236 65 58 ) ) ( ( 236 233 65 ) ) ( ( 212 237 60 ) ) ( ( 60 237 61 ) ) ( ( 224 226 235 ) ) ( ( 226 64 235 ) ) ( ( 226 63 64 ) ) ( ( 238 63 226 ) ) ( ( 238 57 63 ) ) ( ( 232 59 239 ) ) ( ( 59 62 239 ) ) ( ( 239 62 61 ) ) ( ( 239 61 237 ) ) ( ( 57 236 58 ) ) ( ( 238 236 57 ) ) ( ( 68 69 203 ) ) ( ( 69 205 203 ) ) ( ( 227 231 229 ) ) ( ( 231 211 229 ) ) ( ( 125 99 98 ) ) ( ( 240 241 242 ) ) ( ( 125 241 99 ) ) ( ( 242 241 243 ) ) ( ( 125 128 132 ) ) ( ( 125 132 241 ) ) ( ( 244 128 245 ) ) ( ( 79 241 229 ) ) ( ( 244 132 128 ) ) ( ( 227 132 131 ) ) ( ( 227 229 132 ) ) ( ( 125 98 171 ) ) ( ( 168 80 236 ) ) ( ( 236 80 229 ) ) ( ( 80 79 229 ) ) ( ( 132 229 241 ) ) ( ( 79 243 241 ) ) ( ( 238 226 227 ) ) ( ( 236 229 233 ) ) ( ( 238 146 236 ) ) ( ( 140 131 130 ) ) ( ( 118 130 175 ) ) ( ( 141 140 130 ) ) ( ( 146 126 171 ) ) ( ( 118 141 130 ) ) ( ( 146 171 170 ) ) ( ( 238 135 173 ) ) ( ( 238 118 175 ) ) ( ( 126 125 171 ) ) ( ( 146 170 236 ) ) ( ( 95 168 236 ) ) ( ( 220 95 236 ) ) ( ( 238 222 118 ) ) ( ( 238 198 146 ) ) ( ( 140 136 131 ) ) ( ( 146 147 126 ) ) ( ( 238 175 198 ) ) ( ( 175 200 198 ) ) ( ( 198 200 113 ) ) ( ( 118 119 141 ) ) ( ( 170 220 236 ) ) ( ( 238 173 222 ) ) ( ( 173 82 222 ) ) ( ( 222 82 84 ) ) ( ( 170 246 220 ) ) ( ( 200 244 111 ) ) ( ( 220 246 72 ) ) ( ( 82 136 140 ) ) ( ( 82 140 82 ) ) ( ( 246 240 72 ) ) ( ( 113 200 111 ) ) ( ( 84 82 82 ) ) ( ( 238 227 135 ) ) ( ( 136 227 131 ) ) ( ( 135 227 136 ) ) ( ( 247 134 137 ) ) ( ( 172 134 247 ) ) ( ( 199 129 133 ) ) ( ( 174 129 199 ) ) ( ( 115 139 138 ) ) ( ( 116 115 138 ) ) ( ( 81 83 115 ) ) ( ( 83 139 115 ) ) ( ( 221 117 114 ) ) ( ( 219 94 91 ) ) ( ( 143 127 124 ) ) ( ( 144 143 124 ) ) ( ( 110 112 143 ) ) ( ( 112 127 143 ) ) ( ( 197 145 142 ) ) ( ( 169 97 248 ) ) ( ( 248 97 99 ) ) ( ( 248 99 241 ) ) ( ( 70 92 71 ) ) ( ( 93 92 78 ) ) ( ( 70 79 92 ) ) ( ( 92 79 78 ) ) ( ( 70 243 79 ) ) ( ( 234 214 213 ) ) ( ( 228 214 234 ) ) ( ( 224 235 230 ) ) ( ( 224 230 225 ) ) ( ( 249 209 185 ) ) ( ( 185 209 186 ) ) ( ( 182 217 183 ) ) ( ( 250 217 182 ) ) ( ( 148 107 106 ) ) ( ( 181 149 148 ) ) ( ( 251 181 148 ) ) ( ( 251 148 106 ) ) ( ( 151 150 207 ) ) ( ( 165 164 215 ) ) ( ( 180 163 162 ) ) ( ( 252 162 120 ) ) ( ( 252 180 162 ) ) ( ( 162 121 120 ) ) ( ( 211 237 212 ) ) ( ( 231 232 211 ) ) ( ( 232 194 211 ) ) ( ( 232 159 194 ) ) ( ( 232 239 161 ) ) ( ( 194 253 211 ) ) ( ( 232 161 159 ) ) ( ( 154 254 194 ) ) ( ( 154 156 254 ) ) ( ( 156 188 254 ) ) ( ( 161 239 190 ) ) ( ( 202 239 223 ) ) ( ( 159 154 194 ) ) ( ( 154 196 77 ) ) ( ( 159 196 154 ) ) ( ( 190 239 202 ) ) ( ( 196 190 202 ) ) ( ( 196 202 77 ) ) ( ( 194 191 66 ) ) ( ( 194 66 253 ) ) ( ( 239 237 153 ) ) ( ( 211 249 250 ) ) ( ( 211 253 249 ) ) ( ( 211 182 237 ) ) ( ( 211 250 182 ) ) ( ( 249 180 252 ) ) ( ( 188 177 176 ) ) ( ( 253 181 251 ) ) ( ( 185 187 166 ) ) ( ( 185 166 180 ) ) ( ( 181 85 152 ) ) ( ( 182 184 237 ) ) ( ( 179 85 181 ) ) ( ( 239 153 85 ) ) ( ( 249 185 180 ) ) ( ( 239 177 105 ) ) ( ( 239 85 206 ) ) ( ( 187 237 167 ) ) ( ( 253 179 181 ) ) ( ( 167 237 216 ) ) ( ( 153 237 208 ) ) ( ( 188 105 177 ) ) ( ( 254 188 176 ) ) ( ( 223 239 105 ) ) ( ( 249 252 250 ) ) ( ( 253 251 249 ) ) ( ( 187 167 166 ) ) ( ( 218 216 184 ) ) ( ( 218 123 216 ) ) ( ( 216 237 184 ) ) ( ( 85 153 152 ) ) ( ( 210 208 187 ) ) ( ( 210 109 208 ) ) ( ( 208 237 187 ) ) ( ( 239 206 177 ) ) ( ( 67 193 205 ) ) ( ( 193 177 206 ) ) ( ( 193 206 205 ) ) ( ( 249 251 210 ) ) ( ( 251 108 210 ) ) ( ( 250 252 218 ) ) ( ( 252 122 218 ) ) ( ( 122 123 218 ) ) ( ( 108 109 210 ) ) ( ( 158 160 195 ) ) ( ( 160 189 195 ) ) ( ( 157 100 155 ) ) ( ( 155 100 102 ) ) ( ( 157 74 100 ) ) ( ( 74 76 100 ) ) ( ( 103 201 101 ) ) ( ( 90 204 86 ) ) ( ( 254 176 192 ) ) ( ( 194 254 192 ) ) ( ( 176 178 192 ) ) ( ( 179 88 89 ) ) ( ( 68 203 88 ) ) ( ( 66 68 253 ) ) ( ( 253 68 88 ) ) ( ( 253 88 179 ) ) ) ;
-                    city:lod 2 ] ] ;
+    city:hasObject <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#city-objects-Building_1>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#city-objects-Building_2> ;
     city:hasTransform [ city:scale [ city:x 0.001 ;
                     city:y 0.001 ;
                     city:z 0.001 ] ;
             city:translate [ city:x 300578.235 ;
                     city:y 5041258.061 ;
                     city:z 13.688 ] ] ;
-    city:hasVertex [ city:x 19211.0 ;
-            city:y 19441.0 ;
-            city:z 0.0 ],
-        [ city:x 17245.0 ;
-            city:y 14582.0 ;
-            city:z 0.0 ],
-        [ city:x 0.0 ;
-            city:y 20015.0 ;
-            city:z 0.0 ],
-        [ city:x 31053.0 ;
-            city:y 12946.0 ;
-            city:z 12232.0 ],
-        [ city:x 30306.0 ;
-            city:y 12519.0 ;
-            city:z 11498.0 ],
-        [ city:x 30308.0 ;
-            city:y 12520.0 ;
-            city:z 11497.0 ],
-        [ city:x 31053.0 ;
-            city:y 12946.0 ;
-            city:z 12235.0 ],
-        [ city:x 30306.0 ;
-            city:y 12519.0 ;
-            city:z 10462.0 ],
-        [ city:x 30308.0 ;
-            city:y 12520.0 ;
-            city:z 10463.0 ],
-        [ city:x 28977.0 ;
-            city:y 7536.0 ;
-            city:z 12286.0 ],
-        [ city:x 28975.0 ;
-            city:y 7541.0 ;
-            city:z 12281.0 ],
-        [ city:x 28977.0 ;
-            city:y 7536.0 ;
-            city:z 11160.0 ],
-        [ city:x 28975.0 ;
-            city:y 7541.0 ;
-            city:z 11156.0 ],
-        [ city:x 4403.0 ;
-            city:y 31333.0 ;
-            city:z 14494.0 ],
-        [ city:x 37014.0 ;
-            city:y 6955.0 ;
-            city:z 12269.0 ],
-        [ city:x 37013.0 ;
-            city:y 6960.0 ;
-            city:z 10993.0 ],
-        [ city:x 37013.0 ;
-            city:y 6960.0 ;
-            city:z 12274.0 ],
-        [ city:x 37014.0 ;
-            city:y 6955.0 ;
-            city:z 10990.0 ],
-        [ city:x 38348.0 ;
-            city:y 9208.0 ;
-            city:z 11498.0 ],
-        [ city:x 38174.0 ;
-            city:y 10015.0 ;
-            city:z 12377.0 ],
-        [ city:x 38347.0 ;
-            city:y 9211.0 ;
-            city:z 11496.0 ],
-        [ city:x 38174.0 ;
-            city:y 10015.0 ;
-            city:z 12383.0 ],
-        [ city:x 38348.0 ;
-            city:y 9208.0 ;
-            city:z 10615.0 ],
-        [ city:x 38347.0 ;
-            city:y 9211.0 ;
-            city:z 10617.0 ],
-        [ city:x 4338.0 ;
-            city:y 31167.0 ;
-            city:z 13252.0 ],
-        [ city:x 28089.0 ;
-            city:y 5212.0 ;
-            city:z 12279.0 ],
-        [ city:x 28083.0 ;
-            city:y 5223.0 ;
-            city:z 12268.0 ],
-        [ city:x 28089.0 ;
-            city:y 5212.0 ;
-            city:z 11229.0 ],
-        [ city:x 28083.0 ;
-            city:y 5223.0 ;
-            city:z 11219.0 ],
-        [ city:x 36296.0 ;
-            city:y 6544.0 ;
-            city:z 11503.0 ],
-        [ city:x 35895.0 ;
-            city:y 7269.0 ;
-            city:z 12117.0 ],
-        [ city:x 36296.0 ;
-            city:y 6544.0 ;
-            city:z 11488.0 ],
-        [ city:x 35804.0 ;
-            city:y 7434.0 ;
-            city:z 12274.0 ],
-        [ city:x 35804.0 ;
-            city:y 7434.0 ;
-            city:z 12261.0 ],
-        [ city:x 36768.0 ;
-            city:y 7673.0 ;
-            city:z 11493.0 ],
-        [ city:x 4338.0 ;
-            city:y 31167.0 ;
-            city:z 14494.0 ],
-        [ city:x 36768.0 ;
-            city:y 7673.0 ;
-            city:z 11477.0 ],
-        [ city:x 35913.0 ;
-            city:y 7468.0 ;
-            city:z 12175.0 ],
-        [ city:x 35792.0 ;
-            city:y 7440.0 ;
-            city:z 12274.0 ],
-        [ city:x 35792.0 ;
-            city:y 7440.0 ;
-            city:z 12287.0 ],
-        [ city:x 37994.0 ;
-            city:y 10685.0 ;
-            city:z 11497.0 ],
-        [ city:x 37994.0 ;
-            city:y 10685.0 ;
-            city:z 11477.0 ],
-        [ city:x 36945.0 ;
-            city:y 10527.0 ;
-            city:z 12367.0 ],
-        [ city:x 36945.0 ;
-            city:y 10527.0 ;
-            city:z 12385.0 ],
-        [ city:x 37529.0 ;
-            city:y 9553.0 ;
-            city:z 11500.0 ],
-        [ city:x 36948.0 ;
-            city:y 10525.0 ;
-            city:z 12381.0 ],
-        [ city:x 0.0 ;
-            city:y 20015.0 ;
-            city:z 13252.0 ],
-        [ city:x 36948.0 ;
-            city:y 10525.0 ;
-            city:z 12363.0 ],
-        [ city:x 37529.0 ;
-            city:y 9553.0 ;
-            city:z 11481.0 ],
-        [ city:x 37134.0 ;
-            city:y 6196.0 ;
-            city:z 11498.0 ],
-        [ city:x 37010.0 ;
-            city:y 6952.0 ;
-            city:z 12264.0 ],
-        [ city:x 37133.0 ;
-            city:y 6205.0 ;
-            city:z 11492.0 ],
-        [ city:x 37010.0 ;
-            city:y 6952.0 ;
-            city:z 12281.0 ],
-        [ city:x 37134.0 ;
-            city:y 6196.0 ;
-            city:z 10603.0 ],
-        [ city:x 37133.0 ;
-            city:y 6205.0 ;
-            city:z 10608.0 ],
-        [ city:x 28979.0 ;
-            city:y 7543.0 ;
-            city:z 12277.0 ],
-        [ city:x 28638.0 ;
-            city:y 8384.0 ;
-            city:z 11492.0 ],
-        [ city:x 9831.0 ;
-            city:y 29283.0 ;
-            city:z 14494.0 ],
-        [ city:x 28635.0 ;
-            city:y 8393.0 ;
-            city:z 11498.0 ],
-        [ city:x 28979.0 ;
-            city:y 7543.0 ;
-            city:z 12292.0 ],
-        [ city:x 28638.0 ;
-            city:y 8384.0 ;
-            city:z 10502.0 ],
-        [ city:x 28635.0 ;
-            city:y 8393.0 ;
-            city:z 10495.0 ],
-        [ city:x 32141.0 ;
-            city:y 12473.0 ;
-            city:z 12192.0 ],
-        [ city:x 31233.0 ;
-            city:y 12121.0 ;
-            city:z 11503.0 ],
-        [ city:x 31233.0 ;
-            city:y 12121.0 ;
-            city:z 11487.0 ],
-        [ city:x 32141.0 ;
-            city:y 12473.0 ;
-            city:z 12234.0 ],
-        [ city:x 32146.0 ;
-            city:y 12473.0 ;
-            city:z 12238.0 ],
-        [ city:x 32146.0 ;
-            city:y 12473.0 ;
-            city:z 12197.0 ],
-        [ city:x 20166.0 ;
-            city:y 25185.0 ;
-            city:z 13252.0 ],
-        [ city:x 31683.0 ;
-            city:y 13262.0 ;
-            city:z 11496.0 ],
-        [ city:x 31683.0 ;
-            city:y 13262.0 ;
-            city:z 11454.0 ],
-        [ city:x 28094.0 ;
-            city:y 5227.0 ;
-            city:z 12259.0 ],
-        [ city:x 27685.0 ;
-            city:y 6031.0 ;
-            city:z 11486.0 ],
-        [ city:x 27674.0 ;
-            city:y 6053.0 ;
-            city:z 11498.0 ],
-        [ city:x 28094.0 ;
-            city:y 5227.0 ;
-            city:z 12292.0 ],
-        [ city:x 27685.0 ;
-            city:y 6031.0 ;
-            city:z 10520.0 ],
-        [ city:x 27674.0 ;
-            city:y 6053.0 ;
-            city:z 10501.0 ],
-        [ city:x 35549.0 ;
-            city:y 3354.0 ;
-            city:z 10990.0 ],
-        [ city:x 36374.0 ;
-            city:y 4339.0 ;
-            city:z 11501.0 ],
-        [ city:x 13671.0 ;
-            city:y 27760.0 ;
-            city:z 13252.0 ],
-        [ city:x 36374.0 ;
-            city:y 4339.0 ;
-            city:z 10607.0 ],
-        [ city:x 35662.0 ;
-            city:y 4635.0 ;
-            city:z 11358.0 ],
-        [ city:x 38825.0 ;
-            city:y 10339.0 ;
-            city:z 11500.0 ],
-        [ city:x 38825.0 ;
-            city:y 10339.0 ;
-            city:z 10599.0 ],
-        [ city:x 37614.0 ;
-            city:y 7332.0 ;
-            city:z 11505.0 ],
-        [ city:x 37614.0 ;
-            city:y 7332.0 ;
-            city:z 10587.0 ],
-        [ city:x 30462.0 ;
-            city:y 10275.0 ;
-            city:z 11497.0 ],
-        [ city:x 29620.0 ;
-            city:y 10636.0 ;
-            city:z 10551.0 ],
-        [ city:x 29620.0 ;
-            city:y 10636.0 ;
-            city:z 11500.0 ],
-        [ city:x 29997.0 ;
-            city:y 9141.0 ;
-            city:z 11501.0 ],
-        [ city:x 13671.0 ;
-            city:y 27760.0 ;
-            city:z 14494.0 ],
-        [ city:x 28578.0 ;
-            city:y 5686.0 ;
-            city:z 11509.0 ],
-        [ city:x 29536.0 ;
-            city:y 8019.0 ;
-            city:z 11504.0 ],
-        [ city:x 28091.0 ;
-            city:y 4563.0 ;
-            city:z 11487.0 ],
-        [ city:x 27192.0 ;
-            city:y 4909.0 ;
-            city:z 11511.0 ],
-        [ city:x 27192.0 ;
-            city:y 4909.0 ;
-            city:z 10492.0 ],
-        [ city:x 29059.0 ;
-            city:y 6892.0 ;
-            city:z 11493.0 ],
-        [ city:x 28155.0 ;
-            city:y 7258.0 ;
-            city:z 11504.0 ],
-        [ city:x 28155.0 ;
-            city:y 7258.0 ;
-            city:z 10485.0 ],
-        [ city:x 30527.0 ;
-            city:y 12425.0 ;
-            city:z 10710.0 ],
-        [ city:x 30784.0 ;
-            city:y 13650.0 ;
-            city:z 11501.0 ],
-        [ city:x 15156.0 ;
-            city:y 12804.0 ;
-            city:z 13252.0 ],
-        [ city:x 30784.0 ;
-            city:y 13650.0 ;
-            city:z 10464.0 ],
-        [ city:x 30662.0 ;
-            city:y 9549.0 ;
-            city:z 11974.0 ],
-        [ city:x 29941.0 ;
-            city:y 9861.0 ;
-            city:z 12362.0 ],
-        [ city:x 29941.0 ;
-            city:y 9861.0 ;
-            city:z 11163.0 ],
-        [ city:x 31014.0 ;
-            city:y 9397.0 ;
-            city:z 12362.0 ],
-        [ city:x 31055.0 ;
-            city:y 12950.0 ;
-            city:z 12238.0 ],
-        [ city:x 31055.0 ;
-            city:y 12950.0 ;
-            city:z 10993.0 ],
-        [ city:x 37611.0 ;
-            city:y 7324.0 ;
-            city:z 11498.0 ],
-        [ city:x 37611.0 ;
-            city:y 7324.0 ;
-            city:z 10587.0 ],
-        [ city:x 37014.0 ;
-            city:y 6961.0 ;
-            city:z 12287.0 ],
-        [ city:x 16068.0 ;
-            city:y 15059.0 ;
-            city:z 0.0 ],
-        [ city:x 18034.0 ;
-            city:y 19918.0 ;
-            city:z 12747.0 ],
-        [ city:x 37014.0 ;
-            city:y 6961.0 ;
-            city:z 10993.0 ],
-        [ city:x 30783.0 ;
-            city:y 13647.0 ;
-            city:z 11498.0 ],
-        [ city:x 30783.0 ;
-            city:y 13647.0 ;
-            city:z 10464.0 ],
-        [ city:x 29939.0 ;
-            city:y 9859.0 ;
-            city:z 12358.0 ],
-        [ city:x 29619.0 ;
-            city:y 10634.0 ;
-            city:z 11498.0 ],
-        [ city:x 29939.0 ;
-            city:y 9859.0 ;
-            city:z 11162.0 ],
-        [ city:x 29619.0 ;
-            city:y 10634.0 ;
-            city:z 10550.0 ],
-        [ city:x 28158.0 ;
-            city:y 7265.0 ;
-            city:z 11498.0 ],
-        [ city:x 28158.0 ;
-            city:y 7265.0 ;
-            city:z 10484.0 ],
-        [ city:x 28976.0 ;
-            city:y 7535.0 ;
-            city:z 12298.0 ],
-        [ city:x 16068.0 ;
-            city:y 15059.0 ;
-            city:z 12747.0 ],
-        [ city:x 28976.0 ;
-            city:y 7535.0 ;
-            city:z 11160.0 ],
-        [ city:x 30976.0 ;
-            city:y 2842.0 ;
-            city:z 14923.0 ],
-        [ city:x 30547.0 ;
-            city:y 1946.0 ;
-            city:z 14707.0 ],
-        [ city:x 30547.0 ;
-            city:y 1946.0 ;
-            city:z 15762.0 ],
-        [ city:x 30976.0 ;
-            city:y 2842.0 ;
-            city:z 15762.0 ],
-        [ city:x 27197.0 ;
-            city:y 4925.0 ;
-            city:z 11498.0 ],
-        [ city:x 27197.0 ;
-            city:y 4925.0 ;
-            city:z 10491.0 ],
-        [ city:x 28088.0 ;
-            city:y 5211.0 ;
-            city:z 12305.0 ],
-        [ city:x 28088.0 ;
-            city:y 5211.0 ;
-            city:z 11229.0 ],
-        [ city:x 36373.0 ;
-            city:y 4336.0 ;
-            city:z 11498.0 ],
-        [ city:x 17245.0 ;
-            city:y 14582.0 ;
-            city:z 12462.0 ],
-        [ city:x 36373.0 ;
-            city:y 4336.0 ;
-            city:z 10607.0 ],
-        [ city:x 38824.0 ;
-            city:y 10336.0 ;
-            city:z 11498.0 ],
-        [ city:x 38824.0 ;
-            city:y 10336.0 ;
-            city:z 10599.0 ],
-        [ city:x 30501.0 ;
-            city:y 12980.0 ;
-            city:z 10466.0 ],
-        [ city:x 36641.0 ;
-            city:y 12768.0 ;
-            city:z 15263.0 ],
-        [ city:x 36310.0 ;
-            city:y 11972.0 ;
-            city:z 15263.0 ],
-        [ city:x 36641.0 ;
-            city:y 12768.0 ;
-            city:z 13471.0 ],
-        [ city:x 36310.0 ;
-            city:y 11972.0 ;
-            city:z 13471.0 ],
-        [ city:x 32013.0 ;
-            city:y 2346.0 ;
-            city:z 15762.0 ],
-        [ city:x 32013.0 ;
-            city:y 2346.0 ;
-            city:z 13857.0 ],
-        [ city:x 19211.0 ;
-            city:y 19441.0 ;
-            city:z 12444.0 ],
-        [ city:x 34792.0 ;
-            city:y 12604.0 ;
-            city:z 15263.0 ],
-        [ city:x 35008.0 ;
-            city:y 12514.0 ;
-            city:z 14923.0 ],
-        [ city:x 34792.0 ;
-            city:y 12604.0 ;
-            city:z 14605.0 ],
-        [ city:x 31584.0 ;
-            city:y 1450.0 ;
-            city:z 13857.0 ],
-        [ city:x 31584.0 ;
-            city:y 1450.0 ;
-            city:z 15762.0 ],
-        [ city:x 35123.0 ;
-            city:y 13399.0 ;
-            city:z 15263.0 ],
-        [ city:x 35253.0 ;
-            city:y 0.0 ;
-            city:z 10024.0 ],
-        [ city:x 26216.0 ;
-            city:y 3965.0 ;
-            city:z 9933.0 ],
-        [ city:x 39903.0 ;
-            city:y 11453.0 ;
-            city:z 10035.0 ],
-        [ city:x 30437.0 ;
-            city:y 14347.0 ;
-            city:z 9865.0 ],
-        [ city:x 8944.0 ;
-            city:y 16499.0 ;
-            city:z 13252.0 ],
-        [ city:x 35608.0 ;
-            city:y 4017.0 ;
-            city:z 11181.0 ],
-        [ city:x 34574.0 ;
-            city:y 4440.0 ;
-            city:z 12284.0 ],
-        [ city:x 35607.0 ;
-            city:y 4015.0 ;
-            city:z 11180.0 ],
-        [ city:x 34577.0 ;
-            city:y 4436.0 ;
-            city:z 12279.0 ],
-        [ city:x 35906.0 ;
-            city:y 7395.0 ;
-            city:z 12153.0 ],
-        [ city:x 35906.0 ;
-            city:y 7394.0 ;
-            city:z 12153.0 ],
-        [ city:x 35848.0 ;
-            city:y 3918.0 ;
-            city:z 10927.0 ],
-        [ city:x 38175.0 ;
-            city:y 10018.0 ;
-            city:z 12385.0 ],
-        [ city:x 35848.0 ;
-            city:y 3918.0 ;
-            city:z 12284.0 ],
-        [ city:x 30001.0 ;
-            city:y 7131.0 ;
-            city:z 12298.0 ],
-        [ city:x 5482.0 ;
-            city:y 17965.0 ;
-            city:z 13252.0 ],
-        [ city:x 29067.0 ;
-            city:y 4855.0 ;
-            city:z 12305.0 ],
-        [ city:x 29990.0 ;
-            city:y 7136.0 ;
-            city:z 12286.0 ],
-        [ city:x 29044.0 ;
-            city:y 4864.0 ;
-            city:z 12279.0 ],
-        [ city:x 30673.0 ;
-            city:y 9315.0 ;
-            city:z 12077.0 ],
-        [ city:x 30641.0 ;
-            city:y 9987.0 ;
-            city:z 11782.0 ],
-        [ city:x 12313.0 ;
-            city:y 22218.0 ;
-            city:z 13252.0 ],
-        [ city:x 11229.0 ;
-            city:y 19602.0 ;
-            city:z 13252.0 ],
-        [ city:x 11229.0 ;
-            city:y 19602.0 ;
-            city:z 14469.0 ],
-        [ city:x 12313.0 ;
-            city:y 22218.0 ;
-            city:z 15152.0 ],
-        [ city:x 20166.0 ;
-            city:y 25185.0 ;
-            city:z 0.0 ],
-        [ city:x 13264.0 ;
-            city:y 24729.0 ;
-            city:z 14469.0 ],
-        [ city:x 13264.0 ;
-            city:y 24729.0 ;
-            city:z 13252.0 ],
-        [ city:x 9769.0 ;
-            city:y 29122.0 ;
-            city:z 14494.0 ],
-        [ city:x 9769.0 ;
-            city:y 29122.0 ;
-            city:z 13252.0 ],
-        [ city:x 13593.0 ;
-            city:y 27596.0 ;
-            city:z 14494.0 ],
-        [ city:x 13593.0 ;
-            city:y 27596.0 ;
-            city:z 13252.0 ],
-        [ city:x 10099.0 ;
-            city:y 28352.0 ;
-            city:z 13885.0 ],
-        [ city:x 10099.0 ;
-            city:y 28352.0 ;
-            city:z 13252.0 ],
-        [ city:x 9539.0 ;
-            city:y 28524.0 ;
-            city:z 13885.0 ],
-        [ city:x 9539.0 ;
-            city:y 28524.0 ;
-            city:z 13252.0 ],
-        [ city:x 18034.0 ;
-            city:y 19918.0 ;
-            city:z 0.0 ],
-        [ city:x 8646.0 ;
-            city:y 22157.0 ;
-            city:z 13885.0 ],
-        [ city:x 7855.0 ;
-            city:y 22489.0 ;
-            city:z 13885.0 ],
-        [ city:x 7855.0 ;
-            city:y 22489.0 ;
-            city:z 13252.0 ],
-        [ city:x 8646.0 ;
-            city:y 22157.0 ;
-            city:z 13252.0 ],
-        [ city:x 9173.0 ;
-            city:y 23630.0 ;
-            city:z 13252.0 ],
-        [ city:x 9173.0 ;
-            city:y 23630.0 ;
-            city:z 13885.0 ],
-        [ city:x 8382.0 ;
-            city:y 23962.0 ;
-            city:z 13885.0 ],
-        [ city:x 8382.0 ;
-            city:y 23962.0 ;
-            city:z 13252.0 ],
-        [ city:x 6358.0 ;
-            city:y 18288.0 ;
-            city:z 13885.0 ],
-        [ city:x 5712.0 ;
-            city:y 18565.0 ;
-            city:z 13885.0 ],
-        [ city:x 9831.0 ;
-            city:y 29283.0 ;
-            city:z 0.0 ],
-        [ city:x 5712.0 ;
-            city:y 18565.0 ;
-            city:z 13252.0 ],
-        [ city:x 6358.0 ;
-            city:y 18288.0 ;
-            city:z 13252.0 ],
-        [ city:x 16385.0 ;
-            city:y 17555.0 ;
-            city:z 14469.0 ],
-        [ city:x 16385.0 ;
-            city:y 17555.0 ;
-            city:z 13252.0 ],
-        [ city:x 18420.0 ;
-            city:y 22682.0 ;
-            city:z 14469.0 ],
-        [ city:x 18420.0 ;
-            city:y 22682.0 ;
-            city:z 13252.0 ],
-        [ city:x 17440.0 ;
-            city:y 20213.0 ;
-            city:z 15152.0 ],
-        [ city:x 39903.0 ;
-            city:y 11453.0 ;
-            city:z 2794.0 ],
-        [ city:x 35253.0 ;
-            city:y 0.0 ;
-            city:z 2794.0 ],
-        [ city:x 34792.0 ;
-            city:y 12604.0 ;
-            city:z 2794.0 ],
-        [ city:x 8944.0 ;
-            city:y 16499.0 ;
-            city:z 0.0 ],
-        [ city:x 30547.0 ;
-            city:y 1946.0 ;
-            city:z 2794.0 ],
-        [ city:x 26216.0 ;
-            city:y 3965.0 ;
-            city:z 2794.0 ],
-        [ city:x 30437.0 ;
-            city:y 14347.0 ;
-            city:z 2794.0 ],
-        [ city:x 36641.0 ;
-            city:y 12768.0 ;
-            city:z 2794.0 ],
-        [ city:x 35123.0 ;
-            city:y 13399.0 ;
-            city:z 2794.0 ],
-        [ city:x 31584.0 ;
-            city:y 1450.0 ;
-            city:z 2794.0 ],
-        [ city:x 31011.0 ;
-            city:y 9397.0 ;
-            city:z 12359.0 ],
-        [ city:x 30662.0 ;
-            city:y 9548.0 ;
-            city:z 11975.0 ],
-        [ city:x 29940.0 ;
-            city:y 9860.0 ;
-            city:z 12359.0 ],
-        [ city:x 29940.0 ;
-            city:y 9860.0 ;
-            city:z 11163.0 ],
-        [ city:x 15156.0 ;
-            city:y 12804.0 ;
-            city:z 0.0 ],
-        [ city:x 35848.0 ;
-            city:y 3916.0 ;
-            city:z 12279.0 ],
-        [ city:x 35848.0 ;
-            city:y 3915.0 ;
-            city:z 12278.0 ],
-        [ city:x 35848.0 ;
-            city:y 3916.0 ;
-            city:z 10927.0 ],
-        [ city:x 35848.0 ;
-            city:y 3915.0 ;
-            city:z 10926.0 ],
-        [ city:x 31054.0 ;
-            city:y 12948.0 ;
-            city:z 12234.0 ],
-        [ city:x 31054.0 ;
-            city:y 12948.0 ;
-            city:z 10993.0 ],
-        [ city:x 31053.0 ;
-            city:y 12947.0 ;
-            city:z 12233.0 ],
-        [ city:x 31053.0 ;
-            city:y 12947.0 ;
-            city:z 10992.0 ],
-        [ city:x 35075.0 ;
-            city:y 3551.0 ;
-            city:z 11502.0 ],
-        [ city:x 34758.0 ;
-            city:y 4112.0 ;
-            city:z 11994.0 ],
-        [ city:x 5482.0 ;
-            city:y 17965.0 ;
-            city:z 0.0 ],
-        [ city:x 35075.0 ;
-            city:y 3551.0 ;
-            city:z 11496.0 ],
-        [ city:x 38175.0 ;
-            city:y 10016.0 ;
-            city:z 12379.0 ],
-        [ city:x 38175.0 ;
-            city:y 10018.0 ;
-            city:z 11068.0 ],
-        [ city:x 38175.0 ;
-            city:y 10018.0 ;
-            city:z 12381.0 ],
-        [ city:x 38175.0 ;
-            city:y 10016.0 ;
-            city:z 11067.0 ],
-        [ city:x 29144.0 ;
-            city:y 9506.0 ;
-            city:z 10542.0 ],
-        [ city:x 29142.0 ;
-            city:y 9506.0 ;
-            city:z 11498.0 ],
-        [ city:x 29142.0 ;
-            city:y 9506.0 ;
-            city:z 10540.0 ],
-        [ city:x 29940.0 ;
-            city:y 9858.0 ;
-            city:z 12357.0 ],
-        [ city:x 29144.0 ;
-            city:y 9506.0 ;
-            city:z 11497.0 ],
-        [ city:x 4403.0 ;
-            city:y 31333.0 ;
-            city:z 0.0 ],
-        [ city:x 29940.0 ;
-            city:y 9858.0 ;
-            city:z 12360.0 ],
-        [ city:x 35896.0 ;
-            city:y 3208.0 ;
-            city:z 11498.0 ],
-        [ city:x 35847.0 ;
-            city:y 3915.0 ;
-            city:z 12277.0 ],
-        [ city:x 35896.0 ;
-            city:y 3210.0 ;
-            city:z 11497.0 ],
-        [ city:x 35847.0 ;
-            city:y 3915.0 ;
-            city:z 12281.0 ],
-        [ city:x 35896.0 ;
-            city:y 3208.0 ;
-            city:z 10622.0 ],
-        [ city:x 35896.0 ;
-            city:y 3210.0 ;
-            city:z 10623.0 ],
-        [ city:x 35544.0 ;
-            city:y 4683.0 ;
-            city:z 11496.0 ],
-        [ city:x 35544.0 ;
-            city:y 4683.0 ;
-            city:z 11485.0 ],
-        [ city:x 34780.0 ;
-            city:y 4493.0 ;
-            city:z 12114.0 ] ;
+    city:hasVertex <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-0>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-1>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-10>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-100>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-101>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-102>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-103>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-104>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-105>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-106>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-107>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-108>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-109>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-11>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-110>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-111>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-112>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-113>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-114>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-115>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-116>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-117>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-118>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-119>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-12>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-120>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-121>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-122>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-123>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-124>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-125>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-126>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-127>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-128>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-129>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-13>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-130>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-131>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-132>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-133>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-134>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-135>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-136>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-137>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-138>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-139>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-14>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-140>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-141>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-142>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-143>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-144>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-145>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-146>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-147>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-148>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-149>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-15>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-150>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-151>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-152>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-153>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-154>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-155>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-156>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-157>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-158>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-159>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-16>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-160>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-161>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-162>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-163>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-164>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-165>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-166>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-167>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-168>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-169>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-17>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-170>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-171>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-172>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-173>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-174>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-175>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-176>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-177>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-178>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-179>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-18>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-180>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-181>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-182>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-183>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-184>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-185>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-186>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-187>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-188>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-189>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-19>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-190>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-191>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-192>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-193>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-194>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-195>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-196>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-197>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-198>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-199>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-2>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-20>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-200>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-201>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-202>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-203>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-204>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-205>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-206>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-207>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-208>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-209>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-21>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-210>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-211>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-212>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-213>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-214>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-215>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-216>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-217>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-218>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-219>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-22>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-220>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-221>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-222>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-223>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-224>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-225>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-226>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-227>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-228>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-229>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-23>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-230>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-231>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-232>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-233>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-234>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-235>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-236>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-237>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-238>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-239>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-24>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-240>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-241>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-242>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-243>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-244>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-245>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-246>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-247>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-248>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-249>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-25>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-250>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-251>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-252>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-253>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-254>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-26>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-27>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-28>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-29>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-3>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-30>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-31>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-32>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-33>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-34>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-35>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-36>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-37>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-38>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-39>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-4>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-40>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-41>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-42>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-43>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-44>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-45>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-46>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-47>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-48>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-49>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-5>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-50>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-51>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-52>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-53>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-54>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-55>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-56>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-57>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-58>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-59>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-6>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-60>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-61>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-62>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-63>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-64>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-65>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-66>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-67>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-68>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-69>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-7>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-70>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-71>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-72>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-73>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-74>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-75>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-76>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-77>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-78>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-79>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-8>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-80>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-81>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-82>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-83>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-84>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-85>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-86>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-87>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-88>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-89>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-9>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-90>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-91>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-92>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-93>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-94>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-95>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-96>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-97>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-98>,
+        <https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/cityjson/twobuildings.city.json#vertices-99> ;
     city:version "1.1" .
 
