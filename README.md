@@ -1,6 +1,6 @@
 # CHEK profiles
 
-This repository defines profiles of standards used in the CHEK project.
+This repository defines profiles of standards used in the [CHEK project](https://chekdbp.eu/).
 
 It uses automated scripts to transform and validate implementation patterns into a semantic model that can be matched to the business rules.  This transformation allows multiple forms of data to coexist (as required to integrate different systems) whilst simplifying using a single profile specification that meets this goal. 
 
