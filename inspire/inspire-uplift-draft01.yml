@@ -1,0 +1,53 @@
+input-filter:
+  xml:
+    attr-prefix: ''
+    process-namespaces: true
+    namespace-separator: '#'
+    text-property: 'rdf:value'
+
+transform:
+  # Keep individual features
+  - .data
+    ."http://www.opengis.net/wfs/2.0#FeatureCollection"
+    ."http://www.opengis.net/wfs/2.0#member"
+  # 1. Add namespace to attributes
+  # 2. Convert class names (uppercase initial) to @type, so that:
+  #   { "http://www.opengis.net/gml/3.2#MultiSurface" : { ...props } }
+  # turns into:
+  #   { "@type": "http://www.opengis.net/gml/3.2#MultiSurface", ...props }
+  # 3. Add @base depending on filename
+  - |
+    def gmlid: if type == "object" and ."http://www.opengis.net/gml/3.2#id" then ."@id" = "#" + (."http://www.opengis.net/gml/3.2#id" | tostring) end;
+    walk(
+      if (type == "object") then 
+        with_entries(if (.key | contains("#")) and (.value | type == "object") then 
+          (.key | sub("#.*$"; "#")) as $ns | 
+          .value |= with_entries(.key = if (.key | test("^@|#") | not) and (.value | type == "string") then $ns + .key else .key end)
+        end)
+      end
+      | if (type != "object") or (length != 1) or (keys[0] | test("#[A-Z]") | not) then gmlid else 
+        to_entries[0] | { "@type": .key } + .value | gmlid
+        end
+    ) | {
+      "@context": { 
+        "@base": "https://raw.githubusercontent.com/ogcincubator/chek-profiles/master/\($_relname)"
+      },
+      "@graph": .
+    }
+
+context:
+  $:
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    xsd: http://www.w3.org/2001/XMLSchema#
+    inspire-cp: http://inspire.ec.europa.eu/schemas/cp/4.0#
+    gml: http://www.opengis.net/gml/3.2#
+    inspire-base: http://inspire.ec.europa.eu/schemas/base/3.3#
+
+    http://www.opengis.net/gml/3.2#srsName:
+      '@type': '@id'
+
+    http://www.opengis.net/gml/3.2#srsDimension:
+      '@type': xsd:integer
+
+    http://www.opengis.net/gml/3.2#count:
+      '@type': xsd:integer
