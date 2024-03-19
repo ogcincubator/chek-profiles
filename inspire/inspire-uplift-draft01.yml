@@ -26,7 +26,7 @@ transform:
         end)
       end
       | if (type != "object") or (length != 1) or (keys[0] | test("#[A-Z]") | not) then gmlid else 
-        to_entries[0] | { "@type": .key } + .value | gmlid
+        to_entries[0] | (if .value | type == "object" then { "@type": .key } + .value else .key as $key | .value | map({ "@type": $key } + .) end ) | gmlid
         end
     ) | {
       "@context": { 
