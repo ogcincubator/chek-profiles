@@ -8,8 +8,8 @@ input-filter:
 transform:
   # Keep individual features
   - .data
-    ."http://www.opengis.net/wfs/2.0#FeatureCollection"
-    ."http://www.opengis.net/wfs/2.0#member"
+    # ."http://www.opengis.net/wfs/2.0#FeatureCollection"
+    # ."http://www.opengis.net/wfs/2.0#member"
   # 1. Add namespace to attributes
   # 2. Convert class names (uppercase initial) to @type, so that:
   #   { "http://www.opengis.net/gml/3.2#MultiSurface" : { ...props } }
